@@ -1,5 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+
+import LandingTitle from "../components/LandingTitle";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -11,8 +13,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div>Flumq</div>
-        <div>Your guide to moving abroad</div>
+        <LandingTitle />
       </main>
     </div>
   );
