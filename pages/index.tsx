@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import LandingTitle from "../components/LandingTitle";
+import StartPage from "../components/StartPage";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -13,7 +13,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <LandingTitle />
+        <StartPage />
       </main>
     </div>
   );
