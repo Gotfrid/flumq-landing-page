@@ -9,6 +9,7 @@
 
 .textLogo {
   margin-top: 3em;
+  margin-bottom: 1em;
 }
 
 .imageLogo {
@@ -48,9 +49,66 @@
 }
 
 .integrations {
+  margin-top: 5em;
   width: 100%;
   height: 50vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 7em;
+}
+
+.bottomGroup {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20vh;
+  width: 100vw;
+}
+
+.bottomCurvature {
+  height: 80%;
+  background: url("../public/curvature.png") no-repeat bottom;
+  background-size: 100%;
+}
+
+.bottomFiller {
+  background-color: #ffffff;
+  height: 20%;
+}
+
+.scrollIconContainer {
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.qrContainer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.qrText {
+  font-weight: 600;
+  margin-bottom: 0.1em;
+  margin-right: -0.5em;
+
+  /* FIGMA */
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  color: #454267;
+}
+
+.diagonalArrow {
+  margin-bottom: 2.3em;
+  margin-right: 0.5em;
 }
