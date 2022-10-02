@@ -1,6 +1,8 @@
 .container {
   width: 100vw;
   height: 100vh;
+  padding-right: 1em;
+  padding-left: 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,12 +20,13 @@
 }
 
 .title {
-  height: 1.2em;
+  height: 7vw;
+  font-size: 6vw;
 
   /* FIGMA */
   font-style: normal;
   font-weight: 800;
-  font-size: 80px;
+  /* font-size: 80px; */
   text-align: center;
   letter-spacing: -0.06em;
 
@@ -35,10 +38,12 @@
 }
 
 .subtitle {
+  font-size: 1.8vw;
+
   /* FIGMA */
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  /* font-size: 24px; */
   /* line-height: 32px; */
   text-align: center;
   letter-spacing: -0.04em;
@@ -55,7 +60,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 7em;
+  gap: 7vw;
+}
+
+.iphoneContainer {
+  align-self: flex-end;
 }
 
 .bottomGroup {

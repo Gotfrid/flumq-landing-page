@@ -28,7 +28,7 @@ const StartPage = () => {
         <div>
           <Image src={appStoreGray} />
         </div>
-        <div>
+        <div className={styles.iphoneContainer}>
           <Image src={iphone14} />
         </div>
         <div>
