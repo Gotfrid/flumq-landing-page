@@ -1,20 +1,50 @@
 .container {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: linear-gradient(180deg, #ffffff 50%, #dfd7ff 100%);
+}
+
+.textLogo {
+  margin-top: 3em;
 }
 
 .imageLogo {
   align-self: flex-end;
+  margin-right: 3em;
 }
 
 .title {
-  font-size: clamp(1rem, 5vw, 4rem); 
-  margin-bottom: 0;
+  height: 1.2em;
+
+  /* FIGMA */
+  font-style: normal;
+  font-weight: 800;
+  font-size: 80px;
+  text-align: center;
+  letter-spacing: -0.06em;
+
+  background: linear-gradient(89.78deg, #704ee2 0.15%, #926ff7 99.81%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 .subtitle {
-  font-size: 2vw; 
+  /* FIGMA */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  /* line-height: 32px; */
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: #454267;
+  /* flex: none;
+  order: 1;
+  flex-grow: 0; */
 }
 
 .integrations {
