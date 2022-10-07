@@ -208,8 +208,70 @@ p {
   font-size: 1.8vw;
 }
 
-.destinationExplainText {
+.explainText {
   color: #454267;
+  display: inline;
+  font-size: 1.8vw;
+}
+
+/* GUIDES PAGE */
+
+.guides {
+  background: #15141e;
+}
+
+.accessText {
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: -0.04em;
+  font-size: 4vw;
+  color: #ffffff;
+  margin-top: 1em;
+  margin-bottom: -0.3em;
+}
+
+.guidesText {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 6vw;
+  text-align: center;
+  letter-spacing: -0.06em;
+
+  background: linear-gradient(273.07deg, #42bbff 0%, #c241ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.guidesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 50vh;
+  width: 60vw;
+}
+
+.description {
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: -0.04em;
+  width: 56vw;
+}
+
+.highlightLight {
+  color: #ffffff;
+  background: #6d57a1;
+  letter-spacing: -0.04em;
+  border-radius: 8px;
+  padding: 1px 5px 2px;
+  margin-right: 0.2em;
+  font-size: 1.8vw;
+}
+
+.explainTextWhite {
+  color: #ffffff;
   display: inline;
   font-size: 1.8vw;
 }

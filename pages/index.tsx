@@ -82,11 +82,26 @@ const Home: NextPage = () => {
           <span className="destinationText">Destination</span>
           <span>
             <span className="highlightDark">Know your options</span>
-            <p className="destinationExplainText">
+            <p className="explainText">
               Search countries by filters, compare and make your choice
             </p>
           </span>
         </div>
+      </section>
+
+      {/* DESTINATIONS PAGE */}
+
+      <section className="page guides">
+        <span className="accessText">Access</span>
+        <span className="guidesText">Step-by-Step Guides</span>
+        <div className="guidesContainer">Guides placeholder</div>
+        <span className="description">
+          <span className="highlightLight">No more uncertainties</span>
+          <p className="explainTextWhite">
+            Choose a path that shows what to do next, track progress, share
+            timeline, or create your own guide
+          </p>
+        </span>
       </section>
     </>
   );
