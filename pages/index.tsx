@@ -33,13 +33,13 @@ const Home: NextPage = () => {
           experience
         </p>
         <div className="integrations">
-          <div>
+          <div className="storeImage">
             <Image src={appStoreGray} />
           </div>
           <div className="iphoneContainer">
             <Image src={iphone14} />
           </div>
-          <div>
+          <div className="storeImage">
             <Image src={googlePlayGray} />
           </div>
         </div>

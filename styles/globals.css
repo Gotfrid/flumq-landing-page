@@ -76,11 +76,15 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 7vw;
+  gap: 8vw;
 }
 
 .iphoneContainer {
   max-height: 30vh;
+}
+
+.storeImage {
+  padding-top: 9em;
 }
 
 .scrollIconContainer {
@@ -95,7 +99,7 @@ p {
   position: absolute;
   right: 0;
   bottom: 0;
-  margin-right: 5%;
+  margin-right: 1.5em;
   margin-bottom: 1em;
   display: flex;
   align-items: flex-end;
