@@ -173,6 +173,11 @@ p {
   top: 50%;
   left: -1.5em;
 }
+.destinationsImageContainer {
+  position: relative;
+  top: -12%;
+  left: 5%;
+}
 
 .destinationsHeroText {
   width: 40vw;
@@ -282,7 +287,7 @@ p {
 .community {
   flex-direction: row;
   justify-content: center;
-  gap: 5vw;
+  gap: 20vw;
   background-color: #ffffff;
 }
 
@@ -297,6 +302,7 @@ p {
   width: 28vw;
   height: 28vw;
   border-radius: 50%;
+  margin-right: 3em;
   background: linear-gradient(273.81deg, #8564f7 32.09%, #9877f4 100%);
 }
 

@@ -11,7 +11,7 @@ import iphone14 from "../public/assets/iphone14.svg";
 import scrollIcon from "../public/icons/scroll-icon.svg";
 import qrCode from "../public/assets/qr-code.svg";
 import diagonalArrow from "../public/icons/diagonal-arrow.svg";
-import destinations from "../public/assets/destinations.svg";
+import destinations from "../public/assets/destinations.png";
 import searchIcon from "../public/icons/magnifying-glass.svg";
 import settingsIcon from "../public/icons/adjustments-vertical.svg";
 import community3x from "../public/assets/community3x.png";
@@ -76,6 +76,9 @@ const Home: NextPage = () => {
           <span className="iconContainer settingsIcon">
             <Image src={settingsIcon} />
           </span>
+          <div className="destinationsImageContainer">
+            <Image src={destinations} />
+          </div>
           <div className="destinations"></div>
         </div>
         <div className="destinationsHeroText">
