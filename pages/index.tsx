@@ -20,7 +20,7 @@ const Home: NextPage = () => {
         <meta name="description" content="Your guide to moving abroad" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="container">
+      <section className="page welcome">
         <div className="textLogo">
           <Image src={logoText} height="50px" />
         </div>
@@ -56,7 +56,9 @@ const Home: NextPage = () => {
           </div>
           <Image src={qrCode} />
         </div>
-      </div>
+        <div className="bottomCurvature"></div>
+      </section>
+      <section className="page"></section>
     </>
   );
 };
