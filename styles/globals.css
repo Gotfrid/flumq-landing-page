@@ -25,6 +25,7 @@ p {
   align-items: center;
 }
 
+/* WELCOME PAGE */
 .welcome {
   background: linear-gradient(180deg, #ffffff 50%, #dfd7ff 100%);
 }
@@ -130,4 +131,85 @@ p {
   width: 100vw;
   background-color: #ffffff;
   z-index: 0;
+}
+
+/* DESTINATION PAGE */
+
+.destination {
+  background: #ffffff;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.destinationsContainer {
+  position: relative;
+  height: 80%;
+  width: 35vw;
+  border-radius: 2em;
+  background: linear-gradient(180deg, #f4f0ff 0%, #ffffff 100%);
+}
+
+.iconContainer {
+  height: 3.5em;
+  aspect-ratio: 1/1;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 32px 56px rgba(68, 56, 107, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchIcon {
+  position: absolute;
+  top: 10%;
+  left: -1.5em;
+}
+
+.settingsIcon {
+  position: absolute;
+  top: 50%;
+  left: -1.5em;
+}
+
+.destinationsHeroText {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.findText {
+  color: #454267;
+  font-size: 4vw;
+  margin-bottom: -0.5em;
+}
+
+.destinationText {
+  font-size: 6vw;
+
+  /* FIGMA */
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  background: linear-gradient(273.07deg, #e95aec 0%, #8793ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.highlightDark {
+  color: #785bb6;
+  background: #dcd6fb;
+  border-radius: 8px;
+  padding: 1px 5px 2px;
+  margin-right: 0.2em;
+  font-size: 1.8vw;
+}
+
+.destinationExplainText {
+  color: #454267;
+  display: inline;
+  font-size: 1.8vw;
 }

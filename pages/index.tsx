@@ -3,14 +3,17 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 
-import logoText from "../public/logo-text.svg";
-import logoSymbol from "../public/logo-symbol.svg";
-import appStoreGray from "../public/app-store-gray.svg";
-import googlePlayGray from "../public/google-play-gray.svg";
-import iphone14 from "../public/iphone14.svg";
-import scrollIcon from "../public/scroll-icon.svg";
-import qrCode from "../public/qr-code.svg";
-import diagonalArrow from "../public/diagonal-arrow.svg";
+import logoText from "../public/logo/logo-text.svg";
+import logoSymbol from "../public/logo/logo-symbol.svg";
+import appStoreGray from "../public/assets/app-store-gray.svg";
+import googlePlayGray from "../public/assets/google-play-gray.svg";
+import iphone14 from "../public/assets/iphone14.svg";
+import scrollIcon from "../public/icons/scroll-icon.svg";
+import qrCode from "../public/assets/qr-code.svg";
+import diagonalArrow from "../public/icons/diagonal-arrow.svg";
+import destinations from "../public/assets/destinations.svg";
+import searchIcon from "../public/icons/magnifying-glass.svg";
+import settingsIcon from "../public/icons/adjustments-vertical.svg";
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +23,9 @@ const Home: NextPage = () => {
         <meta name="description" content="Your guide to moving abroad" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      {/* START PAGE */}
+
       <section className="page welcome">
         <div className="textLogo">
           <Image src={logoText} height="50px" />
@@ -58,7 +64,30 @@ const Home: NextPage = () => {
         </div>
         <div className="bottomCurvature"></div>
       </section>
-      <section className="page"></section>
+
+      {/* DESTINATIONS PAGE */}
+
+      <section className="page destination">
+        <div className="destinationsContainer">
+          <span className="iconContainer searchIcon">
+            <Image src={searchIcon} />
+          </span>
+          <span className="iconContainer settingsIcon">
+            <Image src={settingsIcon} />
+          </span>
+          <div className="destinations"></div>
+        </div>
+        <div className="destinationsHeroText">
+          <span className="findText">Find your</span>
+          <span className="destinationText">Destination</span>
+          <span>
+            <span className="highlightDark">Know your options</span>
+            <p className="destinationExplainText">
+              Search countries by filters, compare and make your choice
+            </p>
+          </span>
+        </div>
+      </section>
     </>
   );
 };
