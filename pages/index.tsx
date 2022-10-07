@@ -15,6 +15,19 @@ import destinations from "../public/assets/destinations.png";
 import searchIcon from "../public/icons/magnifying-glass.svg";
 import settingsIcon from "../public/icons/adjustments-vertical.svg";
 import community3x from "../public/assets/community3x.png";
+import appIcon from "../public/logo/app-icon.svg";
+import appStoreBlack from "../public/assets/app-store-black.svg";
+import googlePlayBlack from "../public/assets/google-play-black.svg";
+
+import mailIcon from "../public/icons/mail-icon.svg";
+import facebookIcon from "../public/icons/facebook-icon.svg";
+import instagramIcon from "../public/icons/instagram-icon.svg";
+import youtubeIcon from "../public/icons/youtube-icon.svg";
+import twitterIcon from "../public/icons/twitter-icon.svg";
+import linkedinIcon from "../public/icons/linkedin-icon.svg";
+
+import footerLogo from "../public/logo/footer-logo.svg";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
@@ -91,9 +104,10 @@ const Home: NextPage = () => {
             </p>
           </span>
         </div>
+        <div className="whiteBubble"></div>
       </section>
 
-      {/* DESTINATIONS PAGE */}
+      {/* GUIDES PAGE */}
 
       <section className="page guides">
         <span className="accessText">Access</span>
@@ -126,6 +140,75 @@ const Home: NextPage = () => {
           <div className="communityContainer">
             <Image src={community3x} layout="fill" objectFit="contain" />
           </div>
+        </div>
+        <div className="whiteBubble"></div>
+      </section>
+
+      {/* DOWNLOAD PAGE */}
+
+      <section className="page download">
+        <div className="downloadGradient"></div>
+        <div className="appIcon">
+          <div>
+            <Image src={appIcon} />
+          </div>
+        </div>
+        <span className="downloadHeroText">Download App</span>
+        <span className="downloadDescription">
+          It&apos;s time to begin your journey abroad.
+        </span>
+        <div className="downloadStoreContainer">
+          <span>
+            <Image src={appStoreBlack} />
+          </span>
+          <span>
+            <Image src={googlePlayBlack} />
+          </span>
+        </div>
+        <footer className="footer">
+          <div className="contacts">
+            <div className="emailContainer">
+              <span>
+                <Image src={mailIcon} />
+              </span>
+              <a>business@flumq.com</a>
+            </div>
+            <div className="socialContainer">
+              <span>
+                <Image src={facebookIcon} />
+              </span>
+              <span>
+                <Image src={instagramIcon} />
+              </span>
+              <span>
+                <Image src={youtubeIcon} />
+              </span>
+              <span>
+                <Image src={twitterIcon} />
+              </span>
+              <span>
+                <Image src={linkedinIcon} />
+              </span>
+            </div>
+          </div>
+          <div className="footerBorder"></div>
+          <div className="bottomFooter">
+            <div className="copyrightContainer">
+              <span>
+                <Image src={footerLogo} />
+              </span>
+              <span className="copyrightText">© 2022 Flumq LLC</span>
+            </div>
+            <div className="links">
+              <Link href="/">Privacy Policy</Link>
+              <Link href="/">Terms of Service</Link>
+              <Link href="/">Coockie Policy</Link>
+            </div>
+          </div>
+        </footer>
+        <div className="footerQRContainer">
+          <Image src={qrCode} />
+          <span>Scan to download</span>
         </div>
       </section>
     </>
