@@ -5,6 +5,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Manrope", sans-serif;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -73,7 +74,7 @@ p {
 
 .integrations {
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,7 +128,7 @@ p {
 .bottomCurvature {
   position: absolute;
   bottom: 0;
-  height: 14vh;
+  height: 25vh;
   width: 100vw;
   background: url("../public/bottom-curvature.svg");
   background-repeat: no-repeat;
