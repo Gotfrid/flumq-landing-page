@@ -5,7 +5,6 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Manrope", sans-serif;
-  overflow-x: hidden;
 }
 
 h1 {
@@ -20,10 +19,12 @@ p {
 .page {
   width: 100vw;
   height: 100vh;
+  min-height: 720px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 /* WELCOME PAGE */
@@ -86,6 +87,7 @@ p {
 }
 
 .storeImage {
+  padding: 0 2em;
   padding-top: 9em;
 }
 
@@ -143,7 +145,6 @@ p {
   flex-direction: row;
   justify-content: center;
   gap: 5vw;
-  position: relative;
   overflow: visible;
 }
 
@@ -292,12 +293,10 @@ p {
 /* COMMUNITY PAGE */
 
 .community {
-  position: relative;
   flex-direction: row;
   justify-content: center;
   gap: 20vw;
   background-color: #ffffff;
-  overflow: visible;
 }
 
 .communityHeroText {
@@ -360,7 +359,7 @@ p {
 
 .download {
   height: 75vh;
-  position: relative;
+  min-height: 540px;
   background: #ffffff;
   overflow: visible;
 }

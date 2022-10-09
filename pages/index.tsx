@@ -76,7 +76,7 @@ const Home: NextPage = () => {
           </div>
           <Image src={qrCode} />
         </div>
-        <div className="bottomCurvature"></div>
+        {/* <div className="bottomCurvature"></div> */}
       </section>
 
       {/* DESTINATIONS PAGE */}
@@ -104,7 +104,6 @@ const Home: NextPage = () => {
             </p>
           </span>
         </div>
-        <div className="whiteBubble"></div>
       </section>
 
       {/* GUIDES PAGE */}
@@ -141,7 +140,6 @@ const Home: NextPage = () => {
             <Image src={community3x} layout="fill" objectFit="contain" />
           </div>
         </div>
-        <div className="whiteBubble"></div>
       </section>
 
       {/* DOWNLOAD PAGE */}
