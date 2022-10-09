@@ -196,7 +196,7 @@ const Home: NextPage = () => {
           <div className="footerBorder"></div>
           <div className="bottomFooter">
             <div className="copyrightContainer">
-              <span>
+              <span className="copyrightLogo">
                 <Image src={footerLogo} />
               </span>
               <span className="copyrightText">© 2022 Flumq LLC</span>
