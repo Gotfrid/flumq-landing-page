@@ -692,7 +692,7 @@ p {
   width: 100%;
   height: 100%;
   padding: 0 0.5em;
-  background: url("/assets/iphone-frame.png");
+  background: url("/assets/iphone-frame.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
