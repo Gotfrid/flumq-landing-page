@@ -277,7 +277,7 @@ p {
   border-radius: 8px;
   padding: 1px 5px 2px;
   margin-right: 0.2em;
-  font-size: 1.8vw;
+  font-size: 1.5vw;
   letter-spacing: -0.04em;
   font-weight: 600;
 }
@@ -285,7 +285,7 @@ p {
 .explainText {
   color: #454267;
   display: inline;
-  font-size: 1.8vw;
+  font-size: 1.5vw;
   letter-spacing: -0.04em;
   font-weight: 600;
 }
@@ -322,11 +322,14 @@ p {
 
 .guidesContainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
-  height: 50vh;
-  width: 60vw;
+  height: 60vh;
+  width: 660px;
+  background: rgba(21, 20, 30, 0.4);
+  z-index: 1;
 }
 
 .description {
@@ -343,14 +346,14 @@ p {
   border-radius: 8px;
   padding: 1px 5px 2px;
   margin-right: 0.2em;
-  font-size: 1.8vw;
+  font-size: 1.5vw;
   font-weight: 600;
 }
 
 .explainTextWhite {
   color: #ffffff;
   display: inline;
-  font-size: 1.8vw;
+  font-size: 1.5vw;
   letter-spacing: -0.04em;
   font-weight: 600;
 }
@@ -595,4 +598,169 @@ p {
   background: #ffffff;
   border-radius: 0 0 50% 50%;
   transform: scaleX(2);
+}
+
+.backgroundCircleContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  gap: 30vw;
+}
+
+.backgroundCirclePurple {
+  height: 100%;
+  aspect-ratio: 1;
+  background: #8a69ee;
+  opacity: 0.3;
+  filter: blur(120px);
+  border-radius: 50%;
+}
+
+.backgroundCircleTeal {
+  height: 100%;
+  aspect-ratio: 1;
+  background: #3f6fb0;
+  opacity: 0.3;
+  filter: blur(120px);
+  border-radius: 50%;
+}
+
+.backgroundCircleTeal:first-child {
+  margin-top: -5%;
+}
+
+.backgroundCircleTeal:last-child {
+  margin-top: 5%;
+}
+
+.backgroundCirclePink {
+  height: 100%;
+  aspect-ratio: 1;
+  background: #9f4fcd;
+  opacity: 0.3;
+  filter: blur(120px);
+  border-radius: 50%;
+}
+
+.backgroundCirclePink:first-child {
+  margin-top: 5%;
+}
+
+.backgroundCirclePink:last-child {
+  margin-top: -5%;
+}
+
+/* GUIDES BUTTON GROUP */
+.btn-group {
+  background-color: rgba(118, 118, 128, 0.24);
+  border-radius: 50px;
+  height: 4vh;
+  margin-top: 1em;
+}
+.btn-group button {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  float: left;
+  width: 10em;
+  border-radius: 50px;
+  padding: 1vh;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #464649;
+}
+
+.btn-group button.btn-active {
+  background-color: #59537b;
+}
+
+.iphoneFrame {
+  width: 100%;
+  height: 100%;
+  padding: 0 0.5em;
+  background: url("../public/assets/iphone-frame.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.descriptionContent {
+  width: 85%;
+  height: 100%;
+  color: #aba6d6;
+  padding: 0 3em;
+}
+
+.descriptionContent > h3 {
+  font-weight: 800;
+  font-size: 1.6em;
+  letter-spacing: -0.02em;
+}
+
+.descriptionContent__textContainer {
+  padding: 16px 24px;
+  background: rgba(163, 94, 255, 0.05);
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 200%;
+  letter-spacing: -0.02em;
+}
+
+.descriptionContent__textContainer > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.descriptionContent__footer {
+  filter: brightness(0.6);
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+  margin-top: 0.5em;
+}
+
+.timelineContent {
+  display: flex;
+  justify-content: center;
+  padding: 3em;
+}
+
+.timelineContent__image {
+  width: 50%;
+}
+
+.timelineContent__text {
+  width: 100%;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 200%;
+  letter-spacing: -0.02em;
+  color: #aba6d6;
+  padding-left: 3em;
+}
+
+.statsContent {
+  width: 85%;
+  height: 100%;
+  padding: 1em 4em;
 }

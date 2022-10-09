@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 import logoText from "../public/logo/logo-text.svg";
 import logoSymbol from "../public/logo/logo-symbol.svg";
@@ -18,6 +19,8 @@ import community3x from "../public/assets/community3x.png";
 import appIcon from "../public/logo/app-icon.svg";
 import appStoreBlack from "../public/assets/app-store-black.svg";
 import googlePlayBlack from "../public/assets/google-play-black.svg";
+import timeline from "../public/assets/timeline3x.png";
+import stats from "../public/assets/stats3x.png";
 
 import mailIcon from "../public/icons/mail-icon.svg";
 import facebookIcon from "../public/icons/facebook-icon.svg";
@@ -27,9 +30,97 @@ import twitterIcon from "../public/icons/twitter-icon.svg";
 import linkedinIcon from "../public/icons/linkedin-icon.svg";
 
 import footerLogo from "../public/logo/footer-logo.svg";
-import Link from "next/link";
+import { MouseEventHandler, useState } from "react";
+
+const DescriptionContent = () => {
+  return (
+    <div className="descriptionContent">
+      <h3>Moving to Canada</h3>
+      <div className="descriptionContent__textContainer">
+        <p>
+          Hello everyone, This guide is for those who want to move permanently
+          to Canada. I immigrated in 2022, so I share my real steps with you.
+        </p>
+        <p>Follow this guide if you have:</p>
+        <ul>
+          <li>&mdash; 3 years of work experience</li>
+          <li>&mdash; Bachelor's degree</li>
+          <li>&mdash; B2+ level of English</li>
+          <li>...</li>
+        </ul>
+      </div>
+      <div className="descriptionContent__footer">
+        <span>By Alex Cross</span>
+        <span>09/15/22</span>
+      </div>
+    </div>
+  );
+};
+
+const TimelineContent = () => {
+  return (
+    <div className="timelineContent">
+      <div className="timelineContent__image">
+        <Image src={timeline} />
+      </div>
+      <div className="timelineContent__text">
+        <p>English language test</p>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non lacus,
+          augue tortor sed laoreet. Facilisis faucibus viverra fringilla diam in
+          neque convallis facilisi cras. Lectus imperdiet pulvinar cursus ut
+          egestas nec sit neque vitae. Arcu pharetra, suscipit sit massa
+          consectetur.
+        </p>
+      </div>
+    </div>
+  );
+};
+
+const StatsContent = () => {
+  return (
+    <div className="statsContent">
+      <Image src={stats} />
+    </div>
+  );
+};
+
+const guideTabs = ["Description", "Timeline", "Stats"];
+const backgroundCircleMapping = [
+  {
+    tabName: "Description",
+    className: "backgroundCirclePink",
+    component: () => <DescriptionContent />,
+  },
+  {
+    tabName: "Timeline",
+    className: "backgroundCirclePurple",
+    component: () => <TimelineContent />,
+  },
+  {
+    tabName: "Stats",
+    className: "backgroundCircleTeal",
+    component: () => <StatsContent />,
+  },
+];
 
 const Home: NextPage = () => {
+  const [activeGuideTab, setActiveGuideTab] = useState(guideTabs[1]);
+
+  const handleGuideSwitch: MouseEventHandler = (event) => {
+    const input = event.target as HTMLDivElement;
+    setActiveGuideTab(input.innerText);
+  };
+
+  const circleClassname = backgroundCircleMapping.find(
+    (x) => x.tabName === activeGuideTab
+  )?.className;
+
+  const guideComponent = backgroundCircleMapping.find(
+    (x) => x.tabName === activeGuideTab
+  )?.component;
+
   return (
     <>
       <Head>
@@ -114,7 +205,21 @@ const Home: NextPage = () => {
       <section className="page guides">
         <span className="accessText">Access</span>
         <span className="guidesText">Step-by-Step Guides</span>
-        <div className="guidesContainer">Guides placeholder</div>
+        <div className="guidesContainer">
+          <div className="btn-group" onClick={handleGuideSwitch}>
+            {guideTabs.map((tabName) => (
+              <button
+                key={tabName}
+                className={tabName === activeGuideTab ? "btn-active" : ""}
+              >
+                {tabName}
+              </button>
+            ))}
+          </div>
+          <div className="iphoneFrame">
+            {guideComponent && guideComponent()}
+          </div>
+        </div>
         <span className="description">
           <span className="highlightLight">No more uncertainties</span>
           <p className="explainTextWhite">
@@ -122,6 +227,10 @@ const Home: NextPage = () => {
             timeline, or create your own guide
           </p>
         </span>
+        <div className="backgroundCircleContainer">
+          <div className={circleClassname} />
+          <div className={circleClassname} />
+        </div>
       </section>
 
       {/* COMMUNITY PAGE */}
