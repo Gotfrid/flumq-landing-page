@@ -418,6 +418,7 @@ p {
   height: 75vh;
   min-height: 540px;
   background: #ffffff;
+  overflow: hidden;
 }
 
 .downloadGradient {
