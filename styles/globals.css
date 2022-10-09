@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;600;700;800&display=swap");
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Manrope", sans-serif;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -20,7 +25,6 @@ p {
   width: 100vw;
   height: 100vh;
   min-height: 720px;
-  overflow-x: clip;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -347,7 +351,7 @@ p {
 .community {
   flex-direction: row;
   justify-content: center;
-  gap: 20vw;
+  gap: 10vw;
   background: #15141e;
 }
 
