@@ -184,17 +184,6 @@ p {
   margin-right: 0.5em;
 }
 
-.bottomCurvature {
-  position: absolute;
-  bottom: 0;
-  height: 25vh;
-  width: 100vw;
-  background: url("../public/bottom-curvature.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
 /* DESTINATION PAGE */
 
 .destination {
@@ -697,7 +686,7 @@ p {
   width: 100%;
   height: 100%;
   padding: 0 0.5em;
-  background: url("../public/assets/iphone-frame.svg");
+  background: url("/assets/iphone-frame.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
