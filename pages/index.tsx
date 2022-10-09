@@ -208,6 +208,8 @@ const Home: NextPage = () => {
             </div>
           </div>
         </footer>
+        <div className="curvedLine" />
+        <div className="curvedOverlap" />
         <div className="footerQRContainer">
           <Image src={qrCode} />
           <span>Scan to download</span>
