@@ -41,6 +41,20 @@ const Home: NextPage = () => {
       {/* START PAGE */}
 
       <section className="page welcome">
+        <div className="purpleBubble">
+          <div className="iphoneContainer">
+            <Image src={iphone14} />
+          </div>
+          <div className="integrations">
+            <div className="storeImage left">
+              <Image src={appStoreGray} />
+            </div>
+
+            <div className="storeImage right">
+              <Image src={googlePlayGray} />
+            </div>
+          </div>
+        </div>
         <div className="textLogo">
           <Image src={logoText} height="50px" />
         </div>
@@ -52,7 +66,7 @@ const Home: NextPage = () => {
           Choose country, access multiple guides, ask questions and share your
           experience
         </p>
-        <div className="integrations">
+        {/* <div className="integrations">
           <div className="storeImage">
             <Image src={appStoreGray} />
           </div>
@@ -62,7 +76,7 @@ const Home: NextPage = () => {
           <div className="storeImage">
             <Image src={googlePlayGray} />
           </div>
-        </div>
+        </div> */}
         <div className="scrollIconContainer">
           <Image src={scrollIcon} />
         </div>
