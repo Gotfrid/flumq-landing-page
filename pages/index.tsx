@@ -66,17 +66,6 @@ const Home: NextPage = () => {
           Choose country, access multiple guides, ask questions and share your
           experience
         </p>
-        {/* <div className="integrations">
-          <div className="storeImage">
-            <Image src={appStoreGray} />
-          </div>
-          <div className="iphoneContainer">
-            <Image src={iphone14} />
-          </div>
-          <div className="storeImage">
-            <Image src={googlePlayGray} />
-          </div>
-        </div> */}
         <div className="scrollIconContainer">
           <Image src={scrollIcon} />
         </div>
@@ -90,7 +79,6 @@ const Home: NextPage = () => {
           </div>
           <Image src={qrCode} />
         </div>
-        {/* <div className="bottomCurvature"></div> */}
       </section>
 
       {/* DESTINATIONS PAGE */}
@@ -118,6 +106,7 @@ const Home: NextPage = () => {
             </p>
           </span>
         </div>
+        <div className="whiteBubbleBottom"></div>
       </section>
 
       {/* GUIDES PAGE */}
@@ -154,6 +143,7 @@ const Home: NextPage = () => {
             <Image src={community3x} layout="fill" objectFit="contain" />
           </div>
         </div>
+        <div className="whiteBubbleBoth" />
       </section>
 
       {/* DOWNLOAD PAGE */}

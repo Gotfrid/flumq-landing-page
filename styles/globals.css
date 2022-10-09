@@ -20,7 +20,7 @@ p {
   width: 100vw;
   height: 100vh;
   min-height: 720px;
-  overflow: hidden;
+  overflow-x: clip;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,6 +45,29 @@ p {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+}
+
+.whiteBubbleBottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 0 0 50% 50%;
+  transform: scaleX(2);
+}
+
+.whiteBubbleBoth {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 110%;
+  background: #ffffff;
+  border-radius: 50% 50% 50% 50%;
+  transform: scaleX(2);
 }
 
 .textLogo {
@@ -171,11 +194,10 @@ p {
 /* DESTINATION PAGE */
 
 .destination {
-  background: #ffffff;
+  background: #15141e;
   flex-direction: row;
   justify-content: center;
   gap: 5vw;
-  overflow: visible;
 }
 
 .destinationsContainer {
@@ -326,7 +348,7 @@ p {
   flex-direction: row;
   justify-content: center;
   gap: 20vw;
-  background-color: #ffffff;
+  background: #15141e;
 }
 
 .communityHeroText {
@@ -373,25 +395,12 @@ p {
   background-clip: text;
 }
 
-.whiteBubble {
-  position: absolute;
-  z-index: 1;
-  background-color: #ffffff;
-  width: 320vw;
-  aspect-ratio: 5 / 1;
-  top: 50%;
-  left: 50%;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-}
-
 /* DOWNLOAD PAGE */
 
 .download {
   height: 75vh;
   min-height: 540px;
   background: #ffffff;
-  overflow: visible;
 }
 
 .downloadGradient {
@@ -412,7 +421,8 @@ p {
   width: 112px;
   height: 112px;
   z-index: 2;
-  margin-top: -1em;
+  margin-top: 1.3em;
+  margin-bottom: 1.3em;
 }
 
 .appIcon > div {
@@ -420,6 +430,8 @@ p {
 }
 
 .downloadHeroText {
+  margin-bottom: 0.3em;
+
   font-family: "Manrope";
   font-style: normal;
   font-weight: 700;
