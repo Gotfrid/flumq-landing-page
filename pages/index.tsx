@@ -61,7 +61,7 @@ const TimelineContent = () => {
   return (
     <div className="timelineContent">
       <div className="timelineContent__image">
-        <Image src={timeline} />
+        <Image src={timeline} priority />
       </div>
       <div className="timelineContent__text">
         <p>English language test</p>
@@ -81,7 +81,7 @@ const TimelineContent = () => {
 const StatsContent = () => {
   return (
     <div className="statsContent">
-      <Image src={stats} />
+      <Image src={stats} priority />
     </div>
   );
 };
@@ -110,6 +110,7 @@ const Home: NextPage = () => {
 
   const handleGuideSwitch: MouseEventHandler = (event) => {
     const input = event.target as HTMLDivElement;
+    if (!guideTabs.includes(input.innerText)) return;
     setActiveGuideTab(input.innerText);
   };
 
