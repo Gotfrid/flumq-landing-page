@@ -608,6 +608,8 @@ p {
   opacity: 0.3;
   filter: blur(120px);
   border-radius: 50%;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
 }
 
 .backgroundCircleTeal {
@@ -617,6 +619,8 @@ p {
   opacity: 0.3;
   filter: blur(120px);
   border-radius: 50%;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
 }
 
 .backgroundCircleTeal:first-child {
@@ -634,6 +638,8 @@ p {
   opacity: 0.3;
   filter: blur(120px);
   border-radius: 50%;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
 }
 
 .backgroundCirclePink:first-child {
