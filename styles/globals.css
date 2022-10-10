@@ -365,8 +365,8 @@ p {
 
 .communityBackground {
   position: relative;
-  width: 28vw;
-  height: 28vw;
+  width: 28.5vw;
+  aspect-ratio: 1;
   border-radius: 50%;
   margin-right: 3em;
   /* background: linear-gradient(273.81deg, #8564f7 32.09%, #9877f4 100%); */
@@ -375,9 +375,10 @@ p {
 }
 
 .communityContainer {
-  position: relative;
-  left: -40%;
-  top: -20%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-22%, -10%);
   width: 45vw;
   height: 45vw;
 }
