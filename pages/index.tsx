@@ -156,7 +156,7 @@ const Home: NextPage = () => {
         <h1 className="title">Your guide to moving abroad</h1>
         <p className="subtitle">
           Choose country, access multiple guides, ask questions and share your
-          experience.
+          experience
         </p>
         <div className="scrollIconContainer">
           <Image src={scrollIcon} />
@@ -314,7 +314,7 @@ const Home: NextPage = () => {
             <div className="links">
               <Link href="/">Privacy Policy</Link>
               <Link href="/">Terms of Service</Link>
-              <Link href="/">Coockie Policy</Link>
+              <Link href="/">Cookie Policy</Link>
             </div>
           </div>
         </footer>
