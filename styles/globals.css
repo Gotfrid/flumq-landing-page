@@ -369,8 +369,7 @@ p {
   aspect-ratio: 1;
   border-radius: 50%;
   margin-right: 3em;
-  /* background: linear-gradient(273.81deg, #8564f7 32.09%, #9877f4 100%); */
-  background: #9877f4;
+  background: linear-gradient(273.81deg, #8564f7 32.09%, #9877f4 100%);
   z-index: 4;
 }
 
