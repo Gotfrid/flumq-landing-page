@@ -156,7 +156,7 @@ const Home: NextPage = () => {
         <h1 className="title">Your guide to moving abroad</h1>
         <p className="subtitle">
           Choose country, access multiple guides, ask questions and share your
-          experience
+          experience.
         </p>
         <div className="scrollIconContainer">
           <Image src={scrollIcon} />
@@ -194,7 +194,7 @@ const Home: NextPage = () => {
           <span>
             <span className="highlightDark">Know your options</span>
             <p className="explainText">
-              Search countries by filters, compare and make your choice
+              Search countries by filters, compare and make your choice.
             </p>
           </span>
         </div>
@@ -225,7 +225,7 @@ const Home: NextPage = () => {
           <span className="highlightLight">No more uncertainties</span>
           <p className="explainTextWhite">
             Choose a path that shows what to do next, track progress, share
-            timeline, or create your own guide
+            timeline, or create your own guide.
           </p>
         </span>
         <div className="backgroundCircleContainer">
