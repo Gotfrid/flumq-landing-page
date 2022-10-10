@@ -67,11 +67,9 @@ const TimelineContent = () => {
         <p>English language test</p>
         <br />
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non lacus,
-          augue tortor sed laoreet. Facilisis faucibus viverra fringilla diam in
-          neque convallis facilisi cras. Lectus imperdiet pulvinar cursus ut
-          egestas nec sit neque vitae. Arcu pharetra, suscipit sit massa
-          consectetur.
+          There are two approved language tests: CELPIP and IELTS. I suggest
+          taking IELTS because I found it way easier. You need to take IELTS
+          General since IELTS Academic is not accepted by the IRCC
         </p>
       </div>
     </div>
