@@ -359,21 +359,21 @@ const Home: NextPage = () => {
               <a>business@flumq.com</a>
             </div>
             <div className="socialContainer">
-              <span>
+              <a href="https://www.facebook.com/flumq" target="_blank">
                 <Image src={facebookIcon} />
-              </span>
-              <span>
+              </a>
+              <a href="#" target="_blank">
                 <Image src={instagramIcon} />
-              </span>
-              <span>
+              </a>
+              <a href="#" target="_blank">
                 <Image src={youtubeIcon} />
-              </span>
-              <span>
+              </a>
+              <a href="https://twitter.com/FlumqOfficial" target="_blank">
                 <Image src={twitterIcon} />
-              </span>
-              <span>
+              </a>
+              <a href="https://www.linkedin.com/company/flumq" target="_blank">
                 <Image src={linkedinIcon} />
-              </span>
+              </a>
             </div>
           </div>
           <div className="footerBorder"></div>

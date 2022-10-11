@@ -507,6 +507,12 @@ p {
   gap: 2.1em;
 }
 
+.socialContainer > a:hover {
+  cursor: pointer;
+  filter: invert(46%) sepia(76%) saturate(3176%) hue-rotate(229deg)
+    brightness(96%) contrast(101%);
+}
+
 .bottomFooter {
   display: flex;
   align-items: center;
