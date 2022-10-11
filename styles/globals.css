@@ -283,23 +283,26 @@ p {
 
 .guides {
   background: #15141e;
+  height: 110vh;
 }
 
 .accessText {
   font-weight: 800;
   text-align: center;
   letter-spacing: -0.04em;
-  font-size: 4vw;
+  font-size: 4.2vw;
   color: #ffffff;
   margin-top: 1em;
   margin-bottom: -0.3em;
 }
 
 .guidesText {
+  width: 100vw;
+
   font-family: "Manrope";
   font-style: normal;
   font-weight: 800;
-  font-size: 6vw;
+  font-size: 5.5vw;
   text-align: center;
   letter-spacing: -0.06em;
 
