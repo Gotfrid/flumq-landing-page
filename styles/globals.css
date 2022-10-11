@@ -663,7 +663,7 @@ p {
 .btn-group {
   background-color: rgba(118, 118, 128, 0.24);
   border-radius: 50px;
-  height: 4vh;
+  height: 35px;
   margin-top: 1em;
 }
 .btn-group button {
@@ -672,9 +672,12 @@ p {
   color: #ffffff;
   cursor: pointer;
   float: left;
+  height: 100%;
   width: 10em;
   border-radius: 50px;
-  padding: 1vh;
+  padding: 5px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
 }
 
 .btn-group button:not(:last-child) {
