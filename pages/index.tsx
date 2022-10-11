@@ -65,11 +65,10 @@ const TimelineContent = () => {
       </div>
       <div className="timelineContent__text">
         <p>English language test</p>
-        <br />
         <p>
           There are two approved language tests: CELPIP and IELTS. I suggest
           taking IELTS because I found it way easier. You need to take IELTS
-          General since IELTS Academic is not accepted by the IRCC
+          General since IELTS Academic is not accepted by the IRCC.
         </p>
       </div>
     </div>
@@ -154,7 +153,7 @@ const Home: NextPage = () => {
         <h1 className="title">Your guide to moving abroad</h1>
         <p className="subtitle">
           Choose country, access multiple guides, ask questions and share your
-          experience
+          experience.
         </p>
         <div className="scrollIconContainer">
           <Image src={scrollIcon} />
