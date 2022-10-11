@@ -60,16 +60,20 @@ const DescriptionContent = () => {
 const TimelineContent = () => {
   return (
     <div className="timelineContent">
-      <div className="timelineContent__image">
-        <Image src={timeline} priority />
+      <div style={{ width: "50%" }}>
+        <div className="timelineContent__image">
+          <Image src={timeline} priority />
+        </div>
       </div>
-      <div className="timelineContent__text">
-        <p>English language test</p>
-        <p>
-          There are two approved language tests: CELPIP and IELTS. I suggest
-          taking IELTS because I found it way easier. You need to take IELTS
-          General since IELTS Academic is not accepted by the IRCC.
-        </p>
+      <div style={{ width: "50%" }}>
+        <div className="timelineContent__text">
+          <p>English language test</p>
+          <p>
+            There are two approved language tests: CELPIP and IELTS. I suggest
+            taking IELTS because I found it way easier. You need to take IELTS
+            General since IELTS Academic is not accepted by the IRCC.
+          </p>
+        </div>
       </div>
     </div>
   );
