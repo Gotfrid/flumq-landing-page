@@ -42,6 +42,7 @@ const GuidesPage = () => {
 
   return (
     <section className="page guides">
+      <div className="blackBackground" />
       <span className="accessText">Access</span>
       <span className="guidesText">Step-by-Step Guides</span>
       <div className="guidesContainer">

@@ -7,6 +7,7 @@ import settingsIcon from "../public/icons/adjustments-vertical.svg";
 const DestinationsPage = () => {
   return (
     <section className="page destination">
+      <div className="blackBackground" />
       <div className="destinationsContainer">
         <span className="iconContainer searchIcon">
           <Image src={searchIcon} />

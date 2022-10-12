@@ -79,7 +79,7 @@ p {
 .communityGradient {
   position: absolute;
   top: 70%;
-  width: 100%;
+  width: 100vw;
   height: 300px;
   background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 50%),
     linear-gradient(90deg, #ffffff -0.55%, rgba(255, 255, 255, 0) 50%),
@@ -203,7 +203,6 @@ p {
 /* DESTINATION PAGE */
 
 .destination {
-  background: #15141e;
   flex-direction: row;
   justify-content: center;
   gap: 62px;
@@ -305,8 +304,11 @@ p {
 
 /* GUIDES PAGE */
 
-.guides {
-  background: #15141e;
+.blackBackground {
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  background-color: #15141e;
   z-index: 1;
 }
 
@@ -321,6 +323,7 @@ p {
   text-align: center;
   letter-spacing: -0.04em;
   color: #ffffff;
+  z-index: 2;
 }
 
 .guidesText {
@@ -335,6 +338,7 @@ p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  z-index: 2;
 }
 
 .guidesContainer {
@@ -356,6 +360,7 @@ p {
   letter-spacing: -0.04em;
   width: 730px;
   margin-top: 70px;
+  z-index: 2;
 }
 
 .highlightLight {
@@ -388,8 +393,15 @@ p {
   flex-direction: row;
   justify-content: center;
   gap: 95px;
-  background: linear-gradient(#15141e 0%, #15141e 50%, #ffffff);
   height: 697px;
+  z-index: 1;
+}
+
+.communityBackground {
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  background: linear-gradient(#15141e 0%, #15141e 50%, #ffffff);
   z-index: 1;
 }
 
@@ -397,16 +409,6 @@ p {
   width: 445px;
   display: flex;
   flex-direction: column;
-  z-index: 4;
-}
-
-.communityBackground {
-  position: relative;
-  width: 28.5vw;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  margin-right: 3em;
-  background: linear-gradient(273.81deg, #8564f7 32.09%, #9877f4 100%);
   z-index: 4;
 }
 
@@ -602,7 +604,7 @@ p {
 .curvedLine {
   position: absolute;
   bottom: 100px;
-  width: 100%;
+  width: 100vw;
   aspect-ratio: 1;
   background: linear-gradient(90deg, #ffffff 30%, #e7dfff 50%, #ffffff 70%);
   border-radius: 0 0 50% 50%;
@@ -614,7 +616,7 @@ p {
   position: absolute;
   z-index: 0;
   bottom: 103px;
-  width: 100%;
+  width: 100vw;
   aspect-ratio: 1;
   background: #ffffff;
   border-radius: 0 0 50% 50%;

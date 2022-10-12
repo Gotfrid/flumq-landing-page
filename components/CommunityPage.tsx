@@ -5,6 +5,7 @@ import community3x from "../public/assets/community3x.png";
 const CommunityPage = () => {
   return (
     <section className="page community">
+      <div className="communityBackground" />
       <div className="communityHeroText">
         <span className="joinText">Join the</span>
         <span className="communityText">Community</span>
