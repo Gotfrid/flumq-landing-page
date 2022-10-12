@@ -365,7 +365,7 @@ const Home: NextPage = () => {
               <a href="#" target="_blank">
                 <Image src={instagramIcon} />
               </a>
-              <a href="#" target="_blank">
+              <a href="#" target="_blank" className="youtubeIcon">
                 <Image src={youtubeIcon} />
               </a>
               <a href="https://twitter.com/FlumqOfficial" target="_blank">

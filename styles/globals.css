@@ -778,3 +778,7 @@ p {
   height: 100%;
   padding: 1em 4em;
 }
+
+.youtubeIcon {
+  scale: 1.2;
+}
