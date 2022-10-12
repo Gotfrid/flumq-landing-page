@@ -212,7 +212,6 @@ p {
 .destinationsContainer {
   position: relative;
   margin-top: -1px;
-  margin-left: 117px;
   width: 571px;
   height: 521px;
   border-radius: 32px;
@@ -308,6 +307,7 @@ p {
 
 .guides {
   background: #15141e;
+  z-index: 1;
 }
 
 .accessText {
@@ -382,6 +382,7 @@ p {
   gap: 95px;
   background: linear-gradient(#15141e 0%, #15141e 50%, #ffffff);
   height: 697px;
+  z-index: 1;
 }
 
 .communityHeroText {
@@ -436,19 +437,8 @@ p {
 /* DOWNLOAD PAGE */
 
 .download {
-  height: 535px;
+  height: 415px;
   background: #ffffff;
-}
-
-.downloadGradient {
-  position: absolute;
-  top: 0;
-  height: 22vh;
-  width: 100vw;
-  z-index: 2;
-  background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 50%),
-    linear-gradient(90deg, #ffffff -0.55%, rgba(255, 255, 255, 0) 50%),
-    linear-gradient(180deg, #a98cff 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .appIcon {
@@ -458,45 +448,48 @@ p {
   width: 112px;
   height: 112px;
   z-index: 4;
-  margin-top: 1.3em;
-  margin-bottom: 1.3em;
+  position: absolute;
+  bottom: 407px;
 }
 
 .appIcon > div {
   padding: 9px;
 }
 
-.downloadHeroText {
-  margin-bottom: 0.3em;
+.downloadGroup {
+  margin-top: 21px;
+  display: block;
+  z-index: 4;
+}
 
+.downloadHeroText {
   font-family: "Manrope";
   font-style: normal;
-  font-weight: 700;
-  font-size: 4.5vw;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 64px;
   text-align: center;
   letter-spacing: -0.04em;
   color: #454267;
-  z-index: 2;
 }
 
 .downloadDescription {
   font-family: "Manrope";
   font-style: normal;
-  font-weight: 600;
-  font-size: 2vw;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
   text-align: center;
   letter-spacing: -0.04em;
   color: #454267;
-  z-index: 2;
 }
 
 .downloadStoreContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.5vw;
-  margin-top: 2em;
-  z-index: 2;
+  gap: 16px;
+  margin-top: 24px;
 }
 
 .footer {
@@ -504,7 +497,7 @@ p {
   bottom: 0;
   display: flex;
   flex-direction: column;
-  width: 90vw;
+  width: 90%;
 
   font-weight: 600;
   font-size: 14px;
@@ -523,12 +516,12 @@ p {
 
 .emailContainer {
   display: flex;
-  gap: 0.3em;
+  gap: 8px;
 }
 
 .socialContainer {
   display: flex;
-  gap: 2.1em;
+  gap: 30px;
 }
 
 .socialContainer > a:hover {
@@ -553,6 +546,7 @@ p {
 
 .footerBorder {
   height: 1px;
+  width: 100vw;
   background: linear-gradient(
     90deg,
     #e0dde8 0%,
@@ -564,13 +558,13 @@ p {
 .copyrightContainer {
   display: flex;
   align-items: center;
-  gap: 0.3em;
+  gap: 8px;
   color: #45426770;
 }
 
 .links {
   display: flex;
-  gap: 1.5em;
+  gap: 20px;
 }
 
 .links > a {
@@ -579,10 +573,7 @@ p {
 }
 
 .footerQRContainer {
-  position: absolute;
-  left: 50%;
-  bottom: 12px;
-  transform: translate(-50%, 0);
+  margin-top: 57px;
   display: flex;
   flex-direction: column;
   gap: 0.5em;
@@ -602,7 +593,7 @@ p {
 
 .curvedLine {
   position: absolute;
-  bottom: 15%;
+  bottom: 100px;
   width: 100%;
   aspect-ratio: 1;
   background: linear-gradient(90deg, #ffffff 30%, #e7dfff 50%, #ffffff 70%);
@@ -613,8 +604,8 @@ p {
 
 .curvedOverlap {
   position: absolute;
-  z-index: 1;
-  bottom: calc(15% + 3px);
+  z-index: 0;
+  bottom: 103px;
   width: 100%;
   aspect-ratio: 1;
   background: #ffffff;

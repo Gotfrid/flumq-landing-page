@@ -16,24 +16,26 @@ import footerLogo from "../public/logo/footer-logo.svg";
 const DownloadPage = () => {
   return (
     <section className="page download">
-      {/* <div className="downloadGradient"></div> */}
       <div className="appIcon">
         <div>
           <Image src={appIcon} />
         </div>
       </div>
-      <span className="downloadHeroText">Download App</span>
-      <span className="downloadDescription">
-        It&apos;s time to begin your journey abroad.
-      </span>
-      <div className="downloadStoreContainer">
-        <span>
-          <Image src={appStoreBlack} />
-        </span>
-        <span>
-          <Image src={googlePlayBlack} />
-        </span>
+      <div className="downloadGroup">
+        <div className="downloadHeroText">Download App</div>
+        <div className="downloadDescription">
+          It&apos;s time to begin your journey abroad.
+        </div>
+        <div className="downloadStoreContainer">
+          <span>
+            <Image src={appStoreBlack} />
+          </span>
+          <span>
+            <Image src={googlePlayBlack} />
+          </span>
+        </div>
       </div>
+
       <footer className="footer">
         <div className="contacts">
           <div className="emailContainer">
@@ -75,8 +77,8 @@ const DownloadPage = () => {
           </div>
         </div>
       </footer>
-      {/* <div className="curvedLine" />
-      <div className="curvedOverlap" /> */}
+      <div className="curvedLine" />
+      <div className="curvedOverlap" />
       <div className="footerQRContainer">
         <Image src={qrCode} />
         <span>Scan to download</span>
