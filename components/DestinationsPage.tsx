@@ -24,9 +24,10 @@ const DestinationsPage = () => {
         <span className="destinationText">Destination</span>
         <span>
           <span className="highlightDark">Know your options</span>
-          <p className="explainText">
+          <span className="explainText">
+            {" "}
             Search countries by filters, compare and make your choice.
-          </p>
+          </span>
         </span>
       </div>
       <div className="whiteBubbleBottom"></div>

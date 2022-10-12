@@ -57,10 +57,11 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 99%;
   background: #ffffff;
   border-radius: 0 0 50% 50%;
   transform: scaleX(2);
+  z-index: 1;
 }
 
 .whiteBubbleBoth {
@@ -194,20 +195,22 @@ p {
   background: #15141e;
   flex-direction: row;
   justify-content: center;
-  gap: 5vw;
+  gap: 62px;
 }
 
 .destinationsContainer {
   position: relative;
-  height: 80%;
-  width: 40vw;
-  border-radius: 2em;
+  margin-top: -1px;
+  margin-left: 117px;
+  width: 571px;
+  height: 521px;
+  border-radius: 32px;
   background: linear-gradient(180deg, #f4f0ff 0%, #ffffff 100%);
   z-index: 2;
 }
 
 .iconContainer {
-  height: 3.5em;
+  height: 64px;
   aspect-ratio: 1/1;
   background: rgba(255, 255, 255, 0.5);
   box-shadow: 0px 32px 56px rgba(68, 56, 107, 0.25);
@@ -220,43 +223,46 @@ p {
 
 .searchIcon {
   position: absolute;
-  top: 10%;
-  left: -1.5em;
+  top: 71px;
+  left: -20px;
 }
 
 .settingsIcon {
   position: absolute;
-  top: 50%;
-  left: -1.5em;
+  top: 335px;
+  left: -20px;
 }
 .destinationsImageContainer {
   position: relative;
-  top: -12%;
-  left: 5%;
+  width: calc(388px + 36px * 3);
+  top: -99px;
+  left: calc(101px - 36px);
 }
 
 .destinationsHeroText {
-  width: 40vw;
+  width: 445px;
   display: flex;
   flex-direction: column;
   z-index: 2;
 }
 
 .findText {
-  font-weight: 800;
-  letter-spacing: -0.04em;
-  color: #454267;
-  font-size: 4vw;
-  margin-bottom: -0.5em;
-}
-
-.destinationText {
-  font-size: 6vw;
-
-  /* FIGMA */
   font-family: "Manrope";
   font-style: normal;
   font-weight: 800;
+  font-size: 54px;
+  line-height: 64px;
+  letter-spacing: -0.04em;
+  color: #454267;
+  margin: -8px 0px;
+}
+
+.destinationText {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 82px;
   letter-spacing: -0.06em;
   background: linear-gradient(273.07deg, #e95aec 0%, #8793ff 100%);
   -webkit-background-clip: text;
@@ -269,18 +275,22 @@ p {
   background: #dcd6fb;
   border-radius: 8px;
   padding: 1px 5px 2px;
-  margin-right: 0.2em;
-  font-size: 1.5vw;
   letter-spacing: -0.04em;
-  font-weight: 600;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
 }
 
 .explainText {
-  color: #454267;
-  display: inline;
-  font-size: 1.5vw;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
   letter-spacing: -0.04em;
-  font-weight: 600;
+  color: #454267;
 }
 
 /* GUIDES PAGE */
