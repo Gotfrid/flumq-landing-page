@@ -21,6 +21,7 @@ const CommunityPage = () => {
       <div className="communityContainer">
         <Image src={community3x} layout="fill" objectFit="contain" />
       </div>
+      <div className="phoneBackground" />
       <div className="whiteBubbleBoth" />
       <div className="communityGradient" />
     </section>

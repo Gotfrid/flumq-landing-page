@@ -420,6 +420,18 @@ p {
   z-index: 4;
 }
 
+.phoneBackground {
+  position: absolute;
+  z-index: 3;
+  right: 172px;
+  bottom: 180px;
+  width: 350px;
+  height: 350px;
+
+  border-radius: 50%;
+  background: linear-gradient(273.81deg, #8564f7 32.09%, #9877f4 100%);
+}
+
 .joinText {
   font-family: "Manrope";
   font-style: normal;
