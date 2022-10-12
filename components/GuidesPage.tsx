@@ -59,10 +59,11 @@ const GuidesPage = () => {
       </div>
       <span className="description">
         <span className="highlightLight">No more uncertainties</span>
-        <p className="explainTextWhite">
+        <span className="explainTextWhite">
+          {" "}
           Choose a path that shows what to do next, track progress, share
           timeline, or create your own guide.
-        </p>
+        </span>
       </span>
       <div className="backgroundCircleContainer">
         <div className={circleClassname} />

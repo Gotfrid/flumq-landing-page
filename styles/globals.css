@@ -311,25 +311,26 @@ p {
 }
 
 .accessText {
-  font-weight: 800;
-  text-align: center;
-  letter-spacing: -0.04em;
-  font-size: 4.2vw;
-  color: #ffffff;
-  margin-top: 1em;
-  margin-bottom: -0.3em;
-}
-
-.guidesText {
-  width: 100vw;
-
+  margin-top: 40px;
+  margin-bottom: -8px;
   font-family: "Manrope";
   font-style: normal;
   font-weight: 800;
-  font-size: 5.5vw;
+  font-size: 54px;
+  line-height: 64px;
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+}
+
+.guidesText {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 82px;
   text-align: center;
   letter-spacing: -0.06em;
-
   background: linear-gradient(273.07deg, #42bbff 0%, #c241ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -342,36 +343,43 @@ p {
   justify-content: center;
   align-items: center;
   color: white;
-  height: 60vh;
-  width: 660px;
+  height: 320px;
+  width: 611px;
   background: rgba(21, 20, 30, 0.4);
   z-index: 1;
+  margin-top: 30px;
 }
 
 .description {
   font-weight: 600;
   text-align: center;
   letter-spacing: -0.04em;
-  width: 50vw;
+  width: 730px;
+  margin-top: 70px;
 }
 
 .highlightLight {
-  color: #ffffff;
   background: #6d57a1;
-  letter-spacing: -0.04em;
   border-radius: 8px;
   padding: 1px 5px 2px;
-  margin-right: 0.2em;
-  font-size: 1.5vw;
-  font-weight: 600;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.04em;
+  color: #ffffff;
 }
 
 .explainTextWhite {
-  color: #ffffff;
-  display: inline;
-  font-size: 1.5vw;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
   letter-spacing: -0.04em;
-  font-weight: 600;
+  color: #ffffff;
 }
 
 /* COMMUNITY PAGE */
@@ -678,8 +686,8 @@ p {
 .btn-group {
   background-color: rgba(118, 118, 128, 0.24);
   border-radius: 50px;
-  height: 35px;
-  margin-top: 1em;
+  height: 32px;
+  margin-top: 30px;
 }
 .btn-group button {
   background-color: transparent;
@@ -690,9 +698,10 @@ p {
   height: 100%;
   width: 10em;
   border-radius: 50px;
-  padding: 5px;
+  padding: 6px;
   font-family: "Manrope", sans-serif;
   font-weight: 600;
+  font-size: 13px;
 }
 
 .btn-group button:not(:last-child) {
@@ -719,32 +728,40 @@ p {
   width: 100%;
   height: 100%;
   padding: 0 0.5em;
-  background: url("/assets/iphone-frame.svg");
+  background-image: url("/assets/iphone-frame.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .descriptionContent {
   width: 85%;
   height: 100%;
   color: #aba6d6;
-  padding: 0 3em;
+  padding: 1em 3em;
 }
 
 .descriptionContent > h3 {
+  font-family: "Manrope";
+  font-style: normal;
   font-weight: 800;
-  font-size: 1.6em;
+  font-size: 24px;
+  line-height: 33px;
   letter-spacing: -0.02em;
+  color: #aba6d6;
+  margin-bottom: 12px;
 }
 
 .descriptionContent__textContainer {
   padding: 16px 24px;
   background: rgba(163, 94, 255, 0.05);
   border-radius: 20px;
+  font-family: "Manrope";
+  font-style: normal;
   font-weight: 600;
-  font-size: 1em;
-  line-height: 200%;
+  font-size: 14px;
+  line-height: 170%;
   letter-spacing: -0.02em;
+  color: #aba6d6;
 }
 
 .descriptionContent__textContainer > ul {
@@ -754,33 +771,40 @@ p {
 }
 
 .descriptionContent__footer {
-  filter: brightness(0.6);
   display: flex;
   justify-content: flex-end;
-  gap: 1em;
-  margin-top: 0.5em;
+  gap: 12px;
+  margin-top: 5px;
+
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: -0.02em;
+  color: #aba6d6;
+  opacity: 0.5;
 }
 
 .timelineContent {
   display: flex;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+  padding: 1em 4em;
 }
 
 .timelineContent__image {
-  width: 70%;
-  padding: 2em 4em;
+  margin-top: 28px;
 }
 
 .timelineContent__text {
-  padding: 3.6em 3em 0 0;
-
+  margin-top: 42px;
   font-weight: 600;
   font-size: 1em;
   line-height: 200%;
   letter-spacing: -0.02em;
   color: #aba6d6;
+  width: 261px;
+  margin-left: 40px;
 }
 
 .timelineContent__text > p:first-child {
