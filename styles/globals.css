@@ -10,6 +10,8 @@ body {
   box-sizing: border-box;
   font-family: "Manrope", sans-serif;
   overflow-x: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
@@ -22,9 +24,8 @@ p {
 }
 
 .page {
-  width: 100vw;
-  height: 100vh;
-  min-height: 720px;
+  width: 1280px;
+  height: 720px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -283,7 +284,6 @@ p {
 
 .guides {
   background: #15141e;
-  height: 110vh;
 }
 
 .accessText {
@@ -357,6 +357,7 @@ p {
   justify-content: center;
   gap: 10vw;
   background: #15141e;
+  height: 697px;
 }
 
 .communityHeroText {
@@ -410,10 +411,8 @@ p {
 /* DOWNLOAD PAGE */
 
 .download {
-  height: 75vh;
-  min-height: 540px;
+  height: 535px;
   background: #ffffff;
-  overflow: hidden;
 }
 
 .downloadGradient {
