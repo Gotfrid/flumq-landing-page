@@ -242,7 +242,9 @@ const Home: NextPage = () => {
           <div className="diagonalArrow">
             <Image src={diagonalArrow} />
           </div>
-          <Image src={qrCode} />
+          <div className="qrImage">
+            <Image src={qrCode} />
+          </div>
         </div>
       </section>
 
