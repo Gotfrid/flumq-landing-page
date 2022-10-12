@@ -16,7 +16,7 @@ import footerLogo from "../public/logo/footer-logo.svg";
 const DownloadPage = () => {
   return (
     <section className="page download">
-      <div className="downloadGradient"></div>
+      {/* <div className="downloadGradient"></div> */}
       <div className="appIcon">
         <div>
           <Image src={appIcon} />
@@ -75,8 +75,8 @@ const DownloadPage = () => {
           </div>
         </div>
       </footer>
-      <div className="curvedLine" />
-      <div className="curvedOverlap" />
+      {/* <div className="curvedLine" />
+      <div className="curvedOverlap" /> */}
       <div className="footerQRContainer">
         <Image src={qrCode} />
         <span>Scan to download</span>

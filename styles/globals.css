@@ -66,14 +66,25 @@ p {
 
 .whiteBubbleBoth {
   position: absolute;
-  top: 0;
+  top: 56px;
+  bottom: 36px;
   left: 0;
-  z-index: 3;
+  z-index: 2;
   width: 100%;
-  height: 110%;
   background: #ffffff;
   border-radius: 50% 50% 50% 50%;
   transform: scaleX(2);
+}
+
+.communityGradient {
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 50%),
+    linear-gradient(90deg, #ffffff -0.55%, rgba(255, 255, 255, 0) 50%),
+    linear-gradient(180deg, #a98cff 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: 1;
 }
 
 .textLogo {
@@ -368,13 +379,13 @@ p {
 .community {
   flex-direction: row;
   justify-content: center;
-  gap: 10vw;
-  background: #15141e;
+  gap: 95px;
+  background: linear-gradient(#15141e 0%, #15141e 50%, #ffffff);
   height: 697px;
 }
 
 .communityHeroText {
-  width: 40vw;
+  width: 445px;
   display: flex;
   flex-direction: column;
   z-index: 4;
@@ -391,29 +402,30 @@ p {
 }
 
 .communityContainer {
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform: translate(-22%, -10%);
-  width: 45vw;
-  height: 45vw;
+  position: relative;
+  top: 60px;
+  width: 515px;
+  height: 549px;
+  z-index: 4;
 }
 
 .joinText {
-  color: #454267;
-  font-size: 4vw;
-  margin-bottom: -0.5em;
-  font-weight: 800;
-  letter-spacing: -0.04em;
-  font-size: 4vw;
-}
-
-.communityText {
-  font-size: 6vw;
-
   font-family: "Manrope";
   font-style: normal;
   font-weight: 800;
+  font-size: 54px;
+  line-height: 64px;
+  letter-spacing: -0.04em;
+  color: #454267;
+  margin: -8px 0px;
+}
+
+.communityText {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 82px;
   letter-spacing: -0.06em;
   background: linear-gradient(273.07deg, #e95aec 0%, #8793ff 100%);
   -webkit-background-clip: text;

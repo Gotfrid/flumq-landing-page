@@ -10,18 +10,18 @@ const CommunityPage = () => {
         <span className="communityText">Community</span>
         <span>
           <span className="highlightDark">You're not alone</span>
-          <p className="explainText">
+          <span className="explainText">
+            {" "}
             Meet new people, join discussions, share your experience, ask
             questions, and more.
-          </p>
+          </span>
         </span>
       </div>
-      <div className="communityBackground">
-        <div className="communityContainer">
-          <Image src={community3x} layout="fill" objectFit="contain" />
-        </div>
+      <div className="communityContainer">
+        <Image src={community3x} layout="fill" objectFit="contain" />
       </div>
       <div className="whiteBubbleBoth" />
+      <div className="communityGradient" />
     </section>
   );
 };
