@@ -25,6 +25,8 @@
   width: 320px;
   display: flex;
   justify-content: center;
+
+  animation: iphone-appearence 1s cubic-bezier(0, 0.6, 0.32, 1) 0.1s both;
 }
 
 .integrations {
@@ -36,6 +38,14 @@
   bottom: 115px;
   transform: scaleX(0.5);
   position: absolute;
+
+  div:first-child {
+    animation: text-appearence 0.5s ease-out 1s both;
+  }
+
+  div:last-child {
+    animation: store-appearence 0.6s ease-out 1s both;
+  }
 
   .storeImage {
     z-index: 2;
@@ -53,6 +63,8 @@
   margin-top: 40px;
   width: 96px;
   z-index: 2;
+
+  animation: text-appearence 0.5s ease-out 0.5s both;
 }
 
 .imageLogo {
@@ -60,6 +72,8 @@
   width: 64px;
   z-index: 2;
   margin-right: 84px;
+
+  animation: text-appearence 0.5s ease-out 0.7s both;
 }
 
 .title {
@@ -78,6 +92,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+
+  animation: text-appearence 0.5s ease-out 0.6s both;
 }
 
 .subtitle {
@@ -94,6 +110,8 @@
   flex: none;
   order: 1;
   flex-grow: 0;
+
+  animation: text-appearence 1s ease-out 0.7s both;
 }
 
 .scrollIconContainer {
@@ -102,6 +120,8 @@
   left: 50%;
   transform: translate(-50%, -30%);
   z-index: 2;
+
+  animation: text-appearence 1s ease-out 3s both;
 }
 
 .qrContainer {
@@ -113,6 +133,8 @@
   display: flex;
   align-items: flex-end;
   z-index: 2;
+
+  animation: text-appearence 1s ease-out 0.7s both;
 
   .qrText {
     font-weight: 600;
@@ -133,5 +155,38 @@
   .qrImage {
     width: 96px;
     height: 96px;
+  }
+}
+
+@keyframes iphone-appearence {
+  0% {
+    opacity: 0;
+    transform: scaleX(0.5) translate(0, 100%);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(0.5) translate(0, 0);
+  }
+}
+
+@keyframes text-appearence {
+  0% {
+    opacity: 0;
+    transform: translate(0, 30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes store-appearence {
+  0% {
+    opacity: 0;
+    transform: translate(0, 100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
   }
 }
