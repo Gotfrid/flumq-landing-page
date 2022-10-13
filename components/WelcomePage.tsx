@@ -18,11 +18,15 @@ const WelcomPage = () => {
         </div>
         <div className="integrations">
           <div className="storeImage left">
-            <Image src={appStoreGray} />
+            <a href="https://www.apple.com/app-store/" target="_blank">
+              <Image src={appStoreGray} />
+            </a>
           </div>
 
           <div className="storeImage right">
-            <Image src={googlePlayGray} />
+            <a href="https://play.google.com/store/apps" target="_blank">
+              <Image src={googlePlayGray} />
+            </a>
           </div>
         </div>
       </div>

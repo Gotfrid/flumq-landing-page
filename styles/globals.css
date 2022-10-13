@@ -158,6 +158,12 @@ p {
 .storeImage {
   z-index: 2;
   width: 175px;
+  transition: all 100ms linear;
+}
+
+.storeImage:hover {
+  cursor: pointer;
+  scale: 1.1;
 }
 
 .scrollIconContainer {
@@ -512,6 +518,15 @@ p {
   align-items: center;
   gap: 16px;
   margin-top: 24px;
+}
+
+.downloadStoreContainer > a {
+  transition: all 100ms linear;
+}
+
+.downloadStoreContainer > a:hover {
+  cursor: pointer;
+  scale: 1.1;
 }
 
 .footer {

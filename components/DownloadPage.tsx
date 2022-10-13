@@ -27,12 +27,12 @@ const DownloadPage = () => {
           It&apos;s time to begin your journey abroad.
         </div>
         <div className="downloadStoreContainer">
-          <span>
+          <a href="https://www.apple.com/app-store/" target="_blank">
             <Image src={appStoreBlack} />
-          </span>
-          <span>
+          </a>
+          <a href="https://play.google.com/store/apps" target="_blank">
             <Image src={googlePlayBlack} />
-          </span>
+          </a>
         </div>
       </div>
 
