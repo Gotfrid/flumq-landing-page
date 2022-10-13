@@ -1,4 +1,5 @@
 import Image from "next/image";
+import classNames from "classnames";
 
 import logoText from "../public/logo/logo-text.svg";
 import logoSymbol from "../public/logo/logo-symbol.svg";
@@ -9,50 +10,52 @@ import scrollIcon from "../public/icons/scroll-icon.svg";
 import diagonalArrow from "../public/icons/diagonal-arrow.svg";
 import qrCode from "../public/assets/qr-code.svg";
 
+import styles from "../styles/WelcomePage.module.scss";
+
 const WelcomPage = () => {
   return (
-    <section className="page welcome">
-      <div className="purpleBubble">
-        <div className="iphoneContainer">
+    <section className={classNames("page", styles.welcomePage)}>
+      <div className={styles.purpleBubble}>
+        <div className={styles.iphoneContainer}>
           <Image src={iphone14} />
         </div>
-        <div className="integrations">
-          <div className="storeImage left">
+        <div className={styles.integrations}>
+          <div className={styles.storeImage}>
             <a href="https://www.apple.com/app-store/" target="_blank">
               <Image src={appStoreGray} />
             </a>
           </div>
 
-          <div className="storeImage right">
+          <div className={styles.storeImage}>
             <a href="https://play.google.com/store/apps" target="_blank">
               <Image src={googlePlayGray} />
             </a>
           </div>
         </div>
       </div>
-      <div className="textLogo">
+      <div className={styles.textLogo}>
         <Image src={logoText} height="50px" />
       </div>
-      <div className="imageLogo">
+      <div className={styles.imageLogo}>
         <Image src={logoSymbol} height="50px" />
       </div>
-      <h1 className="title">Your guide to moving abroad</h1>
-      <p className="subtitle">
+      <h1 className={styles.title}>Your guide to moving abroad</h1>
+      <p className={styles.subtitle}>
         Choose country, access multiple guides, ask questions and share your
         experience.
       </p>
-      <div className="scrollIconContainer">
+      <div className={styles.scrollIconContainer}>
         <Image src={scrollIcon} />
       </div>
-      <div className="qrContainer">
-        <div className="qrText">
+      <div className={styles.qrContainer}>
+        <div className={styles.qrText}>
           <p>Scan to</p>
           <p>download</p>
         </div>
-        <div className="diagonalArrow">
+        <div className={styles.diagonalArrow}>
           <Image src={diagonalArrow} />
         </div>
-        <div className="qrImage">
+        <div className={styles.qrImage}>
           <Image src={qrCode} />
         </div>
       </div>
