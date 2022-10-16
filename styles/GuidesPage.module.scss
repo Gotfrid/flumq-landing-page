@@ -125,6 +125,7 @@
   }
 }
 
+// TODO: refactor to be real Sass
 .backgroundCircleContainer {
   position: absolute;
   top: 50%;
@@ -142,7 +143,7 @@
     aspect-ratio: 1;
     background: #8a69ee;
     opacity: 0.3;
-    filter: blur(120px);
+    filter: blur(7.5em);
     border-radius: 50%;
     backface-visibility: hidden;
     transform: translate3d(0, 0, 0);
@@ -153,7 +154,7 @@
     aspect-ratio: 1;
     background: #3f6fb0;
     opacity: 0.3;
-    filter: blur(120px);
+    filter: blur(7.5em);
     border-radius: 50%;
     backface-visibility: hidden;
     transform: translate3d(0, 0, 0);
@@ -172,7 +173,7 @@
     aspect-ratio: 1;
     background: #9f4fcd;
     opacity: 0.3;
-    filter: blur(120px);
+    filter: blur(7.5em);
     border-radius: 50%;
     backface-visibility: hidden;
     transform: translate3d(0, 0, 0);
