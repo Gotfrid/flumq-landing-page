@@ -1,8 +1,10 @@
+import styles from "../../styles/Widget.module.scss";
+
 const DescriptionContent = () => {
   return (
-    <div className="descriptionContent">
+    <div className={styles.descriptionContent}>
       <h3>Moving to Canada</h3>
-      <div className="descriptionContent__textContainer">
+      <div className={styles.descriptionContent__textContainer}>
         <p>
           Hello everyone, This guide is for those who want to move permanently
           to Canada. I immigrated in 2022, so I share my real steps with you.
@@ -15,7 +17,7 @@ const DescriptionContent = () => {
           <li>...</li>
         </ul>
       </div>
-      <div className="descriptionContent__footer">
+      <div className={styles.descriptionContent__footer}>
         <span>By Alex Cross</span>
         <span>09/15/22</span>
       </div>

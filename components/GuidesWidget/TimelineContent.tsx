@@ -2,13 +2,15 @@ import Image from "next/image";
 
 import timeline from "../../public/assets/timeline3x.png";
 
+import styles from "../../styles/Widget.module.scss";
+
 const TimelineContent = () => {
   return (
-    <div className="timelineContent">
-      <div className="timelineContent__image">
+    <div className={styles.timelineContent}>
+      <div className={styles.timelineContent__image}>
         <Image src={timeline} priority width={183} height={288} />
       </div>
-      <div className="timelineContent__text">
+      <div className={styles.timelineContent__text}>
         <p>English language test</p>
         <p>
           There are two approved language tests: CELPIP and IELTS. I suggest
