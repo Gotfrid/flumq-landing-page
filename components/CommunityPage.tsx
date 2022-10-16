@@ -1,29 +1,29 @@
 import Image from "next/image";
+import classNames from "classnames";
 
 import community3x from "../public/assets/community3x.png";
 
+import styles from "../styles/CommunityPage.module.scss";
+
 const CommunityPage = () => {
   return (
-    <section className="page community">
-      <div className="communityBackground" />
-      <div className="communityHeroText">
-        <span className="joinText">Join the</span>
-        <span className="communityText">Community</span>
-        <span>
-          <span className="highlightDark">You're not alone</span>
-          <span className="explainText">
+    <section className={classNames("page", styles.communityPage)}>
+      <div className={styles.hero}>
+        <h3>Join the</h3>
+        <h1>Community</h1>
+        <div className={styles.heroDescription}>
+          <span className={styles.highlightDark}>You're not alone</span>
+          <span>
             {" "}
             Meet new people, join discussions, share your experience, ask
             questions, and more.
           </span>
-        </span>
+        </div>
       </div>
-      <div className="communityContainer">
+      <div className={styles.communityContainer}>
         <Image src={community3x} layout="fill" objectFit="contain" />
       </div>
-      <div className="phoneBackground" />
-      <div className="whiteBubbleBoth" />
-      <div className="communityGradient" />
+      <div className={styles.phoneBackground} />
     </section>
   );
 };
