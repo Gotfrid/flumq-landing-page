@@ -80,7 +80,7 @@ const DownloadPage = () => {
       <div className="curvedLine" />
       <div className="curvedOverlap" />
       <div className="footerQRContainer">
-        <Image src={qrCode} />
+        <Image src={qrCode} className="qrImage" />
         <span>Scan to download</span>
       </div>
     </section>
