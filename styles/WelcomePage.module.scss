@@ -1,7 +1,5 @@
 .welcomePage {
   background: linear-gradient(180deg, #ffffff 50%, #dfd7ff 100%);
-  font-size: min(1.125vw, 16px);
-  position: relative;
 
   // TODO: still doesn't look good on high width
   &::after {
