@@ -1,6 +1,7 @@
 .welcomePage {
   background: linear-gradient(180deg, #ffffff 50%, #dfd7ff 100%);
   height: 100vh;
+  min-height: 720px;
 
   // TODO: still doesn't look good on high width
   &::after {
@@ -68,10 +69,11 @@
   position: absolute;
   bottom: 0;
   width: 100vw;
-  padding-inline: 8em;
+  padding-inline: 2em;
 
   display: flex;
-  gap: 7.125em;
+  // gap: 7.125em;
+  gap: clamp(1em, 6vw, 7.125em);
   justify-content: center;
   align-items: center;
 
@@ -82,20 +84,20 @@
       cursor: pointer;
       scale: 1.1;
     }
+
+    // apple store
+    &:first-child {
+      animation: text-appearence 0.5s ease-out 1s both;
+    }
+
+    // google play
+    &:last-child {
+      animation: store-appearence 0.6s ease-out 1s both;
+    }
   }
 
   .iphone {
     animation: iphone-appearence 1s cubic-bezier(0, 0.6, 0.32, 1) 0.1s both;
-  }
-
-  // apple store
-  div:first-child {
-    animation: text-appearence 0.5s ease-out 1s both;
-  }
-
-  // google play
-  div:last-child {
-    animation: store-appearence 0.6s ease-out 1s both;
   }
 }
 

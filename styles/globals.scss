@@ -34,7 +34,7 @@ p {
   flex-direction: column;
   align-items: center;
   position: relative;
-  font-size: min(1.125vw, 16px);
+  font-size: clamp(10px, 1.125vw, 16px);
 }
 
 /* WELCOME PAGE */
