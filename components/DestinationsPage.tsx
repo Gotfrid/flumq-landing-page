@@ -10,31 +10,29 @@ import styles from "../styles/DestinationsPage.module.scss";
 const DestinationsPage = () => {
   return (
     <section className={classNames("page", styles.destinationPage)}>
-      <div className={styles.blackBackground} />
-      <div className={styles.destinationsContainer}>
-        <span className={classNames(styles.iconContainer, styles.searchIcon)}>
-          <Image src={searchIcon} />
-        </span>
-        <span className={classNames(styles.iconContainer, styles.settingsIcon)}>
-          <Image src={settingsIcon} />
-        </span>
-        <div className={styles.destinationsImageContainer}>
-          <Image src={destinations} />
+      <div className={styles.destinations}>
+        <Image src={destinations} />
+        <div className={styles.icons}>
+          <div>
+            <Image src={searchIcon} />
+          </div>
+          <div>
+            <Image src={settingsIcon} />
+          </div>
         </div>
-        <div className={styles.destinations}></div>
       </div>
-      <div className={styles.destinationsHeroText}>
-        <span className={styles.findText}>Find your</span>
-        <span className={styles.destinationText}>Destination</span>
-        <span>
+
+      <div className={styles.hero}>
+        <h3>Find your</h3>
+        <h1>Destination</h1>
+        <div className={styles.heroDescription}>
           <span className={styles.highlightDark}>Know your options</span>
-          <span className={styles.explainText}>
+          <span>
             {" "}
             Search countries by filters, compare and make your choice.
           </span>
-        </span>
+        </div>
       </div>
-      <div className={styles.whiteBubbleBottom}></div>
     </section>
   );
 };
