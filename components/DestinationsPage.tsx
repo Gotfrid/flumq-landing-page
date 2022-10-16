@@ -11,6 +11,7 @@ const DestinationsPage = () => {
   return (
     <section className={classNames("page", styles.destinationPage)}>
       <div className={styles.destinations}>
+        {/* // TODO: build a component with each card as a component */}
         <Image src={destinations} />
         <div className={styles.icons}>
           <div>
