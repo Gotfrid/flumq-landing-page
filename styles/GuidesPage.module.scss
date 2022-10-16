@@ -1,125 +1,190 @@
-.blackBackground {
-  position: absolute;
-  height: 100%;
-  width: 100vw;
-  background-color: #15141e;
+.guidesPage {
+  height: 102vh;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #15141e;
+    z-index: 1;
+  }
+}
+
+.hero {
+  display: block;
+  margin-inline: auto;
+  margin-top: 2.5em;
+  padding-inline: 2em;
   z-index: 1;
-}
 
-.accessText {
-  margin-top: 40px;
-  margin-bottom: -8px;
-  font-family: "Manrope";
-  font-style: normal;
   font-weight: 800;
-  font-size: 54px;
-  line-height: 64px;
+  line-height: 1.1;
   text-align: center;
-  letter-spacing: -0.04em;
-  color: #ffffff;
-  z-index: 2;
+
+  h3 {
+    margin-bottom: 0;
+
+    color: #ffffff;
+    font-size: 3.375em;
+    letter-spacing: -0.04em;
+  }
+
+  h1 {
+    background: linear-gradient(273.07deg, #42bbff 0%, #c241ff 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 4.5em;
+    letter-spacing: -0.06em;
+  }
 }
 
-.guidesText {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 72px;
-  line-height: 82px;
-  text-align: center;
-  letter-spacing: -0.06em;
-  background: linear-gradient(273.07deg, #42bbff 0%, #c241ff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  z-index: 2;
-}
-
-.guidesContainer {
+.widgetContainer {
+  color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  color: white;
-  height: 320px;
-  width: 611px;
-  background: rgba(21, 20, 30, 0.4);
+  height: 40em;
+  width: 47em;
   z-index: 1;
-  margin-top: 30px;
+  position: relative;
+
+  .btnGroup {
+    background-color: rgba(118, 118, 128, 0.24);
+    border-radius: 50px;
+    height: 3em;
+    margin-top: 2em;
+    width: max-content;
+
+    button {
+      background-color: transparent;
+      border: none;
+      color: #ffffff;
+      cursor: pointer;
+      float: left;
+      height: 100%;
+      width: 10em;
+      border-radius: 50px;
+      padding: 6px;
+      font-weight: 600;
+      font-size: 1em;
+
+      &:hover {
+        background-color: #464649;
+      }
+
+      &.btnActive {
+        background-color: #59537b;
+      }
+
+      // TODO: is this necessary?
+      &:not(:last-child) {
+        border-right: none; /* Prevent double borders */
+      }
+    }
+
+    // TODO: is this necessary?
+    &:after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  }
 }
+
+// .guidesContainer {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   color: white;
+//   height: 320px;
+//   width: 611px;
+//   background: rgba(21, 20, 30, 0.4);
+//   z-index: 1;
+//   margin-top: 30px;
+// }
 
 .description {
-  font-weight: 600;
-  text-align: center;
-  letter-spacing: -0.04em;
-  width: 730px;
-  margin-top: 70px;
-  z-index: 2;
-}
-
-.highlightLight {
-  background: #6d57a1;
-  border-radius: 8px;
-  padding: 1px 5px 2px;
-  font-family: "Manrope";
-  font-style: normal;
+  color: #ffffff;
+  font-size: 1.5em;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 36px;
   letter-spacing: -0.04em;
-  color: #ffffff;
-}
-
-.explainTextWhite {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 36px;
+  line-height: 1.5;
+  max-width: 35em;
+  padding-inline: 2em;
   text-align: center;
-  letter-spacing: -0.04em;
-  color: #ffffff;
+  z-index: 1;
+
+  .highlightLight {
+    background: #6d57a1;
+    border-radius: 8px;
+    padding: 1px 5px 2px;
+  }
 }
 
-.btnGroup {
-  background-color: rgba(118, 118, 128, 0.24);
-  border-radius: 50px;
-  height: 32px;
-  margin-top: 30px;
-}
-.btnGroup button {
-  background-color: transparent;
-  border: none;
-  color: #ffffff;
-  cursor: pointer;
-  float: left;
-  height: 100%;
-  width: 10em;
-  border-radius: 50px;
-  padding: 6px;
-  font-family: "Manrope", sans-serif;
-  font-weight: 600;
-  font-size: 13px;
-}
+.backgroundCircleContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  gap: 30vw;
+  z-index: 1;
 
-.btnGroup button:not(:last-child) {
-  border-right: none; /* Prevent double borders */
-}
+  .backgroundCirclePurple {
+    height: 100%;
+    aspect-ratio: 1;
+    background: #8a69ee;
+    opacity: 0.3;
+    filter: blur(120px);
+    border-radius: 50%;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+  }
 
-/* Clear floats (clearfix hack) */
-.btnGroup:after {
-  content: "";
-  clear: both;
-  display: table;
-}
+  .backgroundCircleTeal {
+    height: 100%;
+    aspect-ratio: 1;
+    background: #3f6fb0;
+    opacity: 0.3;
+    filter: blur(120px);
+    border-radius: 50%;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+  }
 
-/* Add a background color on hover */
-.btnGroup button:hover {
-  background-color: #464649;
-}
+  .backgroundCircleTeal:first-child {
+    margin-top: -5%;
+  }
 
-.btnGroup button.btnActive {
-  background-color: #59537b;
+  .backgroundCircleTeal:last-child {
+    margin-top: 5%;
+  }
+
+  .backgroundCirclePink {
+    height: 100%;
+    aspect-ratio: 1;
+    background: #9f4fcd;
+    opacity: 0.3;
+    filter: blur(120px);
+    border-radius: 50%;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .backgroundCirclePink:first-child {
+    margin-top: 5%;
+  }
+
+  .backgroundCirclePink:last-child {
+    margin-top: -5%;
+  }
 }
 
 .iphoneFrame {

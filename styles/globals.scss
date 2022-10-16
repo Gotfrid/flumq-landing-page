@@ -319,67 +319,6 @@ p {
   transform: scaleX(2);
 }
 
-.backgroundCircleContainer {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100vw;
-  height: 30vh;
-  display: flex;
-  justify-content: center;
-  gap: 30vw;
-}
-
-.backgroundCirclePurple {
-  height: 100%;
-  aspect-ratio: 1;
-  background: #8a69ee;
-  opacity: 0.3;
-  filter: blur(120px);
-  border-radius: 50%;
-  backface-visibility: hidden;
-  transform: translate3d(0, 0, 0);
-}
-
-.backgroundCircleTeal {
-  height: 100%;
-  aspect-ratio: 1;
-  background: #3f6fb0;
-  opacity: 0.3;
-  filter: blur(120px);
-  border-radius: 50%;
-  backface-visibility: hidden;
-  transform: translate3d(0, 0, 0);
-}
-
-.backgroundCircleTeal:first-child {
-  margin-top: -5%;
-}
-
-.backgroundCircleTeal:last-child {
-  margin-top: 5%;
-}
-
-.backgroundCirclePink {
-  height: 100%;
-  aspect-ratio: 1;
-  background: #9f4fcd;
-  opacity: 0.3;
-  filter: blur(120px);
-  border-radius: 50%;
-  backface-visibility: hidden;
-  transform: translate3d(0, 0, 0);
-}
-
-.backgroundCirclePink:first-child {
-  margin-top: 5%;
-}
-
-.backgroundCirclePink:last-child {
-  margin-top: -5%;
-}
-
 .youtubeIcon {
   scale: 1.2;
 }
