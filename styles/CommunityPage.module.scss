@@ -1,8 +1,13 @@
 .communityPage {
   background: linear-gradient(#15141e 0%, #15141e 50%, #ffffff 60%, #fff);
-  flex-direction: row;
+
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  justify-items: end;
+
   height: 95vh;
-  justify-content: center;
+  min-height: 45em;
   padding-inline: 2em;
   z-index: 1;
 
@@ -57,7 +62,8 @@
     font-weight: 700;
     line-height: 1.5;
     letter-spacing: -0.04em;
-    width: 20em;
+    max-width: 20em;
+    min-width: 16em;
 
     .highlightDark {
       color: #785bb6;
