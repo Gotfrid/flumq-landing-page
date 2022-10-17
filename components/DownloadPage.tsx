@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import classNames from "classnames";
 
 import qrCode from "../public/assets/qr-code.svg";
 import appIcon from "../public/logo/app-icon.svg";
@@ -13,20 +14,23 @@ import twitterIcon from "../public/icons/twitter-icon.svg";
 import linkedinIcon from "../public/icons/linkedin-icon.svg";
 import footerLogo from "../public/logo/footer-logo.svg";
 
+import styles from "../styles/DownloadPage.module.scss";
+
 const DownloadPage = () => {
   return (
-    <section className="page download">
-      <div className="appIcon">
+    <section className={classNames("page", styles.downloadPage)}>
+      <div className={styles.appIcon}>
         <div>
           <Image src={appIcon} />
         </div>
       </div>
-      <div className="downloadGroup">
-        <div className="downloadHeroText">Download App</div>
-        <div className="downloadDescription">
+
+      <div className={styles.hero}>
+        <div className={styles.title}>Download App</div>
+        <div className={styles.subtitle}>
           It&apos;s time to begin your journey abroad.
         </div>
-        <div className="downloadStoreContainer">
+        <div className={styles.stores}>
           <a href="https://www.apple.com/app-store/" target="_blank">
             <Image src={appStoreBlack} />
           </a>
@@ -36,51 +40,60 @@ const DownloadPage = () => {
         </div>
       </div>
 
-      <footer className="footer">
-        <div className="contacts">
-          <div className="emailContainer">
+      <footer className={styles.footer}>
+        <div className={styles.contacts}>
+          <div className={styles.email}>
             <span>
               <Image src={mailIcon} />
             </span>
             <a>business@flumq.com</a>
           </div>
-          <div className="socialContainer">
-            <a href="https://www.facebook.com/flumq" target="_blank">
-              <Image src={facebookIcon} />
-            </a>
-            <a href="#" target="_blank">
-              <Image src={instagramIcon} />
-            </a>
-            <a href="#" target="_blank" className="youtubeIcon">
-              <Image src={youtubeIcon} />
-            </a>
-            <a href="https://twitter.com/FlumqOfficial" target="_blank">
-              <Image src={twitterIcon} />
-            </a>
-            <a href="https://www.linkedin.com/company/flumq" target="_blank">
-              <Image src={linkedinIcon} />
-            </a>
-          </div>
+          <ul className={styles.socials}>
+            <li>
+              <a href="https://www.facebook.com/flumq" target="_blank">
+                <Image src={facebookIcon} />
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <Image src={instagramIcon} />
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" className={styles.youtube}>
+                <Image src={youtubeIcon} />
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/FlumqOfficial" target="_blank">
+                <Image src={twitterIcon} />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/flumq" target="_blank">
+                <Image src={linkedinIcon} />
+              </a>
+            </li>
+          </ul>
         </div>
-        <div className="footerBorder"></div>
-        <div className="bottomFooter">
-          <div className="copyrightContainer">
-            <span className="copyrightLogo">
+
+        <div className={styles.links}>
+          <div className={styles.copyrightContainer}>
+            <span className={styles.copyrightLogo}>
               <Image src={footerLogo} />
             </span>
-            <span className="copyrightText">© 2022 Flumq LLC</span>
+            <span>© 2022 Flumq LLC</span>
           </div>
-          <div className="links">
+          <div className={styles.terms}>
             <Link href="/">Privacy Policy</Link>
             <Link href="/">Terms of Service</Link>
             <Link href="/">Cookie Policy</Link>
           </div>
         </div>
       </footer>
-      <div className="curvedLine" />
-      <div className="curvedOverlap" />
-      <div className="footerQRContainer">
-        <Image src={qrCode} className="qrImage" />
+
+      <div className={styles.footerQRContainer}>
+        <Image src={qrCode} className={styles.qrImage} />
         <span>Scan to download</span>
       </div>
     </section>
