@@ -23,7 +23,6 @@ const CommunityPage = () => {
       <div className={styles.communityContainer}>
         <Image src={community3x} layout="fill" objectFit="contain" />
       </div>
-      <div className={styles.phoneBackground} />
     </section>
   );
 };

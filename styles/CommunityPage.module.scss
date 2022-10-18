@@ -2,13 +2,15 @@
   background: linear-gradient(#15141e 0%, #15141e 50%, #ffffff 60%, #fff);
 
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr;
-  justify-items: end;
+  grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
 
   height: 95vh;
-  min-height: 45em;
-  padding-inline: 2em;
+  min-height: 75em;
+  padding-inline: 6em;
   z-index: 1;
 
   &:before {
@@ -42,6 +44,11 @@
   font-weight: 800;
   line-height: 1.4;
 
+  // TODO: this value will probably change
+  @media (max-width: 935px) {
+    text-align: center;
+  }
+
   h3 {
     font-size: 3.375em;
     letter-spacing: -0.04em;
@@ -59,7 +66,7 @@
 
   .heroDescription {
     font-size: 1.5em;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.5;
     letter-spacing: -0.04em;
     max-width: 20em;
@@ -76,9 +83,8 @@
 
 .communityContainer {
   position: relative;
-  width: 40em;
-  max-width: 40em;
-  height: 40em;
+  width: 35em;
+  aspect-ratio: 1;
   z-index: 4;
 
   &::before {
