@@ -1,9 +1,11 @@
 .destinationPage {
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
   justify-content: center;
-  align-items: flex-start;
-  gap: 3.875em;
-  height: 50em;
+  align-items: center;
+  justify-items: center;
+
+  height: min-content;
   padding-inline: 2em;
 
   &::before {
@@ -25,17 +27,15 @@
     border-radius: 0 0 50% 50%;
     transform: scaleX(2);
   }
-
-  @media screen and (max-width: 675px) {
-    align-items: center;
-  }
 }
 
 .destinations {
-  height: min(90%, 30em);
+  align-self: baseline;
   position: relative;
-  scale: 0.9;
-  width: 37em;
+  margin-left: 1em;
+  margin-bottom: 4em;
+  max-width: 40em;
+  min-width: 30em;
   z-index: 1;
 
   &::before {
@@ -47,10 +47,6 @@
     position: absolute;
     top: 8em;
     width: 100%;
-
-    @media screen and (max-width: 675px) {
-      top: 5em;
-    }
   }
 
   .icons {
@@ -60,11 +56,6 @@
     left: -2.5em;
     position: absolute;
     top: 13em;
-
-    @media screen and (max-width: 675px) {
-      top: 8em;
-      gap: 6em;
-    }
 
     div {
       height: 4em;
@@ -84,7 +75,13 @@
   font-weight: 800;
   line-height: 1.4;
   z-index: 1;
-  align-self: center;
+  margin-block: 3em;
+
+  @media (max-width: 640px) {
+    // FIXME: 1px jump
+    order: -1;
+    text-align: center;
+  }
 
   h3 {
     font-size: 3.375em;
