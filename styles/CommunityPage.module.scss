@@ -8,9 +8,8 @@
   align-items: center;
   justify-items: center;
 
-  height: 95vh;
-  min-height: 75em;
-  padding-inline: 6em;
+  height: min-content;
+  padding-inline: 2em;
   z-index: 1;
 
   &:before {
@@ -44,9 +43,9 @@
   font-weight: 800;
   line-height: 1.4;
 
-  // TODO: this value will probably change
-  @media (max-width: 935px) {
+  @media (max-width: 640px) {
     text-align: center;
+    margin-top: 10em;
   }
 
   h3 {
@@ -86,6 +85,11 @@
   width: 35em;
   aspect-ratio: 1;
   z-index: 4;
+  margin-block: 10em;
+
+  @media (max-width: 640px) {
+    margin-block-start: 0;
+  }
 
   &::before {
     content: "";
