@@ -40,6 +40,11 @@ const DownloadPage = () => {
         </div>
       </div>
 
+      <div className={styles.footerQRContainer}>
+        <Image src={qrCode} className={styles.qrImage} />
+        <span>Scan to download</span>
+      </div>
+
       <footer className={styles.footer}>
         <div className={styles.contacts}>
           <div className={styles.email}>
@@ -77,6 +82,8 @@ const DownloadPage = () => {
           </ul>
         </div>
 
+        <div className={styles.footerBorder} />
+
         <div className={styles.links}>
           <div className={styles.copyrightContainer}>
             <span className={styles.copyrightLogo}>
@@ -91,11 +98,6 @@ const DownloadPage = () => {
           </div>
         </div>
       </footer>
-
-      <div className={styles.footerQRContainer}>
-        <Image src={qrCode} className={styles.qrImage} />
-        <span>Scan to download</span>
-      </div>
     </section>
   );
 };
