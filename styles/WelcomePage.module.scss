@@ -1,9 +1,12 @@
 .welcomePage {
   background: linear-gradient(180deg, #ffffff 50%, #dfd7ff 100%);
   height: 100vh;
-  min-height: 40em;
+  min-height: 50em;
 
-  // TODO: still doesn't look good on high width
+  @media (max-width: 740px) {
+    height: min-content;
+  }
+
   &::after {
     content: "";
     background-image: url("/assets/white-curve3x.png");
@@ -14,7 +17,7 @@
     left: 0;
     right: 0;
     bottom: -2em;
-    height: max(20vmin, 82px);
+    height: 30vh;
     z-index: 1;
   }
 }
@@ -23,11 +26,13 @@
   display: block;
   margin-top: 2.5em;
   margin-bottom: 2.5em;
-  padding-inline: 8em;
+  padding-inline: 2em;
+  z-index: 1;
 
   .textLogo {
     animation: text-appearence 0.5s ease-out 0.5s both;
 
+    font-size: clamp(13px, 1.125vw, 16px);
     margin-inline: auto;
     width: 6em;
   }
@@ -35,9 +40,14 @@
   .imageLogo {
     animation: text-appearence 0.5s ease-out 0.7s both;
 
+    font-size: clamp(7px, 1.125vw, 16px);
     margin-left: auto;
-    margin-right: -4em;
+    margin-right: -4vw;
     width: 4em;
+
+    @media (max-width: 740px) {
+      margin-right: 1em;
+    }
   }
 
   .title {
@@ -65,15 +75,20 @@
   }
 }
 
-.integrationsContainer {
+.integrations {
   width: 100vw;
   padding-inline: 2em;
   margin-top: auto;
+  margin-bottom: 5vh;
 
   display: flex;
   gap: clamp(1em, 6vw, 7.125em);
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 740px) {
+    display: none;
+  }
 
   .store {
     transition: all 100ms linear;
@@ -99,24 +114,51 @@
   }
 }
 
+.integrationsMobile {
+  display: none;
+
+  align-items: center;
+  flex-direction: column;
+  gap: 3em;
+  padding-inline: 2em;
+  margin-bottom: 5vh;
+
+  z-index: 1;
+
+  @media (max-width: 740px) {
+    display: flex;
+  }
+
+  .stores {
+    display: flex;
+    gap: 1em;
+  }
+}
+
 .scrollIconContainer {
   animation: text-appearence 1s ease-out 3s both;
 
   position: absolute;
-  bottom: 1%;
+  bottom: 4%;
   left: 50%;
   z-index: 2;
+
+  @media (max-width: 740px) {
+    display: none;
+  }
 }
 
 .qrContainer {
   position: absolute;
   right: 0;
-  bottom: 0;
+  // bottom: 0;
+  top: 80%;
   margin-right: 2em;
-  margin-bottom: 1.5em;
+  // margin-bottom: 1.5em;
   display: flex;
   align-items: flex-end;
   z-index: 2;
+  font-size: 1rem;
 
   animation: text-appearence 1s ease-out 0.7s both;
 

@@ -29,7 +29,7 @@ const WelcomPage = () => {
         </div>
       </div>
 
-      <div className={styles.integrationsContainer}>
+      <div className={styles.integrations}>
         <div className={styles.store}>
           <a href="https://www.apple.com/app-store/" target="_blank">
             <Image src={appStoreGray} />
@@ -42,6 +42,25 @@ const WelcomPage = () => {
           <a href="https://play.google.com/store/apps" target="_blank">
             <Image src={googlePlayGray} />
           </a>
+        </div>
+      </div>
+
+      {/* TODO: there must be a better way? */}
+      <div className={styles.integrationsMobile}>
+        <div className={styles.stores}>
+          <div className={styles.store}>
+            <a href="https://www.apple.com/app-store/" target="_blank">
+              <Image src={appStoreGray} />
+            </a>
+          </div>
+          <div className={styles.store}>
+            <a href="https://play.google.com/store/apps" target="_blank">
+              <Image src={googlePlayGray} />
+            </a>
+          </div>
+        </div>
+        <div className={styles.iphone}>
+          <Image src={iphone14} />
         </div>
       </div>
 
