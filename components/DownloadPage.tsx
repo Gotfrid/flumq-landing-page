@@ -64,8 +64,8 @@ const DownloadPage = () => {
                 <Image src={instagramIcon} />
               </a>
             </li>
-            <li>
-              <a href="#" target="_blank" className={styles.youtube}>
+            <li className={styles.youtube}>
+              <a href="#" target="_blank">
                 <Image src={youtubeIcon} />
               </a>
             </li>
