@@ -1,84 +1,67 @@
-.descriptionContent {
-  width: 85%;
-  height: 100%;
-  color: #aba6d6;
-  padding: 1em 3em;
-}
-
-.descriptionContent > h3 {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 33px;
-  letter-spacing: -0.02em;
-  color: #aba6d6;
-  margin-bottom: 12px;
-}
-
-.descriptionContent__textContainer {
-  padding: 16px 24px;
-  background: rgba(163, 94, 255, 0.05);
-  border-radius: 20px;
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 170%;
-  letter-spacing: -0.02em;
-  color: #aba6d6;
-}
-
-.descriptionContent__textContainer > ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.descriptionContent__footer {
-  display: flex;
-  justify-content: flex-end;
-  gap: 12px;
-  margin-top: 5px;
-
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 160%;
-  letter-spacing: -0.02em;
-  color: #aba6d6;
-  opacity: 0.5;
-}
-
 .timelineContent {
-  display: flex;
-  justify-content: center;
-  padding: 1em 4em;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  font-size: clamp(13px, 1.125vw, 16px);
+
+  .timelineContent__image {
+    scale: 0.9;
+  }
+
+  .timelineContent__text {
+    padding-top: clamp(1.5em, 3.5vh, 2.5em);
+
+    font-weight: 600;
+
+    line-height: 200%;
+    letter-spacing: -0.02em;
+    color: #aba6d6;
+
+    p:first-child {
+      font-weight: 700;
+      margin-bottom: 0.8em;
+    }
+  }
 }
 
-.timelineContent__image {
-  margin-top: 28px;
-}
-
-.timelineContent__text {
-  margin-top: 42px;
-  font-weight: 600;
-  font-size: 1em;
-  line-height: 200%;
-  letter-spacing: -0.02em;
-  color: #aba6d6;
-  width: 261px;
-  margin-left: 40px;
-}
-
-.timelineContent__text > p:first-child {
-  font-weight: 700;
-  margin-bottom: 0.8em;
-}
-
-.statsContent {
-  width: 85%;
+.descriptionContent {
+  width: 100%;
   height: 100%;
-  padding: 1em 4em;
+  color: #aba6d6;
+  font-size: clamp(13px, 1.125vw, 16px);
+  letter-spacing: -0.02em;
+
+  h3 {
+    font-weight: 800;
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin-bottom: 0.75em;
+  }
+
+  .descriptionContent__textContainer {
+    padding: 1em 1.5em;
+    background: rgba(163, 94, 255, 0.05);
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 170%;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  }
+
+  .descriptionContent__footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5em;
+    margin-top: 0.5em;
+
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 160%;
+    opacity: 0.5;
+  }
 }

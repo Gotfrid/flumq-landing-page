@@ -61,13 +61,10 @@ const GuidesPage = () => {
             </button>
           ))}
         </div>
-      </div>
-
-      {/* <div className={styles.guidesContainer}>
         <div className={styles.iphoneFrame}>
           {guideComponent && guideComponent()}
         </div>
-      </div> */}
+      </div>
 
       <div className={styles.description}>
         <span className={styles.highlightLight}>No more uncertainties</span>

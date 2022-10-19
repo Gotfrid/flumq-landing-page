@@ -1,6 +1,5 @@
 .guidesPage {
-  height: 102vh;
-  min-height: 45em;
+  height: min-content;
 
   &::before {
     content: "";
@@ -47,10 +46,14 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 40em;
   width: 47em;
-  z-index: 1;
+  z-index: 2;
   position: relative;
+  padding-inline: 3em;
+
+  background-image: url("/assets/iphone-frame.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 
   .btnGroup {
     background-color: rgba(118, 118, 128, 0.24);
@@ -95,25 +98,13 @@
   }
 }
 
-// .guidesContainer {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   color: white;
-//   height: 320px;
-//   width: 611px;
-//   background: rgba(21, 20, 30, 0.4);
-//   z-index: 1;
-//   margin-top: 30px;
-// }
-
 .description {
   color: #ffffff;
   font-size: 1.5em;
   font-weight: 700;
   letter-spacing: -0.04em;
   line-height: 1.5;
+  margin-top: 2em;
   max-width: 35em;
   padding-inline: 2em;
   text-align: center;
@@ -192,8 +183,5 @@
 .iphoneFrame {
   width: 100%;
   height: 100%;
-  padding: 0 0.5em;
-  background-image: url("/assets/iphone-frame.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding: 1em 4em;
 }
