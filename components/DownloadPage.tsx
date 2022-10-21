@@ -4,8 +4,6 @@ import classNames from "classnames";
 
 import qrCode from "../public/assets/qr-code.svg";
 import appIcon from "../public/logo/app-icon.svg";
-import appStoreBlack from "../public/assets/app-store-black.svg";
-import googlePlayBlack from "../public/assets/google-play-black.svg";
 import mailIcon from "../public/icons/mail-icon.svg";
 import facebookIcon from "../public/icons/facebook-icon.svg";
 import instagramIcon from "../public/icons/instagram-icon.svg";
@@ -15,6 +13,7 @@ import linkedinIcon from "../public/icons/linkedin-icon.svg";
 import footerLogo from "../public/logo/footer-logo.svg";
 
 import styles from "../styles/DownloadPage.module.scss";
+import StoreButton from "./Common/StoreButton";
 
 const DownloadPage = () => {
   return (
@@ -31,12 +30,8 @@ const DownloadPage = () => {
           It&apos;s time to begin your journey abroad.
         </div>
         <div className={styles.stores}>
-          <a href="https://www.apple.com/app-store/" target="_blank">
-            <Image src={appStoreBlack} />
-          </a>
-          <a href="https://play.google.com/store/apps" target="_blank">
-            <Image src={googlePlayBlack} />
-          </a>
+          <StoreButton store="apple" color="black" />
+          <StoreButton store="google" color="black" />
         </div>
       </div>
 

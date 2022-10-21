@@ -1,0 +1,23 @@
+.store {
+  cursor: pointer;
+  transition: all 100ms linear;
+  animation-name: text-appearence;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+@keyframes text-appearence {
+  0% {
+    opacity: 0;
+    transform: translate(0, 30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}

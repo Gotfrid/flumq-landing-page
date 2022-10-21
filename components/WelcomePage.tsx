@@ -3,14 +3,13 @@ import classNames from "classnames";
 
 import logoText from "../public/logo/logo-text.svg";
 import logoSymbol from "../public/logo/logo-symbol.svg";
-import appStoreGray from "../public/assets/app-store-gray.svg";
-import googlePlayGray from "../public/assets/google-play-gray.svg";
 import iphone14 from "../public/assets/iphone14.svg";
 import scrollIcon from "../public/icons/scroll-icon.svg";
 import diagonalArrow from "../public/icons/diagonal-arrow.svg";
 import qrCode from "../public/assets/qr-code.svg";
 
 import styles from "../styles/WelcomePage.module.scss";
+import StoreButton from "./Common/StoreButton";
 
 const WelcomPage = () => {
   return (
@@ -30,34 +29,18 @@ const WelcomPage = () => {
       </div>
 
       <div className={styles.integrations}>
-        <div className={styles.store}>
-          <a href="https://www.apple.com/app-store/" target="_blank">
-            <Image src={appStoreGray} />
-          </a>
-        </div>
+        <StoreButton store="apple" color="gray" />
         <div className={styles.iphone}>
           <Image src={iphone14} />
         </div>
-        <div className={styles.store}>
-          <a href="https://play.google.com/store/apps" target="_blank">
-            <Image src={googlePlayGray} />
-          </a>
-        </div>
+        <StoreButton store="google" color="gray" />
       </div>
 
       {/* TODO: there must be a better way? */}
       <div className={styles.integrationsMobile}>
         <div className={styles.stores}>
-          <div className={styles.store}>
-            <a href="https://www.apple.com/app-store/" target="_blank">
-              <Image src={appStoreGray} />
-            </a>
-          </div>
-          <div className={styles.store}>
-            <a href="https://play.google.com/store/apps" target="_blank">
-              <Image src={googlePlayGray} />
-            </a>
-          </div>
+          <StoreButton store="apple" color="gray" />
+          <StoreButton store="google" color="gray" />
         </div>
         <div className={styles.iphone}>
           <Image src={iphone14} />
