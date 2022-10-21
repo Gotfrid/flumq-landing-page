@@ -22,11 +22,15 @@
     position: absolute;
     top: 70%;
     width: 100vw;
-    height: 50vh;
+    height: 20em;
     background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 50%),
       linear-gradient(90deg, #ffffff -0.55%, rgba(255, 255, 255, 0) 50%),
       linear-gradient(180deg, #a98cff 0%, rgba(255, 255, 255, 0) 100%);
     z-index: 1;
+
+    @media (max-width: 640px) {
+      height: 30em;
+    }
   }
 }
 
