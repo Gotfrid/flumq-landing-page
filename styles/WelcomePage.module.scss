@@ -1,6 +1,6 @@
 .welcomePage {
   background: linear-gradient(180deg, #ffffff 50%, #dfd7ff 100%);
-  height: 100vh;
+  height: max-content;
   min-height: 50em;
 
   @media (max-width: 740px) {
@@ -9,6 +9,7 @@
 
   &::after {
     content: "";
+    font-size: clamp(13px, 1.125vw, 16px);
     background-image: url("/assets/white-curve3x.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -17,8 +18,12 @@
     left: 0;
     right: 0;
     bottom: -2em;
-    height: 30vh;
+    height: 22em;
     z-index: 1;
+
+    @media (max-width: 740px) {
+      height: 17rem;
+    }
   }
 }
 
@@ -85,7 +90,6 @@
 }
 
 .integrations {
-  width: 100vw;
   padding-inline: 2em;
   margin-top: auto;
   margin-bottom: 5vh;
@@ -151,6 +155,10 @@
   font-size: 1rem;
 
   animation: text-appearence 1s ease-out 0.7s both;
+
+  @media (max-width: 740px) {
+    display: none;
+  }
 
   .qrText {
     font-weight: 600;

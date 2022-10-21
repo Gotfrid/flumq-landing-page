@@ -99,12 +99,17 @@
     margin-block-start: 0;
   }
 
+  // TODO: this is a workaround, and should be fixed on image level
+  & > span {
+    right: 8% !important;
+  }
+
   &::before {
     content: "";
     position: absolute;
     top: 4em;
-    right: 5%;
-    width: 80%;
+    right: 13%;
+    width: 75%;
     aspect-ratio: 1;
 
     border-radius: 50%;
