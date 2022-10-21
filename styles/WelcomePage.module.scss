@@ -22,6 +22,15 @@
   }
 }
 
+.container {
+  max-width: 1280px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
 .hero {
   display: block;
   margin-top: 2.5em;
