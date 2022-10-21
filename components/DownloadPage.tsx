@@ -18,81 +18,86 @@ import StoreButton from "./Common/StoreButton";
 const DownloadPage = () => {
   return (
     <section className={classNames("page", styles.downloadPage)}>
-      <div className={styles.appIcon}>
-        <div>
-          <Image src={appIcon} />
-        </div>
-      </div>
-
-      <div className={styles.hero}>
-        <div className={styles.title}>Download App</div>
-        <div className={styles.subtitle}>
-          It&apos;s time to begin your journey abroad.
-        </div>
-        <div className={styles.stores}>
-          <StoreButton store="apple" color="black" />
-          <StoreButton store="google" color="black" />
-        </div>
-      </div>
-
-      <div className={styles.footerQRContainer}>
-        <Image src={qrCode} className={styles.qrImage} />
-        <span>Scan to download</span>
-      </div>
-
-      <footer className={styles.footer}>
-        <div className={styles.contacts}>
-          <div className={styles.email}>
-            <span>
-              <Image src={mailIcon} />
-            </span>
-            <a>business@flumq.com</a>
-          </div>
-          <ul className={styles.socials}>
-            <li>
-              <a href="https://www.facebook.com/flumq" target="_blank">
-                <Image src={facebookIcon} />
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank">
-                <Image src={instagramIcon} />
-              </a>
-            </li>
-            <li className={styles.youtube}>
-              <a href="#" target="_blank">
-                <Image src={youtubeIcon} />
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/FlumqOfficial" target="_blank">
-                <Image src={twitterIcon} />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/company/flumq" target="_blank">
-                <Image src={linkedinIcon} />
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div className={styles.footerBorder} />
-
-        <div className={styles.links}>
-          <div className={styles.copyrightContainer}>
-            <span className={styles.copyrightLogo}>
-              <Image src={footerLogo} />
-            </span>
-            <span>© 2022 Flumq LLC</span>
-          </div>
-          <div className={styles.terms}>
-            <Link href="/">Privacy Policy</Link>
-            <Link href="/">Terms of Service</Link>
-            <Link href="/">Cookie Policy</Link>
+      <div className={styles.container}>
+        <div className={styles.appIcon}>
+          <div>
+            <Image src={appIcon} />
           </div>
         </div>
-      </footer>
+
+        <div className={styles.hero}>
+          <div className={styles.title}>Download App</div>
+          <div className={styles.subtitle}>
+            It&apos;s time to begin your journey abroad.
+          </div>
+          <div className={styles.stores}>
+            <StoreButton store="apple" color="black" />
+            <StoreButton store="google" color="black" />
+          </div>
+        </div>
+
+        <div className={styles.footerQRContainer}>
+          <Image src={qrCode} className={styles.qrImage} />
+          <span>Scan to download</span>
+        </div>
+
+        <footer className={styles.footer}>
+          <div className={styles.contacts}>
+            <div className={styles.email}>
+              <span>
+                <Image src={mailIcon} />
+              </span>
+              <a>business@flumq.com</a>
+            </div>
+            <ul className={styles.socials}>
+              <li>
+                <a href="https://www.facebook.com/flumq" target="_blank">
+                  <Image src={facebookIcon} />
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank">
+                  <Image src={instagramIcon} />
+                </a>
+              </li>
+              <li className={styles.youtube}>
+                <a href="#" target="_blank">
+                  <Image src={youtubeIcon} />
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/FlumqOfficial" target="_blank">
+                  <Image src={twitterIcon} />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/flumq"
+                  target="_blank"
+                >
+                  <Image src={linkedinIcon} />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div className={styles.footerBorder} />
+
+          <div className={styles.links}>
+            <div className={styles.copyrightContainer}>
+              <span className={styles.copyrightLogo}>
+                <Image src={footerLogo} />
+              </span>
+              <span>© 2022 Flumq LLC</span>
+            </div>
+            <div className={styles.terms}>
+              <Link href="/">Privacy Policy</Link>
+              <Link href="/">Terms of Service</Link>
+              <Link href="/">Cookie Policy</Link>
+            </div>
+          </div>
+        </footer>
+      </div>
     </section>
   );
 };

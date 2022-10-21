@@ -1,10 +1,7 @@
 .downloadPage {
   height: min-content;
   background: #ffffff;
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-  padding-block: 2em;
+  padding-inline: 2em;
 
   &::before {
     content: "";
@@ -39,6 +36,16 @@
   }
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding-block: 2em;
+
+  height: 100%;
+  width: min(100%, 1280px);
+}
+
 .appIcon {
   background: rgba(145, 107, 255, 0.25);
   backdrop-filter: blur(0.5em);
@@ -48,6 +55,8 @@
   z-index: 4;
   position: absolute;
   top: -6em;
+  left: 50%;
+  transform: translate(-50%);
 
   div {
     padding: 0.5em;
@@ -108,7 +117,7 @@
   flex-direction: column;
   gap: 0.2em;
   margin-top: -4em;
-  width: 90%;
+  width: 100%;
   z-index: 1;
 
   color: #454267;
