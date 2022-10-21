@@ -1,13 +1,5 @@
 .communityPage {
   background: linear-gradient(#15141e 0%, #15141e 50%, #ffffff 60%, #fff);
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-
   height: min-content;
   padding-inline: 2em;
   z-index: 1;
@@ -36,6 +28,18 @@
       linear-gradient(180deg, #a98cff 0%, rgba(255, 255, 255, 0) 100%);
     z-index: 1;
   }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+
+  height: 100%;
+  width: min(100%, 1280px);
 }
 
 .hero {
