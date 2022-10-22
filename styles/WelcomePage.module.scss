@@ -1,6 +1,6 @@
 .welcomePage {
   background: linear-gradient(180deg, #ffffff 50%, #dfd7ff 100%);
-  height: max-content;
+  height: 100vh;
   min-height: 50em;
 
   @media (max-width: 740px) {
@@ -30,17 +30,12 @@
 .container {
   max-width: 1280px;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
   position: relative;
 }
 
 .hero {
-  display: block;
-  margin-top: 2.5em;
-  margin-bottom: 2.5em;
-  padding-inline: 2em;
+  align-self: flex-end;
   z-index: 1;
 
   .textLogo {
