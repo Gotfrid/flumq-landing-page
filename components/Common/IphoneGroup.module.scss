@@ -1,10 +1,10 @@
 .grid {
   display: grid;
-  grid-template-areas: ". iphone ." "apple iphone google" ". iphone qrcode";
+  grid-template-areas: "apple iphone google" "apple iphone google" ". iphone qrcode";
+  grid-template-columns: 1fr 2fr 1fr;
   justify-items: center;
   align-items: center;
   height: min-content;
-  gap: 3em;
   align-self: flex-end;
   margin-bottom: 6vh;
 
