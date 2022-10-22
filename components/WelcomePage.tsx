@@ -5,11 +5,11 @@ import logoText from "../public/logo/logo-text.svg";
 import logoSymbol from "../public/logo/logo-symbol.svg";
 import iphone14 from "../public/assets/iphone14.svg";
 import scrollIcon from "../public/icons/scroll-icon.svg";
-import diagonalArrow from "../public/icons/diagonal-arrow.svg";
-import qrCode from "../public/assets/qr-code.svg";
+
+import StoreButton from "./Common/StoreButton";
+import IphoneGroup from "./Common/IphoneGroup";
 
 import styles from "../styles/WelcomePage.module.scss";
-import StoreButton from "./Common/StoreButton";
 
 const WelcomPage = () => {
   return (
@@ -29,13 +29,7 @@ const WelcomPage = () => {
           </div>
         </div>
 
-        <div className={styles.integrations}>
-          <StoreButton store="apple" color="gray" />
-          <div className={styles.iphone}>
-            <Image src={iphone14} />
-          </div>
-          <StoreButton store="google" color="gray" />
-        </div>
+        <IphoneGroup />
 
         {/* TODO: there must be a better way? */}
         <div className={styles.integrationsMobile}>
@@ -50,19 +44,6 @@ const WelcomPage = () => {
 
         <div className={styles.scrollIconContainer}>
           <Image src={scrollIcon} />
-        </div>
-
-        <div className={styles.qrContainer}>
-          <div className={styles.qrText}>
-            <p>Scan to</p>
-            <p>download</p>
-          </div>
-          <div className={styles.diagonalArrow}>
-            <Image src={diagonalArrow} />
-          </div>
-          <div className={styles.qrImage}>
-            <Image src={qrCode} />
-          </div>
         </div>
       </div>
     </section>

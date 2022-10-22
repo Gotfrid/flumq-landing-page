@@ -1,0 +1,91 @@
+.grid {
+  display: grid;
+  grid-template-areas: ". iphone ." "apple iphone google" ". iphone qrcode";
+  justify-items: center;
+  align-items: center;
+  height: min-content;
+  gap: 3em;
+  align-self: flex-end;
+  margin-bottom: 6vh;
+
+  @media (max-width: 740px) {
+    display: none;
+  }
+
+  .appstore {
+    grid-area: apple;
+    align-self: flex-end;
+  }
+
+  .playmarket {
+    grid-area: google;
+    align-self: flex-end;
+  }
+
+  .iphone {
+    grid-area: iphone;
+    position: relative;
+    width: 25em;
+    aspect-ratio: 1;
+
+    animation: iphone-appearence 1s cubic-bezier(0, 0.6, 0.32, 1) 0.1s both;
+  }
+
+  .qrcode {
+    grid-area: qrcode;
+
+    display: flex;
+    align-items: flex-end;
+    z-index: 2;
+    font-size: 1rem;
+
+    animation: text-appearence 1s ease-out 0.7s both;
+
+    @media (max-width: 740px) {
+      display: none;
+    }
+
+    .qrText {
+      font-weight: 600;
+      margin-right: -0.75em;
+      font-size: 1em;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      color: #454267;
+    }
+
+    .diagonalArrow {
+      margin-bottom: 1.25em;
+      margin-right: 0.5em;
+      width: 1em;
+      aspect-ratio: 1;
+    }
+
+    .qrImage {
+      width: 6em;
+      aspect-ratio: 1;
+    }
+  }
+}
+
+@keyframes iphone-appearence {
+  0% {
+    opacity: 0;
+    transform: translate(0, 100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes text-appearence {
+  0% {
+    opacity: 0;
+    transform: translate(0, 30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}

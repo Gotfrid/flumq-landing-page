@@ -1,7 +1,7 @@
 .welcomePage {
   background: linear-gradient(180deg, #ffffff 50%, #dfd7ff 100%);
   height: 100vh;
-  min-height: 50em;
+  // min-height: 50em;
 
   @media (max-width: 740px) {
     height: min-content;
@@ -17,8 +17,8 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -2em;
-    height: 22em;
+    bottom: 0;
+    height: 22vh;
     z-index: 1;
 
     @media (max-width: 740px) {
@@ -31,12 +31,16 @@
   max-width: 1280px;
   height: 100%;
   display: grid;
+  grid-template-rows: 1fr auto;
   position: relative;
+  margin-top: 2.5em;
+  padding-inline: 2em;
 }
 
 .hero {
-  align-self: flex-end;
+  align-self: center;
   z-index: 1;
+  margin-bottom: 2.5em;
 
   .textLogo {
     animation: text-appearence 0.5s ease-out 0.5s both;
@@ -84,25 +88,6 @@
   }
 }
 
-.integrations {
-  padding-inline: 2em;
-  margin-top: auto;
-  margin-bottom: 5vh;
-
-  display: flex;
-  gap: clamp(1em, 6vw, 7.125em);
-  justify-content: center;
-  align-items: center;
-
-  @media (max-width: 740px) {
-    display: none;
-  }
-
-  .iphone {
-    animation: iphone-appearence 1s cubic-bezier(0, 0.6, 0.32, 1) 0.1s both;
-  }
-}
-
 .integrationsMobile {
   display: none;
 
@@ -125,7 +110,7 @@
 }
 
 .scrollIconContainer {
-  animation: text-appearence 1s ease-out 3s both;
+  animation: text-appearence 1s ease-out 2s both;
 
   position: absolute;
   bottom: 4%;
@@ -134,46 +119,6 @@
 
   @media (max-width: 740px) {
     display: none;
-  }
-}
-
-.qrContainer {
-  position: absolute;
-  right: 0;
-  // bottom: 0;
-  top: 80%;
-  margin-right: 2em;
-  // margin-bottom: 1.5em;
-  display: flex;
-  align-items: flex-end;
-  z-index: 2;
-  font-size: 1rem;
-
-  animation: text-appearence 1s ease-out 0.7s both;
-
-  @media (max-width: 740px) {
-    display: none;
-  }
-
-  .qrText {
-    font-weight: 600;
-    margin-right: -0.75em;
-    font-size: 1em;
-    line-height: 1;
-    letter-spacing: -0.02em;
-    color: #454267;
-  }
-
-  .diagonalArrow {
-    margin-bottom: 1.25em;
-    margin-right: 0.5em;
-    width: 1em;
-    aspect-ratio: 1;
-  }
-
-  .qrImage {
-    width: 6em;
-    aspect-ratio: 1;
   }
 }
 
