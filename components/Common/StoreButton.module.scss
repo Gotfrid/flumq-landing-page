@@ -1,6 +1,6 @@
 .store {
   position: relative;
-  width: 10em;
+  width: 12em;
   aspect-ratio: 2 / 1;
 
   cursor: pointer;
@@ -13,6 +13,10 @@
 
   &:hover {
     scale: 1.1;
+  }
+
+  @media (max-width: 740px) {
+    width: 16em;
   }
 }
 
