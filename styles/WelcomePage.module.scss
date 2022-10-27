@@ -105,6 +105,10 @@
     display: flex;
     gap: 1em;
   }
+
+  .iphone {
+    animation: iphone-appearence 1s cubic-bezier(0, 0.6, 0.32, 1) 0.1s both;
+  }
 }
 
 .scrollIconContainer {
