@@ -1,7 +1,7 @@
 .welcomePage {
   background: linear-gradient(180deg, #ffffff 50%, #dfd7ff 100%);
   height: 100vh;
-  // min-height: 50em;
+  min-height: 50em;
 
   @media (max-width: 740px) {
     height: min-content;

@@ -28,16 +28,26 @@
     width: 25em;
     aspect-ratio: 1;
 
+    @media (min-height: 1000px) {
+      width: 35em;
+    }
+
+    @media (min-height: 1200px) {
+      width: 45em;
+    }
+
     animation: iphone-appearence 1s cubic-bezier(0, 0.6, 0.32, 1) 0.1s both;
   }
 
   .qrcode {
     grid-area: qrcode;
+    align-self: flex-end;
+    margin-bottom: 1em;
 
     display: flex;
     align-items: flex-end;
     z-index: 2;
-    font-size: 1rem;
+    font-size: 1em;
 
     animation: text-appearence 1s ease-out 0.7s both;
 
