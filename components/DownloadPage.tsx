@@ -14,6 +14,7 @@ import footerLogo from "../public/logo/footer-logo.svg";
 
 import styles from "../styles/DownloadPage.module.scss";
 import StoreButton from "./Common/StoreButton";
+import QrCode from "./Common/QrCode";
 
 const DownloadPage = () => {
   return (
@@ -37,7 +38,7 @@ const DownloadPage = () => {
         </div>
 
         <div className={styles.footerQRContainer}>
-          <Image src={qrCode} className={styles.qrImage} />
+          <QrCode />
           <span>Scan to download</span>
         </div>
 
