@@ -38,7 +38,7 @@ const DownloadPage = () => {
         </div>
 
         <div className={styles.footerQRContainer}>
-          <QrCode />
+          <QrCode width="6.5em" />
           <span>Scan to download</span>
         </div>
 

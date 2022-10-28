@@ -28,7 +28,7 @@ const IphoneGroup = () => {
         <div className={styles.diagonalArrow}>
           <Image src={diagonalArrow} />
         </div>
-        <QrCode />
+        <QrCode width="5.5em" />
       </div>
     </div>
   );
