@@ -96,7 +96,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.5em;
-  z-index: 2;
+  z-index: 1;
 
   font-weight: 600;
   font-size: 0.875rem;
@@ -170,6 +170,7 @@
   .footerBorder {
     height: 1px;
     width: 100%;
+    margin-block: 0.2em;
     background: linear-gradient(
       90deg,
       #e0dde8 0%,
@@ -223,6 +224,11 @@
       a {
         color: inherit;
         text-decoration: none;
+        transition: color 300ms linear;
+
+        &:hover {
+          color: #8965f6;
+        }
       }
     }
   }

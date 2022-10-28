@@ -61,7 +61,10 @@ const DownloadPage = () => {
                 </a>
               </li>
               <li className={styles.youtube}>
-                <a href="#" target="_blank">
+                <a
+                  href="https://www.youtube.com/channel/UCFrC1y1KCd8hz9HA6DN48bQ"
+                  target="_blank"
+                >
                   <Image src={youtubeIcon} />
                 </a>
               </li>
