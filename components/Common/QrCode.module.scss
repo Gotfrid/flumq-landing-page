@@ -1,12 +1,18 @@
-$borderWidth: 0.4em;
+$borderWidth: 0.4rem;
 
 .qrImage {
   width: 6em;
   aspect-ratio: 1;
   background-color: #fff;
-  padding: 6px 6px 0 6px;
+  padding: 0.3rem;
   position: relative;
   border-radius: $borderWidth;
+
+  & > div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .qrImage:after {
@@ -16,7 +22,7 @@ $borderWidth: 0.4em;
   left: calc(-1 * $borderWidth);
   height: calc(100% + $borderWidth * 2);
   width: calc(100% + $borderWidth * 2);
-  background: linear-gradient(90deg, #f292ff, #7651f2, #00d1d1);
+  background: radial-gradient(#f292ff, #7651f2, #00d1d1);
   border-radius: calc(2 * $borderWidth);
   z-index: -1;
   animation: animatedgradient 1.5s ease alternate infinite;
@@ -25,12 +31,12 @@ $borderWidth: 0.4em;
 
 @keyframes animatedgradient {
   0% {
-    background-position: 0% 50%;
+    background-position: 0% 100%;
   }
-  50% {
-    background-position: 100% 0%;
-  }
+  // 50% {
+
+  // }
   100% {
-    background-position: 50% 0%;
+    background-position: 100% 0%;
   }
 }

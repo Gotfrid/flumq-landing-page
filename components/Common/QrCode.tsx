@@ -5,7 +5,9 @@ import styles from "./QrCode.module.scss";
 const QrCode = () => {
   return (
     <div className={styles.qrImage}>
-      <Image src={qrCode} />
+      <div>
+        <Image src={qrCode} layout="fill" />
+      </div>
     </div>
   );
 };
