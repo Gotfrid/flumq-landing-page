@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 import StoreButton from "./StoreButton";
+import QrCode from "./QrCode";
 
 import iphone14 from "../../public/assets/iphone14.svg";
 import diagonalArrow from "../../public/icons/diagonal-arrow.svg";
-import qrCode from "../../public/assets/qr-code.svg";
 
 import styles from "./IphoneGroup.module.scss";
 
@@ -28,9 +28,7 @@ const IphoneGroup = () => {
         <div className={styles.diagonalArrow}>
           <Image src={diagonalArrow} />
         </div>
-        <div className={styles.qrImage}>
-          <Image src={qrCode} />
-        </div>
+        <QrCode width="5.5em" />
       </div>
     </div>
   );

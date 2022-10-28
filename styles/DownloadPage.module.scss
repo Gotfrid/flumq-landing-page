@@ -92,6 +92,7 @@
 }
 
 .footerQRContainer {
+  align-items: center;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -105,9 +106,8 @@
   letter-spacing: -0.02em;
   color: #454267;
 
-  .qrImage {
-    width: 6em;
-    aspect-ratio: 1;
+  span {
+    margin-top: 0.5em;
   }
 }
 
