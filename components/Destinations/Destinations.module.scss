@@ -1,0 +1,15 @@
+.cardsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1em;
+  place-items: center;
+  grid-auto-rows: 14em;
+
+  & > :nth-child(odd) {
+    align-self: flex-start;
+  }
+
+  & > :nth-child(even) {
+    align-self: flex-end;
+  }
+}

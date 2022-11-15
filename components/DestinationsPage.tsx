@@ -1,7 +1,8 @@
 import Image from "next/image";
 import classNames from "classnames";
 
-import destinations from "../public/assets/destinations.png";
+import { Destinations } from "./Destinations/Destinations";
+
 import searchIcon from "../public/icons/magnifying-glass.svg";
 import settingsIcon from "../public/icons/adjustments-vertical.svg";
 
@@ -12,8 +13,7 @@ const DestinationsPage = () => {
     <section className={classNames("page", styles.destinationPage)}>
       <div className={styles.container}>
         <div className={styles.destinations}>
-          {/* // TODO: build a component with each card as a component */}
-          <Image src={destinations} />
+          <Destinations />
           <div className={styles.icons}>
             <div>
               <Image src={searchIcon} />
