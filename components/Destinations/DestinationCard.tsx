@@ -14,6 +14,8 @@ import nzFlag from "../../public/assets/countries/flag-nz.png";
 import frFlag from "../../public/assets/countries/flag-fr.png";
 import geFlag from "../../public/assets/countries/flag-ge.png";
 
+import styles from "./DestinationCard.module.scss";
+
 const countryImages = new Map<string, StaticImageData>([
   ["United States", us],
   ["Canada", ca],
@@ -40,33 +42,11 @@ export const DestinationCard: React.FC<Props> = ({ country }) => {
   const countryImage = countryImages.get(country) ?? us;
   const countryFlag = countryFlags.get(country) ?? usFlag;
   return (
-    <div style={{ position: "relative", width: "10em" }}>
+    <div className={styles.destinationCard}>
       <Image src={countryImage} />
-      <div
-        style={{
-          padding: "0.6em 1.2em",
-          position: "absolute",
-          bottom: "-1em",
-          right: "-1em",
-          letterSpacing: "-0.02em",
-          fontWeight: 600,
-          color: "#454267",
-          borderRadius: "2em",
-          background: "rgba(255, 255, 255, 0.9)",
-          boxShadow: "0px 8px 64px rgba(0, 0, 0, 0.25)",
-          backdropFilter: "blur(4px)",
-          whiteSpace: "nowrap",
-        }}
-      >
+      <div className={styles.destinationInfo}>
         <Image src={countryFlag} width={15} height={10} />
-        <span
-          style={{
-            marginLeft: "0.3em",
-            boxShadow: "0 0.5em 4em 0 rgba(0, 0, 0, 0.25)",
-          }}
-        >
-          {country}
-        </span>
+        <span className={styles.countryName}>{country}</span>
       </div>
     </div>
   );

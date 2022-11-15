@@ -1,0 +1,23 @@
+.destinationCard {
+  position: relative;
+  width: 10em;
+
+  .destinationInfo {
+    backdrop-filter: blur(0.25em);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 2em;
+    bottom: -1em;
+    box-shadow: 0px 0.5em 4em rgba(0, 0, 0, 0.25);
+    color: #454267;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    padding: 0.6em 1.2em;
+    position: absolute;
+    right: -1em;
+    white-space: nowrap;
+
+    .countryName {
+      margin-left: 0.3em;
+    }
+  }
+}
