@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image";
+import { motion } from "framer-motion";
 
 import us from "../../public/assets/countries/us.png";
 import ca from "../../public/assets/countries/ca.png";
@@ -38,16 +39,26 @@ type Props = {
   country: string;
 };
 
+const initial = { opacity: 0 };
+const animate = { opacity: 1 };
+const transition = { delay: 0.3, duration: 0.5 };
+
 export const DestinationCard: React.FC<Props> = ({ country }) => {
   const countryImage = countryImages.get(country) ?? us;
   const countryFlag = countryFlags.get(country) ?? usFlag;
   return (
-    <div className={styles.destinationCard}>
+    <motion.div
+      className={styles.destinationCard}
+      initial={initial}
+      whileInView={animate}
+      viewport={{ once: true }}
+      transition={transition}
+    >
       <Image src={countryImage} />
       <div className={styles.destinationInfo}>
         <Image src={countryFlag} width={15} height={10} />
         <span className={styles.countryName}>{country}</span>
       </div>
-    </div>
+    </motion.div>
   );
 };
