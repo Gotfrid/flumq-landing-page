@@ -55,6 +55,7 @@ const CommunityPage = () => {
               src={community3x}
               layout="fill"
               objectFit="contain"
+              loading="eager"
               priority
             />
           </div>
@@ -65,7 +66,7 @@ const CommunityPage = () => {
             transition={{ delay: 0.4, duration: 0.3 }}
             viewport={{ once: true }}
           >
-            <Image src={usercard1} />
+            <Image src={usercard1} loading="eager" priority />
           </motion.div>
           <motion.div
             className={styles.usercard2}
