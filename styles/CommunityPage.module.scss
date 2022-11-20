@@ -89,18 +89,13 @@
 
 .communityContainer {
   position: relative;
-  width: 35em;
+  width: 30em;
   aspect-ratio: 1;
   z-index: 4;
   margin-block: 10em;
 
   @media (max-width: 640px) {
-    margin-block-start: 0;
-  }
-
-  // TODO: this is a workaround, and should be fixed on image level
-  & > span {
-    right: 8% !important;
+    margin-block-start: 2em;
   }
 
   &::before {
@@ -110,8 +105,66 @@
     right: 13%;
     width: 75%;
     aspect-ratio: 1;
+    z-index: -1;
 
     border-radius: 50%;
     background: linear-gradient(273.81deg, #8564f7 32.09%, #9877f4 100%);
+  }
+
+  .main {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(50%);
+    z-index: 1;
+    background: rgba(59, 49, 86, 0.25);
+    border-radius: 20% / 50%;
+    box-shadow: 0px 2em 5em rgba(59, 49, 86, 0.32);
+  }
+
+  .usercard1 {
+    position: absolute;
+    top: 3.5em;
+    left: -3.3em;
+    z-index: 0;
+    width: 18em;
+    height: 6em;
+    box-shadow: 0px 1em 1em rgba(0, 0, 0, 0.06);
+    border-radius: 1em;
+  }
+
+  .usercard2 {
+    position: absolute;
+    top: 9em;
+    right: 0;
+    z-index: 1;
+    width: 12em;
+    height: 4.5em;
+    box-shadow: 0px 1em 1em rgba(0, 0, 0, 0.06);
+    border-radius: 1em;
+  }
+
+  .usercard3 {
+    position: absolute;
+    top: 14.5em;
+    left: 0;
+    z-index: 0;
+    width: 12em;
+    height: 5em;
+    box-shadow: 0px 1em 1em rgba(0, 0, 0, 0.06);
+    border-radius: 1em;
+  }
+
+  .usercard4 {
+    position: absolute;
+    top: 18.9em;
+    right: 1.6em;
+    z-index: 1;
+    width: 14em;
+    height: 4.5em;
+    box-shadow: 0px 1em 1em rgba(0, 0, 0, 0.06);
+    border-radius: 1em;
   }
 }
