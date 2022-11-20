@@ -51,7 +51,12 @@ const CommunityPage = () => {
         </div>
         <div className={styles.communityContainer}>
           <div className={styles.main}>
-            <Image src={community3x} layout="fill" objectFit="contain" />
+            <Image
+              src={community3x}
+              layout="fill"
+              objectFit="contain"
+              priority
+            />
           </div>
           <motion.div
             className={styles.usercard1}
