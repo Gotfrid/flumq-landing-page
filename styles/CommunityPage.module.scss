@@ -95,23 +95,59 @@
   margin-block: 10em;
 
   @media (max-width: 640px) {
-    margin-block-start: 0;
+    margin-block-start: 2em;
   }
 
-  // TODO: this is a workaround, and should be fixed on image level
-  & > span {
-    right: 8% !important;
-  }
-
-  &::before {
-    content: "";
+  .main {
+    height: 100%;
+    width: 100%;
     position: absolute;
-    top: 4em;
-    right: 13%;
-    width: 75%;
-    aspect-ratio: 1;
-
-    border-radius: 50%;
-    background: linear-gradient(273.81deg, #8564f7 32.09%, #9877f4 100%);
+    top: 0;
+    left: 0;
+    z-index: 1;
   }
+
+  .usercard1 {
+    position: absolute;
+    top: 3.5em;
+    left: -7em;
+    z-index: 0;
+    width: 25em;
+  }
+
+  .usercard2 {
+    position: absolute;
+    top: 9.3em;
+    right: -3em;
+    z-index: 1;
+    width: 17em;
+  }
+
+  .usercard3 {
+    position: absolute;
+    top: 17em;
+    left: -2em;
+    z-index: 0;
+    width: 17em;
+  }
+
+  .usercard4 {
+    position: absolute;
+    top: 22em;
+    right: 1.6em;
+    z-index: 1;
+    width: 17em;
+  }
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 4em;
+  //   right: 13%;
+  //   width: 75%;
+  //   aspect-ratio: 1;
+
+  //   border-radius: 50%;
+  //   background: linear-gradient(273.81deg, #8564f7 32.09%, #9877f4 100%);
+  // }
 }
