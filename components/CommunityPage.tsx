@@ -1,5 +1,6 @@
 import Image from "next/image";
 import classNames from "classnames";
+import { motion } from "framer-motion";
 
 import community3x from "../public/assets/community3x.png";
 import usercard1 from "../public/assets/user-cards/card1.png";
@@ -9,13 +10,36 @@ import usercard4 from "../public/assets/user-cards/card4.png";
 
 import styles from "../styles/CommunityPage.module.scss";
 
+const initial = { opacity: 0, y: 50 };
+const animate = { opacity: 1, y: 0 };
+const transition = {
+  delay: 0.3,
+  duration: 0.2,
+  type: "spring",
+  stiffness: 100,
+};
+
 const CommunityPage = () => {
   return (
     <section className={classNames("page", styles.communityPage)}>
       <div className={styles.container}>
         <div className={styles.hero}>
-          <h3>Join the</h3>
-          <h1>Community</h1>
+          <motion.h3
+            initial={initial}
+            whileInView={animate}
+            transition={transition}
+            viewport={{ once: true }}
+          >
+            Join the
+          </motion.h3>
+          <motion.h1
+            initial={initial}
+            whileInView={animate}
+            transition={transition}
+            viewport={{ once: true }}
+          >
+            Community
+          </motion.h1>
           <div className={styles.heroDescription}>
             <span className={styles.highlightDark}>You're not alone</span>
             <span>
