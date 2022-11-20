@@ -126,6 +126,9 @@
     left: -3.3em;
     z-index: 0;
     width: 18em;
+    height: 6em;
+    box-shadow: 0px 1em 1em rgba(0, 0, 0, 0.06);
+    border-radius: 1em;
   }
 
   .usercard2 {
@@ -134,6 +137,9 @@
     right: 0;
     z-index: 1;
     width: 12em;
+    height: 4.5em;
+    box-shadow: 0px 1em 1em rgba(0, 0, 0, 0.06);
+    border-radius: 1em;
   }
 
   .usercard3 {
@@ -142,6 +148,9 @@
     left: 0;
     z-index: 0;
     width: 12em;
+    height: 5em;
+    box-shadow: 0px 1em 1em rgba(0, 0, 0, 0.06);
+    border-radius: 1em;
   }
 
   .usercard4 {
@@ -150,5 +159,8 @@
     right: 1.6em;
     z-index: 1;
     width: 14em;
+    height: 4.5em;
+    box-shadow: 0px 1em 1em rgba(0, 0, 0, 0.06);
+    border-radius: 1em;
   }
 }
