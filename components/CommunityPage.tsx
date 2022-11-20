@@ -53,18 +53,42 @@ const CommunityPage = () => {
           <div className={styles.main}>
             <Image src={community3x} layout="fill" objectFit="contain" />
           </div>
-          <div className={styles.usercard1}>
+          <motion.div
+            className={styles.usercard1}
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.4, duration: 0.3 }}
+            viewport={{ once: true }}
+          >
             <Image src={usercard1} />
-          </div>
-          <div className={styles.usercard2}>
+          </motion.div>
+          <motion.div
+            className={styles.usercard2}
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.6, duration: 0.3 }}
+            viewport={{ once: true }}
+          >
             <Image src={usercard2} />
-          </div>
-          <div className={styles.usercard3}>
+          </motion.div>
+          <motion.div
+            className={styles.usercard3}
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.8, duration: 0.3 }}
+            viewport={{ once: true }}
+          >
             <Image src={usercard3} />
-          </div>
-          <div className={styles.usercard4}>
+          </motion.div>
+          <motion.div
+            className={styles.usercard4}
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ delay: 1, duration: 0.3 }}
+            viewport={{ once: true }}
+          >
             <Image src={usercard4} />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
