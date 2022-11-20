@@ -89,7 +89,7 @@
 
 .communityContainer {
   position: relative;
-  width: 35em;
+  width: 30em;
   aspect-ratio: 1;
   z-index: 4;
   margin-block: 10em;
@@ -123,32 +123,32 @@
   .usercard1 {
     position: absolute;
     top: 3.5em;
-    left: -6em;
+    left: -3.3em;
     z-index: 0;
-    width: 25em;
+    width: 18em;
   }
 
   .usercard2 {
     position: absolute;
-    top: 9.3em;
-    right: -3em;
+    top: 9em;
+    right: 0;
     z-index: 1;
-    width: 17em;
+    width: 12em;
   }
 
   .usercard3 {
     position: absolute;
-    top: 17em;
-    left: -2em;
+    top: 14.5em;
+    left: 0;
     z-index: 0;
-    width: 17em;
+    width: 12em;
   }
 
   .usercard4 {
     position: absolute;
-    top: 22em;
+    top: 18.9em;
     right: 1.6em;
     z-index: 1;
-    width: 17em;
+    width: 14em;
   }
 }
