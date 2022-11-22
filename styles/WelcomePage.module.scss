@@ -34,9 +34,9 @@
 }
 
 .hero {
-  align-self: center;
+  align-self: flex-end;
   z-index: 1;
-  margin-bottom: 2.5em;
+  margin-bottom: 5em;
   padding-inline: 5em;
 
   .textLogo {
@@ -81,7 +81,7 @@
     font-size: 1.4em;
     font-weight: 700;
     line-height: 1.2;
-    margin-top: 0.45em;
+    margin-top: 0.2em;
     text-align: center;
   }
 }
