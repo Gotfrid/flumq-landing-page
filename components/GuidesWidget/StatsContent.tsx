@@ -6,6 +6,7 @@ import styles from "../../styles/Widget.module.scss";
 
 const StatsContent = ({ visible }: { visible: boolean }) => {
   const style: React.CSSProperties = {
+    opacity: visible ? 1 : 0,
     visibility: visible ? "unset" : "hidden",
     height: visible ? "100%" : "0",
   };
