@@ -8,6 +8,11 @@
     width: 100%;
     background-color: #15141e;
     z-index: 1;
+
+    @media (max-width: 640px) {
+      top: -1px;
+      height: calc(100% + 3px);
+    }
   }
 }
 
