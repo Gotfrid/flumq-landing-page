@@ -1,6 +1,7 @@
 .destinationPage {
   height: min-content;
   padding-inline: 2em;
+  z-index: 1;
 
   &::before {
     content: "";
