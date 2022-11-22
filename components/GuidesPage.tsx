@@ -12,17 +12,14 @@ const backgroundCircleMapping = [
   {
     tabName: "Description",
     className: styles.backgroundCirclePink,
-    component: () => <DescriptionContent />,
   },
   {
     tabName: "Timeline",
     className: styles.backgroundCirclePurple,
-    component: () => <TimelineContent />,
   },
   {
     tabName: "Stats",
     className: styles.backgroundCircleTeal,
-    component: () => <StatsContent />,
   },
 ];
 
@@ -38,10 +35,6 @@ const GuidesPage = () => {
   const circleClassname = backgroundCircleMapping.find(
     (x) => x.tabName === activeGuideTab
   )?.className;
-
-  const guideComponent = backgroundCircleMapping.find(
-    (x) => x.tabName === activeGuideTab
-  )?.component;
 
   return (
     <section className={classNames("page", styles.guidesPage)}>
@@ -62,7 +55,9 @@ const GuidesPage = () => {
           ))}
         </div>
         <div className={styles.iphoneFrame}>
-          {guideComponent && guideComponent()}
+          <DescriptionContent visible={activeGuideTab == guideTabs[0]} />
+          <TimelineContent visible={activeGuideTab == guideTabs[1]} />
+          <StatsContent visible={activeGuideTab == guideTabs[2]} />
         </div>
       </div>
 

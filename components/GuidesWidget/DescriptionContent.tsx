@@ -1,8 +1,12 @@
 import styles from "../../styles/Widget.module.scss";
 
-const DescriptionContent = () => {
+const DescriptionContent = ({ visible }: { visible: boolean }) => {
+  const style: React.CSSProperties = {
+    visibility: visible ? "unset" : "hidden",
+    height: visible ? "100%" : "0",
+  };
   return (
-    <div className={styles.descriptionContent}>
+    <div className={styles.descriptionContent} style={style}>
       <h3>Moving to Canada</h3>
       <div className={styles.descriptionContent__textContainer}>
         <p>

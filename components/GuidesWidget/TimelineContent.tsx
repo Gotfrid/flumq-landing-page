@@ -4,9 +4,13 @@ import timeline from "../../public/assets/timeline3x.png";
 
 import styles from "../../styles/Widget.module.scss";
 
-const TimelineContent = () => {
+const TimelineContent = ({ visible }: { visible: boolean }) => {
+  const style: React.CSSProperties = {
+    visibility: visible ? "unset" : "hidden",
+    height: visible ? "100%" : "0",
+  };
   return (
-    <div className={styles.timelineContent}>
+    <div className={styles.timelineContent} style={style}>
       <div className={styles.timelineContent__image}>
         <Image
           src={timeline}
