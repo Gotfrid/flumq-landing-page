@@ -1,5 +1,4 @@
 .destinationPage {
-  height: min-content;
   padding-inline: 2em;
   z-index: 1;
 
@@ -21,6 +20,10 @@
     background: #ffffff;
     border-radius: 0 0 50% 50%;
     transform: scaleX(2);
+  }
+
+  @media (max-width: "640px") {
+    height: min-content;
   }
 }
 
@@ -44,6 +47,10 @@
   max-width: 40em;
   min-width: 30em;
   z-index: 1;
+
+  @media (max-width: "640px") {
+    margin-bottom: 10em;
+  }
 
   &::before {
     background: linear-gradient(180deg, #f4f0ff 0%, #ffffff 100%);
