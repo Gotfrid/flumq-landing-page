@@ -1,4 +1,5 @@
 .grid {
+  font-size: 1rem;
   display: grid;
   grid-template-areas: "apple iphone google" "apple iphone google" ". iphone qrcode";
   grid-template-columns: 1fr 2fr 1fr;
@@ -7,6 +8,10 @@
   height: min-content;
   align-self: flex-end;
   margin-bottom: 6vh;
+
+  @media (max-width: 978px) {
+    font-size: 0.9rem;
+  }
 
   @media (max-width: 740px) {
     display: none;
