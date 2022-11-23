@@ -18,7 +18,7 @@ const Kite = ({ top, left, scale }: KiteProps) => {
     transform: `scale(${scale})`,
   };
   return (
-    <div style={style}>
+    <div className="kite" style={style}>
       <Image src={kite} />
     </div>
   );

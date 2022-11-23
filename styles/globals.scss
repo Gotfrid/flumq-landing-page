@@ -38,3 +38,9 @@ img {
   position: relative;
   font-size: clamp(10px, 1.125vw, 16px);
 }
+
+.kite {
+  @media (max-width: 740px) {
+    opacity: 0;
+  }
+}
