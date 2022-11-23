@@ -1,12 +1,14 @@
 .guidesPage {
   height: min-content;
+  max-width: 1680px;
+  margin-inline: auto;
 
   &::before {
     content: "";
     position: absolute;
     top: -1px;
     height: 101%;
-    width: 100%;
+    width: 105vw;
     background-color: #15141e;
     z-index: 1;
   }

@@ -1,6 +1,7 @@
 import { MouseEventHandler, useState } from "react";
 import classNames from "classnames";
 
+import Kite from "./Common/Kite";
 import DescriptionContent from "./GuidesWidget/DescriptionContent";
 import StatsContent from "./GuidesWidget/StatsContent";
 import TimelineContent from "./GuidesWidget/TimelineContent";
@@ -38,6 +39,20 @@ const GuidesPage = () => {
 
   return (
     <section className={classNames("page", styles.guidesPage)}>
+      {/* Left block of background kites */}
+      <Kite left="15%" top="20%" scale={0.6} />
+      <Kite left="6%" top="46%" scale={0.5} />
+      <Kite left="14%" top="58%" scale={0.4} />
+      <Kite left="18%" top="76%" scale={0.7} />
+      <Kite left="8%" top="81%" scale={0.8} />
+
+      {/* Right block of background kites */}
+      <Kite left="87%" top="20%" scale={0.6} />
+      <Kite left="82%" top="40%" scale={0.3} />
+      <Kite left="89%" top="60%" scale={0.5} />
+      <Kite left="77%" top="70%" scale={0.8} />
+      <Kite left="93%" top="87%" scale={0.6} />
+
       <div className={styles.hero}>
         <h3>Access</h3>
         <h1>Step-by-Step Guides</h1>
