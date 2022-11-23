@@ -74,6 +74,15 @@ const GuidesPage = () => {
           <TimelineContent visible={activeGuideTab == guideTabs[1]} />
           <StatsContent visible={activeGuideTab == guideTabs[2]} />
         </div>
+
+        <div className={styles.backgroundCircleContainer}>
+          <div
+            className={classNames(styles.backgroundCircle, circleClassname)}
+          />
+          <div
+            className={classNames(styles.backgroundCircle, circleClassname)}
+          />
+        </div>
       </div>
 
       <div className={styles.description}>
@@ -83,11 +92,6 @@ const GuidesPage = () => {
           Choose a path that shows what to do next, track progress, share
           timeline, or create your own guide.
         </span>
-      </div>
-
-      <div className={styles.backgroundCircleContainer}>
-        <div className={circleClassname} />
-        <div className={circleClassname} />
       </div>
     </section>
   );

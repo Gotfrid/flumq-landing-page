@@ -129,66 +129,51 @@
 // TODO: refactor to be real Sass
 .backgroundCircleContainer {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100vw;
-  height: 30vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
-  gap: 30vw;
-  z-index: 1;
+  align-items: center;
+  gap: 25em;
+  z-index: -1;
 
-  .backgroundCirclePurple {
-    height: 100%;
+  .backgroundCircle {
+    height: 70%;
     aspect-ratio: 1;
-    background: #8a69ee;
     opacity: 0.3;
-    filter: blur(7.5em);
+    filter: blur(20em);
     border-radius: 50%;
     backface-visibility: hidden;
     transform: translate3d(0, 0, 0);
     transition: all 0.5s linear;
+  }
+
+  .backgroundCirclePurple {
+    background: #8a69ee;
   }
 
   .backgroundCircleTeal {
-    height: 100%;
-    aspect-ratio: 1;
     background: #3f6fb0;
-    opacity: 0.3;
-    filter: blur(7.5em);
-    border-radius: 50%;
-    backface-visibility: hidden;
-    transform: translate3d(0, 0, 0);
-    transition: all 0.5s linear;
-  }
 
-  .backgroundCircleTeal:first-child {
-    margin-top: -5%;
-  }
+    &:first-child {
+      margin-top: -10%;
+    }
 
-  .backgroundCircleTeal:last-child {
-    margin-top: 5%;
+    &:last-child {
+      margin-top: 10%;
+    }
   }
 
   .backgroundCirclePink {
-    height: 100%;
-    aspect-ratio: 1;
     background: #9f4fcd;
-    opacity: 0.3;
-    filter: blur(7.5em);
-    border-radius: 50%;
-    backface-visibility: hidden;
-    transform: translate3d(0, 0, 0);
-    transition: all 0.5s linear;
-  }
 
-  .backgroundCirclePink:first-child {
-    margin-top: 5%;
-  }
+    &:first-child {
+      margin-top: 10%;
+    }
 
-  .backgroundCirclePink:last-child {
-    margin-top: -5%;
+    &:last-child {
+      margin-top: -10%;
+    }
   }
 }
 
