@@ -13,13 +13,7 @@ const TimelineContent = ({ visible }: { visible: boolean }) => {
   return (
     <div className={styles.timelineContent} style={style}>
       <div className={styles.timelineContent__image}>
-        <Image
-          src={timeline}
-          priority
-          width={183}
-          height={288}
-          loading="eager"
-        />
+        <Image src={timeline} width={183} height={288} />
       </div>
       <div className={styles.timelineContent__text}>
         <p>English language test</p>

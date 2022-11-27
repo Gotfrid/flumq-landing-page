@@ -15,7 +15,7 @@ const IphoneGroup = () => {
         <StoreButton store="apple" color="gray" />
       </div>
       <div className={styles.iphone}>
-        <Image src={iphone14} layout="fill" />
+        <Image src={iphone14} layout="fill" priority />
       </div>
       <div className={styles.playmarket}>
         <StoreButton store="google" color="gray" />

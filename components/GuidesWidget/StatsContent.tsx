@@ -12,7 +12,7 @@ const StatsContent = ({ visible }: { visible: boolean }) => {
   };
   return (
     <div className={styles.statsContent} style={style}>
-      <Image src={stats} priority />
+      <Image src={stats} />
     </div>
   );
 };

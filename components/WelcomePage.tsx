@@ -38,7 +38,7 @@ const WelcomPage = () => {
             <StoreButton store="google" color="gray" />
           </div>
           <div className={styles.iphone}>
-            <Image src={iphone14} />
+            <Image src={iphone14} priority />
           </div>
         </div>
 

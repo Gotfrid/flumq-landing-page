@@ -54,7 +54,7 @@ export const DestinationCard: React.FC<Props> = ({ country }) => {
       viewport={{ once: true }}
       transition={transition}
     >
-      <Image src={countryImage} loading="eager" />
+      <Image src={countryImage} />
       <div className={styles.destinationInfo}>
         <Image src={countryFlag} width={15} height={10} />
         <span className={styles.countryName}>{country}</span>
