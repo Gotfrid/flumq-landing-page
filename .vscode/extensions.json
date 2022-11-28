@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "usernamehw.errorlens",
+    "esbenp.prettier-vscode",
+    "formulahendry.auto-rename-tag",
+    "Gruntfuggly.todo-tree",
+    "WakaTime.vscode-wakatime"
+  ]
+}
