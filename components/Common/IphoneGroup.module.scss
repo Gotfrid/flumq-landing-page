@@ -32,6 +32,7 @@
     position: relative;
     width: 25em;
     aspect-ratio: 1;
+    top: -1px; // removes weird lines in Safari on some window sizes
 
     @media (min-height: 1000px) {
       width: 35em;
