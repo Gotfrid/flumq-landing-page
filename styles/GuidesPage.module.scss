@@ -24,8 +24,9 @@
   font-weight: 800;
   line-height: 1.1;
   text-align: center;
+  font-size: 1em;
 
-  h3 {
+  .preTitle {
     margin-bottom: 0;
 
     color: #ffffff;
@@ -33,7 +34,7 @@
     letter-spacing: -0.04em;
   }
 
-  h1 {
+  .mainTitle {
     background: linear-gradient(273.07deg, #42bbff 0%, #c241ff 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;

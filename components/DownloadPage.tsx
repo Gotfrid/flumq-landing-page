@@ -27,7 +27,7 @@ const DownloadPage = () => {
         </div>
 
         <div className={styles.hero}>
-          <div className={styles.title}>Download App</div>
+          <h2 className={styles.title}>Download App</h2>
           <div className={styles.subtitle}>It&apos;s time to begin your journey abroad.</div>
           <div className={styles.stores}>
             <StoreButton store="apple" color="black" />
@@ -46,7 +46,7 @@ const DownloadPage = () => {
               <span>
                 <Image src={mailIcon} alt="Email icon" />
               </span>
-              <a>business@flumq.com</a>
+              <a href="mailto:business@flumq.com">business@flumq.com</a>
             </div>
             <ul className={styles.socials}>
               <li>

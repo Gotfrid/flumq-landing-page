@@ -34,28 +34,30 @@ const DestinationsPage = () => {
           </div>
         </div>
 
-        <div className={styles.hero}>
-          <motion.h3
+        <h2 className={styles.hero}>
+          <motion.div
+            className={styles.preTitle}
             initial={initial}
             whileInView={animate}
             transition={transition}
             viewport={{ once: true }}
           >
             Find your
-          </motion.h3>
-          <motion.h1
+          </motion.div>
+          <motion.div
+            className={styles.mainTitle}
             initial={initial}
             whileInView={animate}
             transition={transition}
             viewport={{ once: true }}
           >
             Destination
-          </motion.h1>
+          </motion.div>
           <div className={styles.heroDescription}>
             <span className={styles.highlightDark}>Know your options</span>
             <span> Search countries by filters, compare and make your choice.</span>
           </div>
-        </div>
+        </h2>
       </div>
     </section>
   );

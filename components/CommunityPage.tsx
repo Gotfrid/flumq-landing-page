@@ -23,28 +23,30 @@ const CommunityPage = () => {
   return (
     <section className={classNames("page", styles.communityPage)}>
       <div className={styles.container}>
-        <div className={styles.hero}>
-          <motion.h3
+        <h2 className={styles.hero}>
+          <motion.div
+            className={styles.preTitle}
             initial={initial}
             whileInView={animate}
             transition={transition}
             viewport={{ once: true }}
           >
             Join the
-          </motion.h3>
-          <motion.h1
+          </motion.div>
+          <motion.div
+            className={styles.mainTitle}
             initial={initial}
             whileInView={animate}
             transition={transition}
             viewport={{ once: true }}
           >
             Community
-          </motion.h1>
+          </motion.div>
           <div className={styles.heroDescription}>
             <span className={styles.highlightDark}>You're not alone</span>
             <span> Meet new people, join discussions, share your experience, ask questions, and more.</span>
           </div>
-        </div>
+        </h2>
         <div className={styles.communityContainer}>
           <div className={styles.main}>
             <Image

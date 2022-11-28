@@ -51,10 +51,10 @@ const GuidesPage = () => {
       <Kite left="77%" top="70%" scale={0.8} />
       <Kite left="93%" top="87%" scale={0.6} />
 
-      <div className={styles.hero}>
-        <h3>Access</h3>
-        <h1>Step-by-Step Guides</h1>
-      </div>
+      <h2 className={styles.hero}>
+        <div className={styles.preTitle}>Access</div>
+        <div className={styles.mainTitle}>Step-by-Step Guides</div>
+      </h2>
 
       <div className={styles.widgetContainer}>
         <div className={styles.btnGroup} onClick={handleGuideSwitch}>

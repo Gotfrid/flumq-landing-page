@@ -8,7 +8,7 @@ const DescriptionContent = ({ visible }: { visible: boolean }) => {
   };
   return (
     <div className={styles.descriptionContent} style={style}>
-      <h3>Moving to Canada</h3>
+      <div style={{ fontSize: "1.5em", marginBlock: "0.5em" }}>Moving to Canada</div>
       <div className={styles.descriptionContent__textContainer}>
         <p>
           Hello everyone, This guide is for those who want to move permanently to Canada. I immigrated in

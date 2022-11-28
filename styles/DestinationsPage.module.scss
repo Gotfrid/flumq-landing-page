@@ -87,6 +87,7 @@
 .hero {
   color: #454267;
   font-weight: 800;
+  font-size: 1em;
   line-height: 1.4;
   z-index: 1;
   margin-block: 3em;
@@ -97,13 +98,13 @@
     text-align: center;
   }
 
-  h3 {
+  .preTitle {
     font-size: 3.375em;
     letter-spacing: -0.04em;
     margin: -0.5em 0;
   }
 
-  h1 {
+  .mainTitle {
     font-size: 4.5em;
     letter-spacing: -0.06em;
     background: linear-gradient(273.07deg, #e95aec 0%, #8793ff 100%);
