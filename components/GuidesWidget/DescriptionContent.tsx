@@ -11,8 +11,8 @@ const DescriptionContent = ({ visible }: { visible: boolean }) => {
       <h3>Moving to Canada</h3>
       <div className={styles.descriptionContent__textContainer}>
         <p>
-          Hello everyone, This guide is for those who want to move permanently
-          to Canada. I immigrated in 2022, so I share my real steps with you.
+          Hello everyone, This guide is for those who want to move permanently to Canada. I immigrated in
+          2022, so I share my real steps with you.
         </p>
         <p>Follow this guide if you have:</p>
         <ul>

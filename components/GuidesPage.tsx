@@ -33,9 +33,7 @@ const GuidesPage = () => {
     setActiveGuideTab(input.innerText);
   };
 
-  const circleClassname = backgroundCircleMapping.find(
-    (x) => x.tabName === activeGuideTab
-  )?.className;
+  const circleClassname = backgroundCircleMapping.find((x) => x.tabName === activeGuideTab)?.className;
 
   return (
     <section className={classNames("page", styles.guidesPage)}>
@@ -61,10 +59,7 @@ const GuidesPage = () => {
       <div className={styles.widgetContainer}>
         <div className={styles.btnGroup} onClick={handleGuideSwitch}>
           {guideTabs.map((tabName) => (
-            <button
-              key={tabName}
-              className={tabName === activeGuideTab ? styles.btnActive : ""}
-            >
+            <button key={tabName} className={tabName === activeGuideTab ? styles.btnActive : ""}>
               {tabName}
             </button>
           ))}
@@ -76,12 +71,8 @@ const GuidesPage = () => {
         </div>
 
         <div className={styles.backgroundCircleContainer}>
-          <div
-            className={classNames(styles.backgroundCircle, circleClassname)}
-          />
-          <div
-            className={classNames(styles.backgroundCircle, circleClassname)}
-          />
+          <div className={classNames(styles.backgroundCircle, circleClassname)} />
+          <div className={classNames(styles.backgroundCircle, circleClassname)} />
         </div>
       </div>
 
@@ -89,8 +80,7 @@ const GuidesPage = () => {
         <span className={styles.highlightLight}>No more uncertainties</span>
         <span>
           {" "}
-          Choose a path that shows what to do next, track progress, share
-          timeline, or create your own guide.
+          Choose a path that shows what to do next, track progress, share timeline, or create your own guide.
         </span>
       </div>
     </section>

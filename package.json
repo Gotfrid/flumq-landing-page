@@ -2,7 +2,9 @@
   "name": "flumq-landing-page",
   "version": "0.1.0",
   "private": true,
-  "browserslist": [">0.1%"],
+  "browserslist": [
+    ">0.1%"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",

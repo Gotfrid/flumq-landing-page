@@ -7,7 +7,9 @@ const countries = ["United States", "Canada", "New Zealand", "Australia", "Franc
 export const Destinations = () => {
   return (
     <div className={styles.cardsContainer}>
-      {countries.map(country => <DestinationCard key={country} country={country} />)}
+      {countries.map((country) => (
+        <DestinationCard key={country} country={country} />
+      ))}
     </div>
-  )
+  );
 };

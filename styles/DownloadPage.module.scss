@@ -157,8 +157,7 @@
       padding: 0;
 
       a:hover {
-        filter: invert(46%) sepia(76%) saturate(3176%) hue-rotate(229deg)
-          brightness(96%) contrast(101%);
+        filter: invert(46%) sepia(76%) saturate(3176%) hue-rotate(229deg) brightness(96%) contrast(101%);
       }
 
       .youtube {
@@ -171,12 +170,7 @@
     height: 1px;
     width: 100%;
     margin-block: 0.2em;
-    background: linear-gradient(
-      90deg,
-      #e0dde8 0%,
-      rgba(210, 197, 255, 0) 50%,
-      #e0dde8 100%
-    );
+    background: linear-gradient(90deg, #e0dde8 0%, rgba(210, 197, 255, 0) 50%, #e0dde8 100%);
 
     @media (max-width: 740px) {
       order: -1;

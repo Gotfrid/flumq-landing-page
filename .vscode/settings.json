@@ -2,7 +2,5 @@
   "color-highlight.markerType": "background",
   "color-highlight.markRuler": false,
   "todo-tree.general.showActivityBarBadge": true,
-  "todo-tree.filtering.excludeGlobs": [
-    "**/node_modules"
-  ]
+  "todo-tree.filtering.excludeGlobs": ["**/node_modules"]
 }
