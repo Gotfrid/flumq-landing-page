@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;600;700;800&display=swap");
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-VariableFont_wght.ttf");
+  font-weight: 300 800;
+  font-style: normal;
+}
 
 * {
   box-sizing: border-box;
