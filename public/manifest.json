@@ -2,7 +2,7 @@
   "name": "Flumq Landing Page",
   "short_name": "Flumq",
   "description": "Flumq is a service that helps people move abroad",
-  "start_url": "http://localhost:3000",
+  "start_url": "https://flumq.com",
   "theme_color": "white",
   "background_color": "white",
   "orientation": "portrait",
