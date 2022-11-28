@@ -17,15 +17,14 @@ const WelcomPage = () => {
       <div className={styles.container}>
         <div className={styles.hero}>
           <div className={styles.textLogo}>
-            <Image src={logoText} height="50px" />
+            <Image src={logoText} alt="Flumq text logo" height="50px" />
           </div>
           <div className={styles.imageLogo}>
-            <Image src={logoSymbol} height="50px" />
+            <Image src={logoSymbol} alt="Flumq image logo" height="50px" />
           </div>
           <h1 className={styles.title}>Your guide to moving abroad</h1>
           <div className={styles.subtitle}>
-            Choose country, access multiple guides, ask questions and share your
-            experience.
+            Choose country, access multiple guides, ask questions and share your experience.
           </div>
         </div>
 
@@ -38,12 +37,12 @@ const WelcomPage = () => {
             <StoreButton store="google" color="gray" />
           </div>
           <div className={styles.iphone}>
-            <Image src={iphone14} priority />
+            <Image src={iphone14} alt="Screenshot of main page in a smartphone app" priority />
           </div>
         </div>
 
         <div className={styles.scrollIconContainer}>
-          <Image src={scrollIcon} />
+          <Image src={scrollIcon} alt="Scroll icon" />
         </div>
       </div>
     </section>

@@ -12,7 +12,7 @@ const StatsContent = ({ visible }: { visible: boolean }) => {
   };
   return (
     <div className={styles.statsContent} style={style}>
-      <Image src={stats} />
+      <Image src={stats} alt="Screenshot of statistics page in a smartphone app" />
     </div>
   );
 };

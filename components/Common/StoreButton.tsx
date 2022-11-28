@@ -32,7 +32,7 @@ const StoreButton: React.FC<StoreButtonProps> = ({ store, color }) => {
   return (
     <div className={styles.store} style={style}>
       <a href={href} target="_blank">
-        <Image src={src} layout="fill" />
+        <Image src={src} alt={`${store} store`} layout="fill" />
       </a>
     </div>
   );

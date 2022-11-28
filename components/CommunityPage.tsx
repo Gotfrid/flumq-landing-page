@@ -42,17 +42,14 @@ const CommunityPage = () => {
           </motion.h1>
           <div className={styles.heroDescription}>
             <span className={styles.highlightDark}>You're not alone</span>
-            <span>
-              {" "}
-              Meet new people, join discussions, share your experience, ask
-              questions, and more.
-            </span>
+            <span> Meet new people, join discussions, share your experience, ask questions, and more.</span>
           </div>
         </div>
         <div className={styles.communityContainer}>
           <div className={styles.main}>
             <Image
               src={community3x}
+              alt="Screenshot of community page in a smartphone app"
               layout="fill"
               objectFit="contain"
               priority
@@ -65,7 +62,7 @@ const CommunityPage = () => {
             transition={{ delay: 0.4, duration: 0.3 }}
             viewport={{ once: true }}
           >
-            <Image src={usercard1} />
+            <Image src={usercard1} alt="User card image in a smartphone app" />
           </motion.div>
           <motion.div
             className={styles.usercard2}
@@ -74,7 +71,7 @@ const CommunityPage = () => {
             transition={{ delay: 0.6, duration: 0.3 }}
             viewport={{ once: true }}
           >
-            <Image src={usercard2} />
+            <Image src={usercard2} alt="User card image in a smartphone app" />
           </motion.div>
           <motion.div
             className={styles.usercard3}
@@ -83,7 +80,7 @@ const CommunityPage = () => {
             transition={{ delay: 0.8, duration: 0.3 }}
             viewport={{ once: true }}
           >
-            <Image src={usercard3} />
+            <Image src={usercard3} alt="User card image in a smartphone app" />
           </motion.div>
           <motion.div
             className={styles.usercard4}
@@ -92,7 +89,7 @@ const CommunityPage = () => {
             transition={{ delay: 1, duration: 0.3 }}
             viewport={{ once: true }}
           >
-            <Image src={usercard4} />
+            <Image src={usercard4} alt="User card image in a smartphone app" />
           </motion.div>
         </div>
       </div>

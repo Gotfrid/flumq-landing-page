@@ -54,9 +54,9 @@ export const DestinationCard: React.FC<Props> = ({ country }) => {
       viewport={{ once: true }}
       transition={transition}
     >
-      <Image src={countryImage} />
+      <Image src={countryImage} alt="Country photo" />
       <div className={styles.destinationInfo}>
-        <Image src={countryFlag} width={15} height={10} />
+        <Image src={countryFlag} alt="Country flag" width={15} height={10} />
         <span className={styles.countryName}>{country}</span>
       </div>
     </motion.div>

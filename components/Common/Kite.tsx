@@ -19,7 +19,7 @@ const Kite = ({ top, left, scale }: KiteProps) => {
   };
   return (
     <div className="kite" style={style}>
-      <Image src={kite} />
+      <Image src={kite} alt="Small kite image" />
     </div>
   );
 };

@@ -15,7 +15,7 @@ const IphoneGroup = () => {
         <StoreButton store="apple" color="gray" />
       </div>
       <div className={styles.iphone}>
-        <Image src={iphone14} layout="fill" priority />
+        <Image src={iphone14} alt="Screenshot of main page in a smartphone app" layout="fill" priority />
       </div>
       <div className={styles.playmarket}>
         <StoreButton store="google" color="gray" />
@@ -26,7 +26,7 @@ const IphoneGroup = () => {
           <p>download</p>
         </div>
         <div className={styles.diagonalArrow}>
-          <Image src={diagonalArrow} />
+          <Image src={diagonalArrow} alt="Diagonal arrow" />
         </div>
         <QrCode width="5.5em" />
       </div>

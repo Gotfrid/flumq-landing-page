@@ -13,14 +13,18 @@ const TimelineContent = ({ visible }: { visible: boolean }) => {
   return (
     <div className={styles.timelineContent} style={style}>
       <div className={styles.timelineContent__image}>
-        <Image src={timeline} width={183} height={288} />
+        <Image
+          src={timeline}
+          alt="Screenshot of the timeline page in a smartphone app"
+          width={183}
+          height={288}
+        />
       </div>
       <div className={styles.timelineContent__text}>
         <p>English language test</p>
         <p>
-          There are two approved language tests: CELPIP and IELTS. I suggest
-          taking IELTS because I found it way easier. You need to take IELTS
-          General since IELTS Academic is not accepted by the IRCC.
+          There are two approved language tests: CELPIP and IELTS. I suggest taking IELTS because I found it
+          way easier. You need to take IELTS General since IELTS Academic is not accepted by the IRCC.
         </p>
       </div>
     </div>

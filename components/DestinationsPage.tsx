@@ -26,10 +26,10 @@ const DestinationsPage = () => {
           <Destinations />
           <div className={styles.icons}>
             <div>
-              <Image src={searchIcon} />
+              <Image src={searchIcon} alt="Search icon" />
             </div>
             <div>
-              <Image src={settingsIcon} />
+              <Image src={settingsIcon} alt="Settings icon" />
             </div>
           </div>
         </div>
@@ -53,10 +53,7 @@ const DestinationsPage = () => {
           </motion.h1>
           <div className={styles.heroDescription}>
             <span className={styles.highlightDark}>Know your options</span>
-            <span>
-              {" "}
-              Search countries by filters, compare and make your choice.
-            </span>
+            <span> Search countries by filters, compare and make your choice.</span>
           </div>
         </div>
       </div>

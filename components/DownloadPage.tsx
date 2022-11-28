@@ -22,15 +22,13 @@ const DownloadPage = () => {
       <div className={styles.container}>
         <div className={styles.appIcon}>
           <div>
-            <Image src={appIcon} />
+            <Image src={appIcon} alt="Application icon" />
           </div>
         </div>
 
         <div className={styles.hero}>
           <div className={styles.title}>Download App</div>
-          <div className={styles.subtitle}>
-            It&apos;s time to begin your journey abroad.
-          </div>
+          <div className={styles.subtitle}>It&apos;s time to begin your journey abroad.</div>
           <div className={styles.stores}>
             <StoreButton store="apple" color="black" />
             <StoreButton store="google" color="black" />
@@ -46,40 +44,34 @@ const DownloadPage = () => {
           <div className={styles.contacts}>
             <div className={styles.email}>
               <span>
-                <Image src={mailIcon} />
+                <Image src={mailIcon} alt="Email icon" />
               </span>
               <a>business@flumq.com</a>
             </div>
             <ul className={styles.socials}>
               <li>
                 <a href="https://www.facebook.com/flumq" target="_blank">
-                  <Image src={facebookIcon} />
+                  <Image src={facebookIcon} alt="Facebook icon" />
                 </a>
               </li>
               <li>
                 <a href="#" target="_blank">
-                  <Image src={instagramIcon} />
+                  <Image src={instagramIcon} alt="Instagram icon" />
                 </a>
               </li>
               <li className={styles.youtube}>
-                <a
-                  href="https://www.youtube.com/channel/UCFrC1y1KCd8hz9HA6DN48bQ"
-                  target="_blank"
-                >
-                  <Image src={youtubeIcon} />
+                <a href="https://www.youtube.com/channel/UCFrC1y1KCd8hz9HA6DN48bQ" target="_blank">
+                  <Image src={youtubeIcon} alt="Youtube icon" />
                 </a>
               </li>
               <li>
                 <a href="https://twitter.com/FlumqOfficial" target="_blank">
-                  <Image src={twitterIcon} />
+                  <Image src={twitterIcon} alt="Twitter icon" />
                 </a>
               </li>
               <li>
-                <a
-                  href="https://www.linkedin.com/company/flumq"
-                  target="_blank"
-                >
-                  <Image src={linkedinIcon} />
+                <a href="https://www.linkedin.com/company/flumq" target="_blank">
+                  <Image src={linkedinIcon} alt="Linkedin icon" />
                 </a>
               </li>
             </ul>
@@ -90,7 +82,7 @@ const DownloadPage = () => {
           <div className={styles.links}>
             <div className={styles.copyrightContainer}>
               <span className={styles.copyrightLogo}>
-                <Image src={footerLogo} />
+                <Image src={footerLogo} alt="Small flumq logo" />
               </span>
               <span>© 2022 Flumq LLC</span>
             </div>

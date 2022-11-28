@@ -6,7 +6,7 @@ const QrCode = ({ width }: { width: "5.5em" | "6.5em" }) => {
   return (
     <div className={styles.qrImage} style={{ width }}>
       <div>
-        <Image src={qrCode} layout="fill" />
+        <Image src={qrCode} alt="QR Code leading to flumq app" layout="fill" />
       </div>
     </div>
   );
