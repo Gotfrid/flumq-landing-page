@@ -9,7 +9,7 @@ import footerLogo from "../public/logo/footer-logo.svg";
 import styles from "../styles/DownloadPage.module.scss";
 import StoreButton from "./Common/StoreButton";
 import QrCode from "./Common/QrCode";
-import { SocialBar } from "./Icons/SocialBar";
+import { IconBar } from "./SocialMedia/IconBar";
 
 const DownloadPage = () => {
   return (
@@ -43,7 +43,7 @@ const DownloadPage = () => {
               </span>
               <a href="mailto:business@flumq.com">business@flumq.com</a>
             </div>
-            <SocialBar />
+            <IconBar />
           </div>
 
           <div className={styles.footerBorder} />

@@ -1,12 +1,12 @@
-import { SocialIcon } from "./SocialIcon";
+import { SocialIcon } from "../Icon";
 
-import facebookIcon from "../../public/icons/facebook-icon.svg";
-import instagramIcon from "../../public/icons/instagram-icon.svg";
-import youtubeIcon from "../../public/icons/youtube-icon.svg";
-import twitterIcon from "../../public/icons/twitter-icon.svg";
-import linkedinIcon from "../../public/icons/linkedin-icon.svg";
+import facebookIcon from "../../../public/icons/facebook-icon.svg";
+import instagramIcon from "../../../public/icons/instagram-icon.svg";
+import youtubeIcon from "../../../public/icons/youtube-icon.svg";
+import twitterIcon from "../../../public/icons/twitter-icon.svg";
+import linkedinIcon from "../../../public/icons/linkedin-icon.svg";
 
-import styles from "./SocialBar.module.scss";
+import styles from "./IconBar.module.scss";
 
 type TSocialDictionary = {
   [key: string]: { href: string; src: any; alt: string };
@@ -26,7 +26,7 @@ const socialDictionary: TSocialDictionary = {
 
 const iconsToScale = ["youtube"];
 
-export const SocialBar = () => {
+export const IconBar = () => {
   const socialNetworks = Object.keys(socialDictionary);
   return (
     <ul className={styles.socialBar}>
