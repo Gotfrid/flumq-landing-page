@@ -55,7 +55,7 @@ const DownloadPage = () => {
                 </a>
               </li>
               <li>
-                <a href="#" target="_blank">
+                <a href="https://www.instagram.com/flumq.app/" target="_blank">
                   <Image src={instagramIcon} alt="Instagram icon" />
                 </a>
               </li>
@@ -65,7 +65,7 @@ const DownloadPage = () => {
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/FlumqOfficial" target="_blank">
+                <a href="https://twitter.com/FlumqApp" target="_blank">
                   <Image src={twitterIcon} alt="Twitter icon" />
                 </a>
               </li>
