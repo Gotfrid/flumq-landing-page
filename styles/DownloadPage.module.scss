@@ -154,22 +154,6 @@
         text-decoration: none;
       }
     }
-
-    .socials {
-      cursor: pointer;
-      display: flex;
-      gap: 2em;
-      list-style: none;
-      padding: 0;
-
-      a:hover {
-        filter: invert(46%) sepia(76%) saturate(3176%) hue-rotate(229deg) brightness(96%) contrast(101%);
-      }
-
-      .youtube {
-        scale: 1.2;
-      }
-    }
   }
 
   .footerBorder {
