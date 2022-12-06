@@ -24,7 +24,7 @@ const WelcomPage = () => {
           </div>
           <h1 className={styles.title}>Your guide to moving abroad</h1>
           <div className={styles.subtitle}>
-            Choose country, access multiple guides, ask questions and share your experience.
+            Choose a country, access multiple guides, ask questions and share your experience.
           </div>
         </div>
 
