@@ -1,4 +1,4 @@
-import { SocialIcon } from "../Icon";
+import { SocialIcon } from "../SocialIcon";
 
 import facebookIcon from "../../../public/icons/facebook-icon.svg";
 import instagramIcon from "../../../public/icons/instagram-icon.svg";
