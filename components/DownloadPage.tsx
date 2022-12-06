@@ -55,7 +55,7 @@ const DownloadPage = () => {
                 </a>
               </li>
               <li>
-                <a href="#" target="_blank">
+                <a href="https://www.instagram.com/flumq.app/" target="_blank">
                   <Image src={instagramIcon} alt="Instagram icon" />
                 </a>
               </li>
