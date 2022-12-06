@@ -12,7 +12,7 @@ type SocialIconProps = {
 export const SocialIcon: FC<SocialIconProps> = ({ href, src, alt }) => {
   return (
     <a href={href} target="_blank" className={styles.socialIcon}>
-      <Image src={src} alt={alt} />
+      <Image src={src} alt={alt} layout="fill" />
     </a>
   );
 };
