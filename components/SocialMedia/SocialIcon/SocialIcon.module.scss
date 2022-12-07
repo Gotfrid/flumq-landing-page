@@ -1,0 +1,10 @@
+.socialIcon {
+  position: relative;
+  display: block;
+  width: 1.3em;
+  height: 1.3em;
+
+  &:hover {
+    filter: invert(46%) sepia(76%) saturate(3176%) hue-rotate(229deg) brightness(96%) contrast(101%);
+  }
+}
