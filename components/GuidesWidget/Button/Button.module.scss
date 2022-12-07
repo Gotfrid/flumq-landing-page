@@ -1,0 +1,26 @@
+.button {
+  background-color: rgba(118, 118, 128);
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  height: 100%;
+  width: 10em;
+  border-radius: 50px;
+  padding: 6px;
+  font-weight: 600;
+  font-size: 1em;
+  transition: background 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #464649;
+  }
+}
+
+.active {
+  background-color: #59537b;
+  transition: background 0.5s ease-out;
+
+  &:hover {
+    background-color: #59537b;
+  }
+}
