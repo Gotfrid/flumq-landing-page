@@ -9,4 +9,17 @@ export const parameters = {
     },
   },
   layout: "centered",
+  backgrounds: {
+    default: "white",
+    values: [
+      {
+        name: "gray",
+        value: "#d3d3d3",
+      },
+      {
+        name: "white",
+        value: "#ffffff",
+      },
+    ],
+  },
 };
