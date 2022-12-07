@@ -8,6 +8,7 @@ import scrollIcon from "../public/icons/scroll-icon.svg";
 
 import StoreButton from "./Common/StoreButton";
 import IphoneGroup from "./Common/IphoneGroup";
+import { MainTitle } from "./Typography/MainTitle";
 
 import styles from "../styles/WelcomePage.module.scss";
 
@@ -22,10 +23,7 @@ const WelcomPage = () => {
           <div className={styles.imageLogo}>
             <Image src={logoSymbol} alt="Flumq image logo" height="50px" />
           </div>
-          <h1 className={styles.title}>Your guide to moving abroad</h1>
-          <div className={styles.subtitle}>
-            Choose a country, access multiple guides, ask questions and share your experience.
-          </div>
+          <MainTitle />
         </div>
 
         <IphoneGroup />
