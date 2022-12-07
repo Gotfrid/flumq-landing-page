@@ -46,21 +46,12 @@
   width: min(100%, 1280px);
 }
 
-.appIcon {
-  background: rgba(145, 107, 255, 0.25);
-  backdrop-filter: blur(0.5em);
-  border-radius: 1.5em;
-  width: 7em;
-  height: 7em;
+.appIconContainer {
   z-index: 4;
   position: absolute;
   top: -6em;
   left: 50%;
   transform: translate(-50%);
-
-  div {
-    padding: 0.5em;
-  }
 }
 
 .hero {

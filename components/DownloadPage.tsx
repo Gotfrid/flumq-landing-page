@@ -10,15 +10,14 @@ import styles from "../styles/DownloadPage.module.scss";
 import StoreButton from "./Common/StoreButton";
 import QrCode from "./Common/QrCode";
 import { IconBar } from "./SocialMedia/IconBar";
+import { AppIcon } from "./Branding/AppIcon";
 
 const DownloadPage = () => {
   return (
     <section className={classNames("page", styles.downloadPage)}>
       <div className={styles.container}>
-        <div className={styles.appIcon}>
-          <div>
-            <Image src={appIcon} alt="Application icon" />
-          </div>
+        <div className={styles.appIconContainer}>
+          <AppIcon />
         </div>
 
         <div className={styles.hero}>
