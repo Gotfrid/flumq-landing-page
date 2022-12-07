@@ -7,7 +7,7 @@ import StatsContent from "./GuidesWidget/StatsContent";
 import TimelineContent from "./GuidesWidget/TimelineContent";
 
 import styles from "../styles/GuidesPage.module.scss";
-import { HighlightTag } from "./Common/HighlightTag";
+import { HighlightTag } from "./Typography/HighlightTag";
 
 const guideTabs = ["Description", "Timeline", "Stats"];
 const backgroundCircleMapping = [

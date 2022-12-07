@@ -9,7 +9,7 @@ import usercard3 from "../public/assets/user-cards/card3.png";
 import usercard4 from "../public/assets/user-cards/card4.png";
 
 import styles from "../styles/CommunityPage.module.scss";
-import { HighlightTag } from "./Common/HighlightTag";
+import { HighlightTag } from "./Typography/HighlightTag";
 
 const initial = { opacity: 0, y: 50 };
 const animate = { opacity: 1, y: 0 };

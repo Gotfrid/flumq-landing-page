@@ -8,7 +8,7 @@ import searchIcon from "../public/icons/magnifying-glass.svg";
 import settingsIcon from "../public/icons/adjustments-vertical.svg";
 
 import styles from "../styles/DestinationsPage.module.scss";
-import { HighlightTag } from "./Common/HighlightTag";
+import { HighlightTag } from "./Typography/HighlightTag";
 
 const initial = { opacity: 0, y: 50 };
 const animate = { opacity: 1, y: 0 };

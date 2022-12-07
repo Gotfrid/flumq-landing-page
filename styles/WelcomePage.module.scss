@@ -67,31 +67,6 @@
       margin-right: 1em;
     }
   }
-
-  .title {
-    animation: text-appearence 0.5s ease-out 0.6s both;
-
-    background: linear-gradient(89.78deg, #704ee2 0.15%, #926ff7 99.81%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 5em;
-    font-weight: 800;
-    letter-spacing: -0.06em;
-    line-height: 1;
-    padding-bottom: 0.2em;
-    text-align: center;
-  }
-
-  .subtitle {
-    animation: text-appearence 1s ease-out 0.7s both;
-
-    color: #454267;
-    font-size: max(1rem, 1.4em);
-    font-weight: 700;
-    line-height: 1.2;
-    margin-top: 0.2em;
-    text-align: center;
-  }
 }
 
 .integrationsMobile {
