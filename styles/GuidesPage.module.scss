@@ -54,54 +54,11 @@
   z-index: 2;
   position: relative;
   padding-inline: 3em;
+  margin-top: 2em;
 
   background-image: url("/assets/iphone-frame.svg");
   background-repeat: no-repeat;
   background-size: contain;
-
-  .btnGroup {
-    background-color: rgba(118, 118, 128, 0.24);
-    border-radius: 50px;
-    height: 3em;
-    margin-top: 2em;
-    width: max-content;
-
-    button {
-      background-color: transparent;
-      border: none;
-      color: #ffffff;
-      cursor: pointer;
-      float: left;
-      height: 100%;
-      width: 10em;
-      border-radius: 50px;
-      padding: 6px;
-      font-weight: 600;
-      font-size: 1em;
-      transition: background 0.2s ease-in-out;
-
-      &:hover {
-        background-color: #464649;
-      }
-
-      &.btnActive {
-        background-color: #59537b;
-        transition: background 0.5s ease-out;
-      }
-
-      // TODO: is this necessary?
-      &:not(:last-child) {
-        border-right: none; /* Prevent double borders */
-      }
-    }
-
-    // TODO: is this necessary?
-    &:after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-  }
 }
 
 .description {
