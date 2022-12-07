@@ -107,7 +107,7 @@
 .description {
   color: #ffffff;
   font-size: 1.5em;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: -0.04em;
   line-height: 1.5;
   margin-top: 2em;
@@ -118,12 +118,6 @@
 
   @media (max-width: 930px) {
     margin-top: 0;
-  }
-
-  .highlightLight {
-    background: #6d57a1;
-    border-radius: 8px;
-    padding: 1px 5px 2px;
   }
 }
 

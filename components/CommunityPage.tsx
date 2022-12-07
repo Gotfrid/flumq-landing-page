@@ -9,6 +9,7 @@ import usercard3 from "../public/assets/user-cards/card3.png";
 import usercard4 from "../public/assets/user-cards/card4.png";
 
 import styles from "../styles/CommunityPage.module.scss";
+import { HighlightTag } from "./Common/HighlightTag";
 
 const initial = { opacity: 0, y: 50 };
 const animate = { opacity: 1, y: 0 };
@@ -43,7 +44,7 @@ const CommunityPage = () => {
             Community
           </motion.div>
           <div className={styles.heroDescription}>
-            <span className={styles.highlightDark}>You're not alone</span>
+            <HighlightTag variant="dark">You're not alone</HighlightTag>
             <span> Meet new people, join discussions, share your experience, ask questions, and more.</span>
           </div>
         </h2>

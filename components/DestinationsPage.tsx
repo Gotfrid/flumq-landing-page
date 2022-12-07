@@ -8,6 +8,7 @@ import searchIcon from "../public/icons/magnifying-glass.svg";
 import settingsIcon from "../public/icons/adjustments-vertical.svg";
 
 import styles from "../styles/DestinationsPage.module.scss";
+import { HighlightTag } from "./Common/HighlightTag";
 
 const initial = { opacity: 0, y: 50 };
 const animate = { opacity: 1, y: 0 };
@@ -54,7 +55,7 @@ const DestinationsPage = () => {
             Destination
           </motion.div>
           <div className={styles.heroDescription}>
-            <span className={styles.highlightDark}>Know your options</span>
+            <HighlightTag variant="dark">Know your options</HighlightTag>
             <span> Search countries by filters, compare and make your choice.</span>
           </div>
         </h2>

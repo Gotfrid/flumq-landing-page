@@ -1,0 +1,1 @@
+export { HighlightTag } from "./HighlightTag";

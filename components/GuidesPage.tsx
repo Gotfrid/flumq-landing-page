@@ -7,6 +7,7 @@ import StatsContent from "./GuidesWidget/StatsContent";
 import TimelineContent from "./GuidesWidget/TimelineContent";
 
 import styles from "../styles/GuidesPage.module.scss";
+import { HighlightTag } from "./Common/HighlightTag";
 
 const guideTabs = ["Description", "Timeline", "Stats"];
 const backgroundCircleMapping = [
@@ -77,7 +78,7 @@ const GuidesPage = () => {
       </div>
 
       <div className={styles.description}>
-        <span className={styles.highlightLight}>No more uncertainties</span>
+        <HighlightTag variant="light">No more uncertainties</HighlightTag>
         <span>
           {" "}
           Choose a path that shows what to do next, track progress, share timeline, or create your own guide.
