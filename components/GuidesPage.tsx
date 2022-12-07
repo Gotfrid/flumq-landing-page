@@ -8,6 +8,7 @@ import TimelineContent from "./GuidesWidget/TimelineContent";
 
 import styles from "../styles/GuidesPage.module.scss";
 import { HighlightTag } from "./Typography/HighlightTag";
+import { ButtonGroup } from "./GuidesWidget/ButtonGroup";
 
 const guideTabs = ["Description", "Timeline", "Stats"];
 const backgroundCircleMapping = [
@@ -58,13 +59,7 @@ const GuidesPage = () => {
       </h2>
 
       <div className={styles.widgetContainer}>
-        <div className={styles.btnGroup} onClick={handleGuideSwitch}>
-          {guideTabs.map((tabName) => (
-            <button key={tabName} className={tabName === activeGuideTab ? styles.btnActive : ""}>
-              {tabName}
-            </button>
-          ))}
-        </div>
+        <ButtonGroup buttonNames={guideTabs} onClick={handleGuideSwitch} />
         <div className={styles.iphoneFrame}>
           <DescriptionContent visible={activeGuideTab == guideTabs[0]} />
           <TimelineContent visible={activeGuideTab == guideTabs[1]} />
