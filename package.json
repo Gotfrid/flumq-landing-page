@@ -13,7 +13,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "serve-storybook": "serve storybook-static",
-    "chromatic": "npx chromatic"
+    "chromatic": "chromatic --exit-zero-on-changes"
   },
   "dependencies": {
     "@vercel/analytics": "^0.1.1",
