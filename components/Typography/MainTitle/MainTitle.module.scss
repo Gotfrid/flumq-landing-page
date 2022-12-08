@@ -7,6 +7,10 @@
   letter-spacing: -0.06em;
   text-align: center;
   -webkit-text-fill-color: transparent;
+
+  @media (max-width: 740px) {
+    line-height: 1;
+  }
 }
 
 .subtitle {
