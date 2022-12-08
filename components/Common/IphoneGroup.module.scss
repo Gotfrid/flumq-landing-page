@@ -13,7 +13,7 @@
     font-size: 0.8rem;
   }
 
-  @media (max-width: 740px) {
+  @media (max-width: $mobile-breakpoint) {
     display: none;
   }
 
@@ -58,7 +58,7 @@
 
     animation: text-appearence 1s ease-out 0.7s both;
 
-    @media (max-width: 740px) {
+    @media (max-width: $mobile-breakpoint) {
       display: none;
     }
 

@@ -8,7 +8,7 @@
   text-align: center;
   -webkit-text-fill-color: transparent;
 
-  @media (max-width: 740px) {
+  @media (max-width: $mobile-breakpoint) {
     line-height: 1.05;
     padding-bottom: 1rem;
   }

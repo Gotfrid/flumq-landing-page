@@ -15,7 +15,7 @@
     scale: 1.1;
   }
 
-  @media (max-width: 740px) {
+  @media (max-width: $mobile-breakpoint) {
     width: 16em;
   }
 }
