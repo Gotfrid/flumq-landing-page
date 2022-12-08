@@ -28,7 +28,7 @@
       linear-gradient(180deg, #a98cff 0%, rgba(255, 255, 255, 0) 100%);
     z-index: 1;
 
-    @media (max-width: 640px) {
+    @media (max-width: $small-mobile-breakpoint) {
       height: 30em;
     }
   }
@@ -51,7 +51,7 @@
   font-size: 1em;
   line-height: 1.4;
 
-  @media (max-width: 640px) {
+  @media (max-width: $small-mobile-breakpoint) {
     text-align: center;
     margin-top: 10em;
   }
@@ -88,7 +88,7 @@
   z-index: 4;
   margin-block: 10em;
 
-  @media (max-width: 640px) {
+  @media (max-width: $small-mobile-breakpoint) {
     margin-block-start: 2em;
   }
 

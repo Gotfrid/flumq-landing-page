@@ -9,7 +9,7 @@
   align-self: flex-end;
   margin-bottom: 6vh;
 
-  @media (max-width: 978px) {
+  @media (max-width: $tablet-breakpoint) {
     font-size: 0.8rem;
   }
 
@@ -34,11 +34,11 @@
     aspect-ratio: 1;
     top: -1px; // removes weird lines in Safari on some window sizes
 
-    @media (min-height: 1000px) {
+    @media (min-height: $small-height) {
       width: 35em;
     }
 
-    @media (min-height: 1200px) {
+    @media (min-height: $large-height) {
       width: 45em;
     }
 

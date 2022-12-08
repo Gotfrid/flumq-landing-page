@@ -73,7 +73,7 @@
   text-align: center;
   z-index: 1;
 
-  @media (max-width: 930px) {
+  @media (max-width: $tablet-breakpoint) {
     margin-top: 0;
   }
 }

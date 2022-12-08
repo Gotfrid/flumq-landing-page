@@ -22,7 +22,7 @@
     transform: scaleX(2);
   }
 
-  @media (max-width: "640px") {
+  @media (max-width: $small-mobile-breakpoint) {
     height: min-content;
   }
 }
@@ -48,7 +48,7 @@
   min-width: 30em;
   z-index: 1;
 
-  @media (max-width: "640px") {
+  @media (max-width: $small-mobile-breakpoint) {
     margin-bottom: 10em;
   }
 
@@ -92,7 +92,7 @@
   z-index: 1;
   margin-block: 3em;
 
-  @media (max-width: 640px) {
+  @media (max-width: $small-mobile-breakpoint) {
     // FIXME: 1px jump
     order: -1;
     text-align: center;

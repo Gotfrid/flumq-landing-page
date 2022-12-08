@@ -4,11 +4,11 @@
 }
 
 .dark {
-  color: #785bb6;
-  background: #dcd6fb;
+  color: $highlight-clr-dark;
+  background: $highlight-bg-dark;
 }
 
 .light {
-  color: #fff;
-  background: #6d57a1;
+  color: $highlight-clr-light;
+  background: $highlight-bg-light;
 }
