@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-import appStoreGray from "../../public/assets/app-store-gray.svg";
-import googlePlayGray from "../../public/assets/google-play-gray.svg";
-import appStoreBlack from "../../public/assets/app-store-black.svg";
-import googlePlayBlack from "../../public/assets/google-play-black.svg";
+import appStoreGray from "../../../public/assets/app-store-gray.svg";
+import googlePlayGray from "../../../public/assets/google-play-gray.svg";
+import appStoreBlack from "../../../public/assets/app-store-black.svg";
+import googlePlayBlack from "../../../public/assets/google-play-black.svg";
 
 import styles from "./StoreButton.module.scss";
 
@@ -24,7 +24,7 @@ interface StoreButtonProps {
   color: "gray" | "black";
 }
 
-const StoreButton: React.FC<StoreButtonProps> = ({ store, color }) => {
+export const StoreButton: React.FC<StoreButtonProps> = ({ store, color }) => {
   const src = storeSources[`${store}_${color}`];
   const href = storeLinks[store];
   const style = { animationDuration: store === "google" ? "0.6s" : "0.5s" };
@@ -37,5 +37,3 @@ const StoreButton: React.FC<StoreButtonProps> = ({ store, color }) => {
     </div>
   );
 };
-
-export default StoreButton;

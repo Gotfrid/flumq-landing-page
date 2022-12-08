@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import StoreButton from "./StoreButton";
+import { StoreButton } from "./StoreButton";
 import QrCode from "./QrCode";
 
 import iphone14 from "../../public/assets/iphone14.svg";

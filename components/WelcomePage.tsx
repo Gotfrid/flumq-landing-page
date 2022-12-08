@@ -6,7 +6,7 @@ import logoSymbol from "../public/logo/logo-symbol.svg";
 import iphone14 from "../public/assets/iphone14.svg";
 import scrollIcon from "../public/icons/scroll-icon.svg";
 
-import StoreButton from "./Common/StoreButton";
+import { StoreButton } from "./Common/StoreButton";
 import IphoneGroup from "./Common/IphoneGroup";
 import { MainTitle } from "./Typography/MainTitle";
 

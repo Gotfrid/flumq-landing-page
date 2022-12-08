@@ -7,7 +7,7 @@ import mailIcon from "../public/icons/mail-icon.svg";
 import footerLogo from "../public/logo/footer-logo.svg";
 
 import styles from "../styles/DownloadPage.module.scss";
-import StoreButton from "./Common/StoreButton";
+import { StoreButton } from "./Common/StoreButton";
 import QrCode from "./Common/QrCode";
 import { IconBar } from "./SocialMedia/IconBar";
 import { AppIcon } from "./Branding/AppIcon";
