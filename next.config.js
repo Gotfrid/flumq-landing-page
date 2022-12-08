@@ -6,6 +6,9 @@ const nextConfig = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  sassOptions: {
+    prependData: `@import "./styles/variables.scss";`,
+  },
 };
 
 module.exports = nextConfig;
