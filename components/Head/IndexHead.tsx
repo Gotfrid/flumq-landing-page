@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Favicon, AppleIcon, AndroidIcon, MicrosoftIcon } from "./Favicon";
 
-const metaTitle = "Flumq: Your guide to moving abroad";
+const metaTitle = "Your guide to moving abroad";
 const metaDescription = "Choose a country, access multiple guides, ask questions and share your experience.";
 const metaUrl = "https://flumq.com";
 const metaImage = "og-image.png";
