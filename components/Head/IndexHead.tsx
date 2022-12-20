@@ -4,7 +4,7 @@ import { Favicon, AppleIcon, AndroidIcon, MicrosoftIcon } from "./Favicon";
 const metaTitle = "Your guide to moving abroad";
 const metaDescription = "Choose a country, access multiple guides, ask questions and share your experience.";
 const metaUrl = "https://flumq.com";
-const metaImage = "og-image.png";
+const metaImage = "https://www.flumq.com/og-image.png";
 const metaType = "website";
 const metaSiteName = "Flumq";
 const metaTwitter = "@FlumqApp";
