@@ -4,8 +4,10 @@ import { Favicon, AppleIcon, AndroidIcon, MicrosoftIcon } from "./Favicon";
 const metaTitle = "Your guide to moving abroad";
 const metaDescription = "Choose a country, access multiple guides, ask questions and share your experience.";
 const metaUrl = "https://flumq.com";
-const metaImage = "og-image.png";
+const metaImage = "https://www.flumq.com/og-image.png";
 const metaType = "website";
+const metaSiteName = "Flumq";
+const metaTwitter = "@FlumqApp";
 
 const MetaOG = () => {
   return (
@@ -16,12 +18,11 @@ const MetaOG = () => {
       <meta property="og:url" content={metaUrl}></meta>
       <meta property="og:image" content={metaImage}></meta>
       <meta property="og:type" content={metaType} />
+      <meta property="og:site_name" content={metaSiteName} />
 
       {/* Twitter preview */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={metaTitle} />
-      <meta name="twitter:description" content={metaDescription} />
-      <meta name="twitter:image" content={metaImage} />
+      <meta name="twitter:site" content={metaTwitter} />
     </>
   );
 };
@@ -30,7 +31,7 @@ const IndexHead = () => {
   return (
     <Head>
       <title>Flumq</title>
-      <meta name="description" content="Your guide to moving abroad" />
+      <meta name="Description" content={metaDescription} />
       <link rel="manifest" href="/manifest.json" />
       <MetaOG />
       <Favicon />
