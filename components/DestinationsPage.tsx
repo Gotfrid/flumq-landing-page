@@ -9,6 +9,8 @@ import settingsIcon from "../public/icons/adjustments-vertical.svg";
 
 import styles from "../styles/DestinationsPage.module.scss";
 import { HighlightTag } from "./Typography/HighlightTag";
+import { PagePreTitle } from "./Typography/PagePreTitle";
+import { PageTitle } from "./Typography/PageTitle";
 
 const initial = { opacity: 0, y: 50 };
 const animate = { opacity: 1, y: 0 };
@@ -36,24 +38,8 @@ const DestinationsPage = () => {
         </div>
 
         <h2 className={styles.hero}>
-          <motion.div
-            className={styles.preTitle}
-            initial={initial}
-            whileInView={animate}
-            transition={transition}
-            viewport={{ once: true }}
-          >
-            Find your
-          </motion.div>
-          <motion.div
-            className={styles.mainTitle}
-            initial={initial}
-            whileInView={animate}
-            transition={transition}
-            viewport={{ once: true }}
-          >
-            Destination
-          </motion.div>
+          <PagePreTitle text="Find your" variant="dark" />
+          <PageTitle text="Destination" />
           <div className={styles.heroDescription}>
             <HighlightTag variant="dark">Know your options</HighlightTag>
             <span> Search countries by filters, compare and make your choice.</span>

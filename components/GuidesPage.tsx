@@ -9,6 +9,8 @@ import TimelineContent from "./GuidesWidget/TimelineContent";
 import styles from "../styles/GuidesPage.module.scss";
 import { HighlightTag } from "./Typography/HighlightTag";
 import { ButtonGroup } from "./GuidesWidget/ButtonGroup";
+import { PagePreTitle } from "./Typography/PagePreTitle";
+import { PageTitle } from "./Typography/PageTitle";
 
 const guideTabs = ["Description", "Timeline", "Stats"];
 const backgroundCircleMapping = [
@@ -54,8 +56,8 @@ const GuidesPage = () => {
       <Kite left="93%" top="87%" scale={0.6} />
 
       <h2 className={styles.hero}>
-        <div className={styles.preTitle}>Access</div>
-        <div className={styles.mainTitle}>Step-by-Step Guides</div>
+        <PagePreTitle text="Access" variant="light" />
+        <PageTitle text="Step-by-Step Guides" />
       </h2>
 
       <div className={styles.widgetContainer}>
