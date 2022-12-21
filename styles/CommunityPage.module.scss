@@ -56,21 +56,6 @@
     margin-top: 10em;
   }
 
-  .preTitle {
-    font-size: 3.375em;
-    letter-spacing: -0.04em;
-    color: #454267;
-    margin: -0.5em 0;
-  }
-
-  .mainTitle {
-    font-size: 4.5em;
-    letter-spacing: -0.06em;
-    background: linear-gradient(273.07deg, #e95aec 0%, #8793ff 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
   .heroDescription {
     font-size: 1.5em;
     font-weight: 600;
@@ -78,6 +63,7 @@
     letter-spacing: -0.04em;
     max-width: 20em;
     min-width: 16em;
+    margin-top: 0.5em; // TODO: remove this fix when proper components are introduced
   }
 }
 
