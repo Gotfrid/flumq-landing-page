@@ -7,7 +7,7 @@ import scrollIcon from "../public/icons/scroll-icon.svg";
 import { StoreButton } from "./Common/StoreButton";
 import { Logo } from "./Branding/Logo";
 import IphoneGroup from "./Common/IphoneGroup";
-import { MainTitle } from "./Typography/MainTitle";
+import { AppTitle } from "./Typography/AppTitle";
 
 import styles from "../styles/WelcomePage.module.scss";
 
@@ -22,7 +22,7 @@ const WelcomPage = () => {
           <div className={styles.imageLogo}>
             <Logo variant="symbol" />
           </div>
-          <MainTitle />
+          <AppTitle />
         </div>
 
         <IphoneGroup />

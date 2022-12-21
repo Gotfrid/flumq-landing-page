@@ -1,12 +1,12 @@
 import { FC } from "react";
-import styles from "./MainTitle.module.scss";
+import styles from "./AppTitle.module.scss";
 
-interface MainTitleProps {
+interface AppTitleProps {
   title?: string;
   subtitle?: string;
 }
 
-export const MainTitle: FC<MainTitleProps> = ({ title, subtitle }) => {
+export const AppTitle: FC<AppTitleProps> = ({ title, subtitle }) => {
   const titleText = title ?? "Your guide to moving abroad";
   const subtitleText =
     subtitle ?? "Choose a country, access multiple guides, ask questions and share your experience.";
