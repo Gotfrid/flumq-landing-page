@@ -1,12 +1,11 @@
 import Image from "next/image";
 import classNames from "classnames";
 
-import logoText from "../public/logo/logo-text.svg";
-import logoSymbol from "../public/logo/logo-symbol.svg";
 import iphone14 from "../public/assets/iphone14.svg";
 import scrollIcon from "../public/icons/scroll-icon.svg";
 
 import { StoreButton } from "./Common/StoreButton";
+import { Logo } from "./Branding/Logo";
 import IphoneGroup from "./Common/IphoneGroup";
 import { MainTitle } from "./Typography/MainTitle";
 
@@ -18,10 +17,10 @@ const WelcomPage = () => {
       <div className={styles.container}>
         <div className={styles.hero}>
           <div className={styles.textLogo}>
-            <Image src={logoText} alt="Flumq text logo" height="50px" />
+            <Logo variant="text" />
           </div>
           <div className={styles.imageLogo}>
-            <Image src={logoSymbol} alt="Flumq image logo" height="50px" />
+            <Logo variant="symbol" />
           </div>
           <MainTitle />
         </div>
