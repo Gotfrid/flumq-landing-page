@@ -57,7 +57,7 @@ const GuidesPage = () => {
 
       <h2 className={styles.hero}>
         <PagePreTitle text="Access" variant="light" />
-        <PageTitle text="Step-by-Step Guides" />
+        <PageTitle text="Step-by-Step Guides" style={{ paddingInline: "1em" }} />
       </h2>
 
       <div className={styles.widgetContainer}>

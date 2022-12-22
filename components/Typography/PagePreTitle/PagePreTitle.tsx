@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { motion } from "framer-motion";
+import { motion, MotionProps } from "framer-motion";
 import styles from "./PagePreTitle.module.scss";
 
 const initial = { opacity: 0, y: 50 };
@@ -10,12 +10,13 @@ const transition = {
   type: "spring",
 };
 
-interface PagePreTitleProps {
+interface PagePreTitleProps extends MotionProps {
   text: string;
   variant: "dark" | "light";
 }
 
-export const PagePreTitle: FC<PagePreTitleProps> = ({ text, variant = "dark" }) => {
+export const PagePreTitle: FC<PagePreTitleProps> = (props) => {
+  const { text, variant } = props;
   return (
     <motion.div
       className={styles.preTitle}
@@ -24,6 +25,7 @@ export const PagePreTitle: FC<PagePreTitleProps> = ({ text, variant = "dark" }) 
       transition={transition}
       viewport={{ once: true }}
       style={{ color: variant === "dark" ? "#454267" : "#fff" }}
+      {...props}
     >
       {text}
     </motion.div>

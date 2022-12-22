@@ -1,6 +1,7 @@
-import { FC } from "react";
-import { motion, Transition } from "framer-motion";
+import { Component, FC } from "react";
+import { motion, MotionProps, Transition } from "framer-motion";
 import styles from "./PageTitle.module.scss";
+import { HTMLProps } from "react";
 
 const initial = { opacity: 0, y: 50 };
 const animate = { opacity: 1, y: 0 };
@@ -10,11 +11,12 @@ const transition: Transition = {
   type: "spring",
 };
 
-interface PageTitleProps {
+interface PageTitleProps extends MotionProps {
   text: string;
 }
 
-export const PageTitle: FC<PageTitleProps> = ({ text }) => {
+export const PageTitle: FC<PageTitleProps> = (props) => {
+  const { text } = props;
   return (
     <motion.div
       className={styles.pageTitle}
@@ -22,6 +24,7 @@ export const PageTitle: FC<PageTitleProps> = ({ text }) => {
       whileInView={animate}
       transition={transition}
       viewport={{ once: true }}
+      {...props}
     >
       {text}
     </motion.div>
