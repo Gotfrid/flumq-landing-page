@@ -12,15 +12,23 @@
   overflow: hidden;
   height: 90%;
   width: 100%;
+
   display: flex;
   justify-content: center;
+  align-items: flex-end;
+
+  @media (max-width: $mobile-breakpoint) {
+    display: grid;
+  }
 }
 
 .container {
   max-width: 1280px;
-  height: 100%;
-  display: grid;
-  grid-template-rows: 1fr auto;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5em;
   position: relative;
   padding-inline: 2em;
   transform: scaleX(0.5);
@@ -28,17 +36,15 @@
 
   @media (max-width: $mobile-breakpoint) {
     margin-top: 2.5em;
+    gap: 1em;
   }
 }
 
 .hero {
-  align-self: flex-end;
   z-index: 1;
-  margin-bottom: 5em;
   padding-inline: 5em;
 
   @media (max-width: $mobile-breakpoint) {
-    margin-bottom: 1em;
     padding-inline: 1em;
   }
 
