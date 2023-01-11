@@ -1,13 +1,12 @@
 .grid {
   font-size: 1rem;
   display: grid;
-  grid-template-areas: "apple iphone google" "apple iphone google" ". iphone qrcode";
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas: "apple iphone google";
+  grid-template-columns: 1fr 1.5fr 1fr;
   justify-items: center;
   align-items: center;
   height: min-content;
   align-self: flex-end;
-  margin-bottom: 6vh;
 
   @media (max-width: $tablet-breakpoint) {
     font-size: 0.8rem;
@@ -19,12 +18,12 @@
 
   .appstore {
     grid-area: apple;
-    align-self: flex-end;
+    justify-self: flex-end;
   }
 
   .playmarket {
     grid-area: google;
-    align-self: flex-end;
+    justify-self: flex-start;
   }
 
   .iphone {
@@ -33,50 +32,19 @@
     width: 25em;
     aspect-ratio: 1;
     top: -1px; // removes weird lines in Safari on some window sizes
+    margin-bottom: -3.5em;
 
     @media (min-height: $small-height) {
       width: 35em;
+      margin-bottom: -4.5em;
     }
 
     @media (min-height: $large-height) {
       width: 45em;
+      margin-bottom: -6em;
     }
 
     animation: iphone-appearence 1s cubic-bezier(0, 0.6, 0.32, 1) 0.1s both;
-  }
-
-  .qrcode {
-    grid-area: qrcode;
-    align-self: flex-end;
-    margin-bottom: 1em;
-
-    display: flex;
-    gap: 0.5em;
-    align-items: flex-end;
-    z-index: 3;
-    font-size: 1em;
-
-    animation: text-appearence 1s ease-out 0.7s both;
-
-    @media (max-width: $mobile-breakpoint) {
-      display: none;
-    }
-
-    .qrText {
-      font-weight: 600;
-      margin-right: -0.75em;
-      font-size: 1em;
-      line-height: 1;
-      letter-spacing: -0.02em;
-      color: #454267;
-    }
-
-    .diagonalArrow {
-      margin-bottom: 1.25em;
-      margin-right: 0.5em;
-      width: 1em;
-      aspect-ratio: 1;
-    }
   }
 }
 
