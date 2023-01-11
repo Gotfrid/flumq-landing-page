@@ -52,7 +52,7 @@ const DownloadPage = () => {
               <span className={styles.copyrightLogo}>
                 <Image src={footerLogo} alt="Small flumq logo" />
               </span>
-              <span>© 2022 Flumq LLC</span>
+              <span>&copy; {new Date().getFullYear()} Flumq LLC</span>
             </div>
             <div className={styles.terms}>
               <Link href="/">Privacy Policy</Link>
