@@ -24,6 +24,7 @@
 
   @media (max-width: $small-mobile-breakpoint) {
     height: min-content;
+    margin-top: 1px; // fix gray lines in safari
   }
 }
 

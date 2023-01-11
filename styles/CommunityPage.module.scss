@@ -41,6 +41,7 @@
   justify-content: center;
   align-items: center;
   justify-items: center;
+  margin-bottom: 3px; // fix gray lines in safari
 
   width: min(100%, 1280px);
 }
